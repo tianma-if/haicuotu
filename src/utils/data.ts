@@ -20,16 +20,16 @@ export interface VolumeData {
 }
 
 export const volumes: VolumeData[] = [
-  vol1 as VolumeData,
-  vol2 as VolumeData,
-  vol3 as VolumeData,
-  vol4 as VolumeData
+  { ...vol1, volume: 1 } as VolumeData,
+  { ...vol3, volume: 2 } as VolumeData, // Swap physical Second Volume sharks (vol3.json) to Volume 2
+  { ...vol2, volume: 3 } as VolumeData, // Swap physical Third Volume shells (vol2.json) to Volume 3
+  { ...vol4, volume: 4 } as VolumeData
 ];
 
-export const allCreatures: Creature[] = volumes.flatMap(v => 
+export const allCreatures: Creature[] = volumes.flatMap((v, idx) => 
   v.creatures.map(c => ({
     ...c,
-    volume: v.volume
+    volume: idx + 1 // Assign correct displayed volume based on index (1, 2, 3, 4)
   }))
 );
 
