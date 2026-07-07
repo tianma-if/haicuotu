@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "海错图数字化图鉴 - 发现东方海洋神秘生物", 
+  description = "清代画家聂璜手绘的海洋生物图鉴《海错图》开源数字化版本。探索三百年前的神秘海怪、珍奇鱼类，支持古今生物对照、美味指数、每日运势抽签，一键生成精美海报分享。"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO Optimization -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="海错图, 聂璜, 古籍数字化, 故宫博物院, 海怪, 国风设计, 艺术科普, 零成本建站" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+
+    <!-- Google Fonts for Modern Typography & Noto Serif SC for Elegant Chinese Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="paper-scroll text-ink-black min-h-screen flex flex-col font-sans selection:bg-cinnabar-red selection:text-paper-light">
+    <!-- Header -->
+    <header class="border-b border-paper-dark/30 py-6 px-4 md:px-8 bg-paper-light/85 backdrop-blur-md sticky top-0 z-40">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="bg-cinnabar-red text-paper-light w-10 h-10 flex items-center justify-center font-display text-2xl font-bold rounded-sm shadow-md group-hover:scale-105 transition-transform duration-300">
+            海
+          </div>
+          <div>
+            <h1 class="font-display text-2xl font-black tracking-wide">海錯圖</h1>
+            <p class="text-xs text-ink-black/60 uppercase tracking-widest font-sans">Facsimile Digital Album</p>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="flex items-center gap-6 font-display text-lg font-bold">
+          <a href="/" class="hover:text-cinnabar-red transition-colors duration-300">画廊图鉴</a>
+          <a href="/fortune" class="hover:text-cinnabar-red transition-colors duration-300 flex items-center gap-1">
+            运势签 <span class="bg-cinnabar-red text-paper-light text-[10px] px-1 rounded-full uppercase tracking-tighter">New</span>
+          </a>
+          <a href="https://github.com/tianma-if/haicuotu" target="_blank" rel="noopener noreferrer" class="hover:text-cinnabar-red transition-colors duration-300 font-sans text-sm border border-ink-black/20 rounded-full px-3 py-1 bg-paper-light/50 flex items-center gap-1 hover:bg-paper-dark/20">
+            GitHub
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Slot -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 md:px-8 py-8">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-paper-dark/40 py-8 px-4 md:px-8 bg-deep-sea text-paper-light">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-paper-light/75">
+        <div class="text-center md:text-left">
+          <p class="font-display text-base font-bold mb-1">《海错图》由清代聂璜绘，现分藏于北京故宫博物院（一至三册）与台北故宫博物院（第四册）</p>
+          <p class="font-sans text-xs">本项目为开源数字化呈现，由 magic-pdf 支持图文智能提取，部署于 Cloudflare Pages。</p>
+        </div>
+        <div class="flex items-center gap-4 font-sans text-xs">
+          <a href="https://github.com/tianma-if/haicuotu" class="hover:underline hover:text-white">GitHub 仓库</a>
+          <span>•</span>
+          <span>© 2026 Haicuotu Project. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

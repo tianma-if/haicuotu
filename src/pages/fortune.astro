@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FortuneCard from '../components/FortuneCard';
+import { allCreatures } from '../utils/data';
+---
+
+<Layout title="每日海怪运势签 - 《海错图》智能求签" description="心诚则灵，求取今日海洋灵兽，预测运势吉凶。">
+  <FortuneCard client:load creatures={allCreatures} />
+</Layout>

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-black: #1a1a1a;
+  --color-paper-light: #fdfaf2;
+  --color-paper-dark: #ebdcb9;
+  --color-cinnabar-red: #b83b3b;
+  --color-cinnabar-hover: #9c2e2e;
+  --color-deep-sea: #1f3b37;
+  --color-deep-sea-light: #2c544e;
+  
+  --font-display: "STKaiti", "KaiTi", "SimSun", "Noto Serif SC", serif;
+  --font-sans: "Outfit", "Inter", "system-ui", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper-light);
+  border-left: 1px solid var(--color-paper-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-deep-sea);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cinnabar-red);
+}
+
+/* Custom Utilities for national style (国风) */
+.paper-scroll {
+  background-color: #fcf9f2;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0),
+                    radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.ink-border {
+  border: 2px solid #1a1a1a;
+  box-shadow: 4px 4px 0px #b83b3b;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ink-border:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #1f3b37;
+}
+
+/* Water waves pattern using SVG */
+.water-waves {
+  background-color: var(--color-deep-sea);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 40c10-5 20-5 30 0h10c10-5 20-5 30 0z' fill='%232c544e' fill-opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* Dynamic Calligraphy Stamp Style */
+.stamp-btn {
+  border: 2px solid var(--color-cinnabar-red);
+  color: var(--color-cinnabar-red);
+  font-family: var(--font-display);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.stamp-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-cinnabar-red);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.stamp-btn:hover {
+  color: var(--color-paper-light);
+}
+
+.stamp-btn:hover::before {
+  left: 0;
+}
+
+/* Micro-animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-25%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-wave {
+  animation: wave 12s linear infinite;
+}
+
+/* Chinese vertical text layout utility */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

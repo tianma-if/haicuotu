@@ -1,0 +1,38 @@
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+.venv/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# IDE / VS Code
+.vscode/
+
+# AI Coding Assistant Settings
+AGENTS.md
+CLAUDE.md
+
+# jetbrains setting folder
+.idea/
+
+# extracted raw outputs
+extracted_raw/
+test_output/
+test_output_pages2_4/
+
