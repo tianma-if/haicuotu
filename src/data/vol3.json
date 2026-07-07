@@ -1,174 +1,174 @@
 {
   "volume": 3,
-  "title": "第三册",
-  "preface": "第三册记载海鸟、海滨植物、海市蜃楼及贝壳。聂璜谓：海物不仅鳞介，海鸟因风涛而生，贝类聚万壳之奇，珊瑚发朱光之艳，皆造化之妙也。",
+  "title": "第二册",
+  "preface": "第二册专收海洋奇兽与各类鲨鱼。聂璜云：海中鲨鱼有数十种，形状各异，性暴鸷，多食人。奇兽如海马、海豹等，亦光怪陆离，备极奇观。",
   "creatures": [
     {
       "id": "vol3_0",
-      "name": "海鹅",
+      "name": "丫髻鲨",
       "image": "/images/vol3/page_0.webp",
-      "description": "海鹅，状如鹅而大，色白，飞鸣海上。随风起落，海人视之以知风向。",
+      "description": "丫髻鲨，头如丫髻，两目分在两角之端，奇诡异常。性鸷猛，食小鱼。",
       "page_idx": 0
     },
     {
       "id": "vol3_1",
-      "name": "海鸥",
+      "name": "虎鲨",
       "image": "/images/vol3/page_1.webp",
-      "description": "海鸥，体白翼灰，鸣声清脆。常群飞于舟楫之后，逐鱼而食。",
+      "description": "虎鲨，头大，身有斑纹如虎，齿如锯，最能噬人，为鲨中之最暴者。",
       "page_idx": 1
     },
     {
       "id": "vol3_2",
-      "name": "海燕",
+      "name": "锯鲨",
       "image": "/images/vol3/page_2.webp",
-      "description": "海燕，状如燕而小，色青黑。大风将至则贴水低飞，海人以为风候。",
+      "description": "锯鲨，吻前突出如长锯，有双侧齿突，用以击杀鱼群。",
       "page_idx": 2
     },
     {
       "id": "vol3_3",
-      "name": "金丝燕",
+      "name": "潜龙鲨",
       "image": "/images/vol3/page_3.webp",
-      "description": "金丝燕，产闽粤海岛，吐唾筑巢于悬崖。其巢即燕窝，清香滋补，为席上珍馐。",
+      "description": "潜龙鲨，身长而黑，伏于深海礁石之下，不易捕获，故名潜龙。",
       "page_idx": 3
     },
     {
       "id": "vol3_4",
-      "name": "海鸡",
+      "name": "白鲨",
       "image": "/images/vol3/page_4.webp",
-      "description": "海鸡，状如鸡，冠红羽彩。晨鸣于礁石之上，海潮退则下滩啄食。",
+      "description": "白鲨，体色苍白，巨躯利齿，常尾随舟船掠食，性极贪婪鸷猛。",
       "page_idx": 4
     },
     {
       "id": "vol3_5",
-      "name": "海鸽",
+      "name": "双髻鲨",
       "image": "/images/vol3/page_5.webp",
-      "description": "海鸽，状如鸽，色青灰，飞翔海岛。其性驯，不畏人。",
+      "description": "双髻鲨，头横展如双髻，又称丫髻鲨，目在横展之两端，视觉开阔。",
       "page_idx": 5
     },
     {
       "id": "vol3_6",
-      "name": "海鹦鹉",
+      "name": "犁头鲨",
       "image": "/images/vol3/page_6.webp",
-      "description": "海鹦鹉，嘴大而色鲜，五彩斑斓，状如鹦鹉，飞鸣滩涂。",
+      "description": "犁头鲨，头部前突如犁，体扁身长，有斑纹。",
       "page_idx": 6
     },
     {
       "id": "vol3_7",
-      "name": "海鹊",
+      "name": "梅花鲨",
       "image": "/images/vol3/page_7.webp",
-      "description": "海鹊，羽黑白相间，声如喜鹊。潮来则鸣，海人谓其能报吉兆。",
+      "description": "梅花鲨，身有斑纹如梅花，体小，皮粗可磨错。",
       "page_idx": 7
     },
     {
       "id": "vol3_8",
-      "name": "燕窝",
+      "name": "猫鲨",
       "image": "/images/vol3/page_8.webp",
-      "description": "金丝燕所筑之巢，有白、红数种。红者名血燕，最名贵，食之润肺大补。",
+      "description": "猫鲨，头圆目圆，状如猫，常伏岩礁间。",
       "page_idx": 8
     },
     {
       "id": "vol3_9",
-      "name": "海鹭",
+      "name": "黄昏鲨",
       "image": "/images/vol3/page_9.webp",
-      "description": "海鹭，身长足高，色洁白，常单足立于水滨待小鱼，意态闲雅。",
+      "description": "黄昏鲨，色昏暗，常于夕阳西下时成群出没掠食。",
       "page_idx": 9
     },
     {
       "id": "vol3_10",
-      "name": "海市蜃楼",
+      "name": "白斑鲨",
       "image": "/images/vol3/page_10.webp",
-      "description": "蜃吐气而成楼台殿阁，或在海上，或在空中，虚无缥缈，旋即消逝，天地间之大幻景也。",
+      "description": "白斑鲨，身有白斑，体狭长，性猛。",
       "page_idx": 10
     },
     {
       "id": "vol3_11",
-      "name": "珠蚌",
+      "name": "青头鲨",
       "image": "/images/vol3/page_11.webp",
-      "description": "珠蚌，大者径尺，腹中育珠。蚌随月盈虚而开阖，月满则珠光华，月缺则珠微。",
+      "description": "青头鲨，头呈青色，体大，皮极厚，利齿。",
       "page_idx": 11
     },
     {
       "id": "vol3_12",
-      "name": "江瑶柱",
+      "name": "潜沙鲨",
       "image": "/images/vol3/page_12.webp",
-      "description": "江瑶柱，大如蚌，肉中有一柱，色洁白。干之即干贝，味极鲜美，席上奇珍。",
+      "description": "潜沙鲨，善伏于沙泥中，目小体圆。",
       "page_idx": 12
     },
     {
       "id": "vol3_13",
-      "name": "马蹄蛏",
+      "name": "扁皮鲨",
       "image": "/images/vol3/page_13.webp",
-      "description": "马蹄蛏，壳长圆如马蹄，色青白，居泥沙深处。肉肥嫩，味冠诸蛏。",
+      "description": "扁皮鲨，身极扁平，粗皮，肉涩。",
       "page_idx": 13
     },
     {
       "id": "vol3_14",
-      "name": "大蚶",
+      "name": "鲀鲨",
       "image": "/images/vol3/page_14.webp",
-      "description": "大蚶，壳有纵沟如瓦垄，肉红，汁如血。暴食之，能补血。",
+      "description": "鲀鲨，状如鲀而大，遍体粗皮，多脂。",
       "page_idx": 14
     },
     {
       "id": "vol3_17",
-      "name": "海刺猬",
+      "name": "海驴",
       "image": "/images/vol3/page_17.webp",
-      "description": "海刺猬，遍身利刺，状如刺猬，居岩石间。其肉黄赤，味极鲜甜。",
+      "description": "海驴, 状如驴，四足如鳍，能登礁石鸣叫，声如驴。其皮可避水。",
       "page_idx": 17
     },
     {
       "id": "vol3_18",
-      "name": "海葵",
+      "name": "海马",
       "image": "/images/vol3/page_18.webp",
-      "description": "海葵，状如菊花，生于礁石。触之则收敛如囊，色艳而有微毒。",
+      "description": "海马，长数寸，头状如马，尾弯曲。常黏附于海草上，入药有温阳之效。",
       "page_idx": 18
     },
     {
       "id": "vol3_19",
-      "name": "紫菜",
+      "name": "海豹",
       "image": "/images/vol3/page_19.webp",
-      "description": "紫菜，生于海石上，叶薄而紫。采暴干之，作羹清香，消痰利水。",
+      "description": "海豹，身有斑文，足如鳍。多居海岛，能登岸假寐，海人取其皮与肾。",
       "page_idx": 19
     },
     {
       "id": "vol3_20",
-      "name": "石花菜",
+      "name": "海狮",
       "image": "/images/vol3/page_20.webp",
-      "description": "石花菜，附生海礁，色红黄，多枝。采洗煮烂冷凝，即为凉粉，清暑解热。",
+      "description": "海狮，状如狮，毛黄褐色，善鸣。性驯良，能捕鱼。",
       "page_idx": 20
     },
     {
       "id": "vol3_23",
-      "name": "海带",
+      "name": "海蜘蛛",
       "image": "/images/vol3/page_23.webp",
-      "description": "海带，身长数丈，如宽带，色褐绿。产自北海，能消瘿瘤。",
+      "description": "海蜘蛛，多足，状如蜘蛛而大，居深海沙泥中，有毒。",
       "page_idx": 23
     },
     {
       "id": "vol3_24",
-      "name": "龙虱",
+      "name": "海蜈蚣",
       "image": "/images/vol3/page_24.webp",
-      "description": "龙虱，体小色黑，状如水中甲虫。闽粤人捕食之，炙之极香，有强身之效。",
+      "description": "海蜈蚣，身长数尺，多足，居石缝中，噬人有毒，能食鱼尸。",
       "page_idx": 24
     },
     {
       "id": "vol3_29",
-      "name": "泥丁香",
+      "name": "海蚕",
       "image": "/images/vol3/page_29.webp",
-      "description": "泥丁香，形细长如丁香，产闽中海涂。炭火炒食，味极清馥，海红中之别调也。",
+      "description": "海蚕，长寸许，状如蚕，居海泥中，味极鲜美，海人晒干为羹。",
       "page_idx": 29
     },
     {
       "id": "vol3_30",
-      "name": "朱蛙",
+      "name": "章鱼",
       "image": "/images/vol3/page_30.webp",
-      "description": "朱蛙，色正红，眼金色。产平阳海涂，偶得之，赤红可爱，为神庙之玩。",
+      "description": "章鱼，八足，无骨。多居石穴中，能喷水，肉坚韧，海人晒干为珍品。",
       "page_idx": 30
     },
     {
       "id": "vol3_33",
-      "name": "荷包蛇",
+      "name": "墨鱼",
       "image": "/images/vol3/page_33.webp",
-      "description": "荷包蛇，体肥短如荷包，色斑驳。食之味同蛇鱼，易化为水，得之宜速食。",
+      "description": "墨鱼，又称乌贼，身白有黑汁。骨名海螵蛸，味鲜美。",
       "page_idx": 33
     }
   ]
