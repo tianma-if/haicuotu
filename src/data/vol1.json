@@ -81,6 +81,13 @@
       "page_idx": 19
     },
     {
+      "id": "vol1_21",
+      "name": "金线鱼",
+      "image": "/images/vol1/page_21.webp",
+      "description": "金线鱼，色红而有金线数道，鲜艳可玩。肉质松软，味微甘。",
+      "page_idx": 21
+    },
+    {
       "id": "vol1_23_1",
       "name": "银鱼",
       "image": "/images/vol1/page_23_left.webp",
