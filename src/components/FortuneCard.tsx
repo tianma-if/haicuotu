@@ -95,7 +95,7 @@ export default function FortuneCard({ creatures }: FortuneCardProps) {
                 <img
                   src={selectedCreature.image}
                   alt={selectedCreature.name}
-                  className="object-cover w-full h-full"
+                  className="object-contain w-full h-full p-2"
                 />
               ) : (
                 <div className="text-center p-4">

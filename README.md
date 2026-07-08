@@ -101,4 +101,4 @@ bun run build
 
 ## 📝 开发与对齐踩坑记录 (Development Lessons)
 
-关于本项目在古籍排版对齐、PDF 偏移量、多物种同框分栏裁切及繁简异体字匹配等开发迭代中遇到的典型技术挑战与解决方案，请参阅独立的 [DEVELOPMENT_LESSONS.md](file:///Users/tianma/Developer/Projects/haicuotu/DEVELOPMENT_LESSONS.md) 说明文档。
+关于本项目在古籍排版对齐、PDF 偏移量、多物种同框分栏裁切及繁简异体字匹配等开发迭代中遇到的典型技术挑战与解决方案，请参阅独立的 [DEVELOPMENT_LESSONS.md](./DEVELOPMENT_LESSONS.md) 说明文档。

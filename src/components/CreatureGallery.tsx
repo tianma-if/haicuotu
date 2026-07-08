@@ -138,7 +138,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
                     <img
                       src={creature.image}
                       alt={creature.name}
-                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="object-contain w-full h-full p-2 group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
                   ) : (
                     <div className="text-center p-4">

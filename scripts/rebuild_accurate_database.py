@@ -3,6 +3,8 @@ import os
 import fitz
 from PIL import Image
 import glob
+import cv2
+import numpy as np
 
 WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 PDF_DIR = os.environ.get("HAICUOTU_PDF_DIR", os.path.join(WORKSPACE_DIR, "raw-pdfs"))
@@ -320,6 +322,120 @@ vol_configs = {
 # Sorted alphabetically to get exact mapping: 1->第一册, 2->第三册, 3->第二册, 4->第四册
 pdf_files = sorted(glob.glob(os.path.join(PDF_DIR, "*.pdf")))
 
+def render_page_image(doc, page_idx):
+    page = doc[page_idx]
+    mat = fitz.Matrix(2.0, 2.0)
+    pix = page.get_pixmap(matrix=mat)
+    return Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+def get_crop_box(width, height, crop_side):
+    if crop_side in ("left", "half_1"):
+        return (0, 0, width // 2, height)
+    if crop_side in ("right", "half_2"):
+        return (width // 2, 0, width, height)
+    if crop_side == "third_1":
+        return (0, 0, width // 3, height)
+    if crop_side == "third_2":
+        return (width // 3, 0, 2 * width // 3, height)
+    if crop_side == "third_3":
+        return (2 * width // 3, 0, width, height)
+    if crop_side == "quarter_1":
+        return (0, 0, width // 4, height)
+    if crop_side == "quarter_2":
+        return (width // 4, 0, width // 2, height)
+    if crop_side == "quarter_3":
+        return (width // 2, 0, 3 * width // 4, height)
+    if crop_side == "quarter_4":
+        return (3 * width // 4, 0, width, height)
+    return (0, 0, width, height)
+
+def detect_illustration_boxes(img, expected_count):
+    arr = np.array(img.convert("RGB"))
+    height, width = arr.shape[:2]
+
+    # Compare each pixel to a blurred local paper background. This catches
+    # painted creatures and ink outlines while avoiding most page texture.
+    blur = cv2.GaussianBlur(arr, (0, 0), 45)
+    diff = np.max(cv2.absdiff(arr, blur), axis=2)
+    gray = cv2.cvtColor(arr, cv2.COLOR_RGB2GRAY)
+    mask = ((diff > 18) | (gray < 115)).astype("uint8") * 255
+    mask = cv2.medianBlur(mask, 3)
+
+    kernel_size = max(13, min(width, height) // 110)
+    if kernel_size % 2 == 0:
+        kernel_size += 1
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (kernel_size, kernel_size))
+    closed = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel, iterations=2)
+
+    num_labels, _labels, stats, _centroids = cv2.connectedComponentsWithStats(closed)
+    candidates = []
+    image_area = width * height
+    for label in range(1, num_labels):
+        x, y, box_width, box_height, area = [int(v) for v in stats[label]]
+        if box_width < width * 0.05 or box_height < height * 0.05:
+            continue
+        bbox_area = box_width * box_height
+        if bbox_area < image_area * 0.003:
+            continue
+
+        raw_region = mask[y:y + box_height, x:x + box_width]
+        raw_labels, _raw_map, raw_stats, _raw_centroids = cv2.connectedComponentsWithStats(raw_region)
+        largest_raw_area = 0
+        if raw_labels > 1:
+            largest_raw_area = int(max(raw_stats[1:, cv2.CC_STAT_AREA]))
+        if largest_raw_area / bbox_area < 0.02:
+            continue
+
+        aspect = box_width / max(1, box_height)
+        center_y = (y + box_height / 2) / height
+        # Vertical text columns are common false positives. Keep vertical
+        # candidates only when they occupy a substantial visual footprint.
+        if aspect < 0.75 and box_width < width * 0.16:
+            continue
+
+        vertical_bonus = 1.25 if 0.34 <= center_y <= 0.84 else 0.75
+        shape_bonus = min(2.2, max(0.45, aspect))
+        score = bbox_area * shape_bonus * vertical_bonus
+        candidates.append((score, x, y, box_width, box_height))
+
+    selected = []
+    for _score, x, y, box_width, box_height in sorted(candidates, reverse=True):
+        new_box = (x, y, x + box_width, y + box_height)
+        overlaps_existing = False
+        for old_box in selected:
+            ix1 = max(new_box[0], old_box[0])
+            iy1 = max(new_box[1], old_box[1])
+            ix2 = min(new_box[2], old_box[2])
+            iy2 = min(new_box[3], old_box[3])
+            if ix2 <= ix1 or iy2 <= iy1:
+                continue
+            intersection = (ix2 - ix1) * (iy2 - iy1)
+            smaller = min((new_box[2] - new_box[0]) * (new_box[3] - new_box[1]), (old_box[2] - old_box[0]) * (old_box[3] - old_box[1]))
+            if intersection / smaller > 0.55:
+                overlaps_existing = True
+                break
+        if overlaps_existing:
+            continue
+        selected.append(new_box)
+        if len(selected) == expected_count:
+            break
+
+    if len(selected) < expected_count:
+        return []
+
+    padding_x = max(24, int(width * 0.025))
+    padding_y = max(24, int(height * 0.035))
+    padded = []
+    for x1, y1, x2, y2 in selected:
+        padded.append((
+            max(0, x1 - padding_x),
+            max(0, y1 - padding_y),
+            min(width, x2 + padding_x),
+            min(height, y2 + padding_y),
+        ))
+
+    return sorted(padded, key=lambda box: box[0])
+
 def rebuild_volume(idx, pdf_path):
     vol_num = idx + 1
     config = vol_configs.get(vol_num)
@@ -343,6 +459,8 @@ def rebuild_volume(idx, pdf_path):
     from collections import Counter
     page_counts = Counter([c[0] for c in config["creatures"]])
     seen = {}
+    page_images = {}
+    auto_boxes_by_page = {}
     
     for page_idx, name, desc, crop_side in config["creatures"]:
         if page_idx >= len(doc):
@@ -359,38 +477,27 @@ def rebuild_volume(idx, pdf_path):
             
         image_path = os.path.join(vol_img_dir, image_name)
         
-        # Render high-resolution page scan
-        page = doc[page_idx]
-        mat = fitz.Matrix(2.0, 2.0)
-        pix = page.get_pixmap(matrix=mat)
-        
-        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-        
-        # For Volume 4, the drawings are ALWAYS on the bottom half of the page
-        width, height = img.size
-        if vol_num == 4:
-            img = img.crop((0, height // 2, width, height))
+        if page_idx not in page_images:
+            img = render_page_image(doc, page_idx)
             width, height = img.size
+            if vol_num == 4:
+                img = img.crop((0, height // 2, width, height))
+            page_images[page_idx] = img
 
-        # Crop according to configuration
-        if crop_side in ("left", "half_1"):
-            img = img.crop((0, 0, width // 2, height))
-        elif crop_side in ("right", "half_2"):
-            img = img.crop((width // 2, 0, width, height))
-        elif crop_side == "third_1":
-            img = img.crop((0, 0, width // 3, height))
-        elif crop_side == "third_2":
-            img = img.crop((width // 3, 0, 2 * width // 3, height))
-        elif crop_side == "third_3":
-            img = img.crop((2 * width // 3, 0, width, height))
-        elif crop_side == "quarter_1":
-            img = img.crop((0, 0, width // 4, height))
-        elif crop_side == "quarter_2":
-            img = img.crop((width // 4, 0, width // 2, height))
-        elif crop_side == "quarter_3":
-            img = img.crop((width // 2, 0, 3 * width // 4, height))
-        elif crop_side == "quarter_4":
-            img = img.crop((3 * width // 4, 0, width, height))
+            if page_counts[page_idx] > 1:
+                auto_boxes_by_page[page_idx] = detect_illustration_boxes(img, page_counts[page_idx])
+
+        img = page_images[page_idx].copy()
+        
+        width, height = img.size
+
+        # Prefer detected illustration regions for multi-creature pages. This
+        # avoids cutting through creatures whose drawings are not evenly spaced.
+        auto_boxes = auto_boxes_by_page.get(page_idx) or []
+        if page_counts[page_idx] > 1 and len(auto_boxes) >= seen[page_idx]:
+            img = img.crop(auto_boxes[seen[page_idx] - 1])
+        else:
+            img = img.crop(get_crop_box(width, height, crop_side))
             
         img.save(image_path, "WEBP", quality=80)
         
