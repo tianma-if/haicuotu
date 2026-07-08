@@ -30,8 +30,8 @@ const meta = getCreatureMeta(creature);
 
     <!-- Main Detail Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      <!-- Left Column: Visual card & Sharing button (4 cols) -->
-      <div class="lg:col-span-5 space-y-6">
+      <!-- Left Column: Visual card (7 cols to highlight the image) -->
+      <div class="lg:col-span-7 space-y-6">
         <!-- Main Card Image -->
         <div class="bg-paper-light border-2 border-ink-black shadow-md p-4 rounded-sm">
           <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
@@ -58,45 +58,45 @@ const meta = getCreatureMeta(creature);
         </div>
       </div>
 
-      <!-- Right Column: Texts & Ancient Scroll (7 cols) -->
-      <div class="lg:col-span-7 space-y-6">
+      <!-- Right Column: Texts & Ancient Scroll (5 cols) -->
+      <div class="lg:col-span-5 space-y-6">
         <!-- Title Header -->
         <div class="flex flex-wrap items-end justify-between gap-4 border-b border-paper-dark/40 pb-4">
           <div class="space-y-1">
-            <span class="text-xs font-bold bg-deep-sea text-paper-light px-2 py-0.5 rounded-full font-sans uppercase tracking-widest">
+            <span class="text-[10px] font-bold bg-deep-sea text-paper-light px-2 py-0.5 rounded-full font-sans uppercase tracking-widest">
               {meta.category}
             </span>
-            <h2 class="font-display text-4xl md:text-5xl font-black text-cinnabar-red tracking-wide">
+            <h2 class="font-display text-3xl md:text-4xl font-black text-cinnabar-red tracking-wide">
               {creature.name}
             </h2>
           </div>
-          <div class="text-right text-xs text-ink-black/60 font-sans">
+          <div class="text-right text-[10px] text-ink-black/60 font-sans">
             <span class="block">出处：故宫博物院藏本</span>
             <span class="block font-bold mt-0.5">第 {creature.volume} 册</span>
           </div>
         </div>
 
         <!-- Attributes card panel -->
-        <div class="grid grid-cols-2 gap-4 bg-paper-light border border-paper-dark/30 p-4 rounded-sm">
+        <div class="grid grid-cols-2 gap-4 bg-paper-light border border-paper-dark/30 p-3 rounded-sm">
           <div class="flex items-center gap-3">
-            <div class="bg-cinnabar-red/10 p-2.5 rounded-sm">
-              <Flame class="w-6 h-6 text-cinnabar-red fill-current" />
+            <div class="bg-cinnabar-red/10 p-2 rounded-sm">
+              <Flame class="w-5 h-5 text-cinnabar-red fill-current" />
             </div>
             <div>
               <span class="block text-[10px] text-ink-black/50 font-sans font-bold">美味度</span>
-              <span class="font-sans text-sm font-bold">
+              <span class="font-sans text-xs font-bold">
                 {'★'.repeat(meta.delicious)}{'☆'.repeat(5 - meta.delicious)}
               </span>
             </div>
           </div>
 
           <div class="flex items-center gap-3">
-            <div class="bg-deep-sea/10 p-2.5 rounded-sm">
-              <ShieldAlert class="w-6 h-6 text-deep-sea fill-current" />
+            <div class="bg-deep-sea/10 p-2 rounded-sm">
+              <ShieldAlert class="w-5 h-5 text-deep-sea fill-current" />
             </div>
             <div>
-              <span class="block text-[10px] text-ink-black/50 font-sans font-bold">危险危险度</span>
-              <span class="font-sans text-sm font-bold">
+              <span class="block text-[10px] text-ink-black/50 font-sans font-bold">危险度</span>
+              <span class="font-sans text-xs font-bold">
                 {'★'.repeat(meta.danger)}{'☆'.repeat(5 - meta.danger)}
               </span>
             </div>
@@ -104,28 +104,28 @@ const meta = getCreatureMeta(creature);
         </div>
 
         <!-- Ancient text segment (Classical reading Scroll) -->
-        <div class="bg-[#faf6eb] border-2 border-ink-black/85 p-6 rounded-sm shadow-inner relative overflow-hidden">
-          <div class="absolute top-0 right-0 bg-[#ebdcb9] text-ink-black/60 font-display text-[10px] font-bold px-2 py-0.5 border-b border-l border-ink-black/85 rounded-bl-sm">
+        <div class="bg-[#faf6eb] border-2 border-ink-black/85 p-5 rounded-sm shadow-inner relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-[#ebdcb9] text-ink-black/60 font-display text-[9px] font-bold px-2 py-0.5 border-b border-l border-ink-black/85 rounded-bl-sm">
             古籍誊录
           </div>
           
-          <h3 class="font-display text-lg font-bold text-deep-sea flex items-center gap-1.5 mb-3">
-            <BookOpen class="w-4 h-4" /> 聂璜 《海错图》 原文记载：
+          <h3 class="font-display text-base font-bold text-deep-sea flex items-center gap-1.5 mb-2">
+            <BookOpen class="w-4 h-4" /> 原文记载：
           </h3>
 
           <!-- Text block -->
-          <div class="font-display text-base md:text-lg leading-relaxed text-ink-black/90 tracking-wide bg-white/50 p-4 rounded-sm border border-paper-dark/30 shadow-sm min-h-[120px]">
+          <div class="font-display text-xs md:text-sm leading-relaxed text-ink-black/90 tracking-wide bg-white/50 p-3 rounded-sm border border-paper-dark/30 shadow-sm min-h-[100px]">
             {creature.description}
           </div>
         </div>
 
         <!-- Modern scientific interpretation -->
-        <div class="bg-paper-light border border-paper-dark/35 p-6 rounded-sm space-y-4">
-          <h3 class="font-display text-lg font-bold text-deep-sea flex items-center gap-1.5 border-b border-paper-dark/20 pb-2">
-            <Compass class="w-4 h-4" /> 现代生物对照与考证：
+        <div class="bg-paper-light border border-paper-dark/35 p-5 rounded-sm space-y-3">
+          <h3 class="font-display text-base font-bold text-deep-sea flex items-center gap-1.5 border-b border-paper-dark/20 pb-1.5">
+            <Compass class="w-4 h-4" /> 现代对照与考证：
           </h3>
           
-          <div class="space-y-3 text-xs md:text-sm font-sans text-ink-black/85 leading-relaxed">
+          <div class="space-y-2.5 text-xs font-sans text-ink-black/85 leading-relaxed">
             <p>
               <span class="font-bold text-deep-sea">【生态解读】</span> {meta.modernInfo}
             </p>
