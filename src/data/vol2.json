@@ -5,9 +5,9 @@
   "creatures": [
     {
       "id": "vol2_2",
-      "name": "海鹅",
+      "name": "海鹳",
       "image": "/images/vol2/page_2.webp",
-      "description": "海鹅，状如鹅而大，色白，飞鸣海上。随风起落，海人视之以知风向。",
+      "description": "海鹳，状如鹳而大，色白，飞鸣海上。随风起落，海人视之以知风向。",
       "page_idx": 2
     },
     {
@@ -27,15 +27,15 @@
     {
       "id": "vol2_6",
       "name": "金丝燕",
-      "image": "/images/vol2/page_6.webp",
-      "description": "金丝燕，产闽粤海岛，吐唾筑巢于悬崖。其巢即燕窝，清香滋补，为席上珍馐。",
+      "image": null,
+      "description": "金丝燕，产闽粤海岛，吐唾筑巢于悬崖。其巢即燕窝，清香滋补，为席上珍馐。当前底本切图未见可对应此条的独立插图，暂不配图。",
       "page_idx": 6
     },
     {
       "id": "vol2_1",
       "name": "海鸡",
-      "image": "/images/vol2/page_1.webp",
-      "description": "海鸡，状如鸡，冠红羽彩. 晨鸣于礁石之上，海潮退则下滩啄食。",
+      "image": null,
+      "description": "海鸡，状如鸡，冠红羽彩。晨鸣于礁石之上，海潮退则下滩啄食。当前底本切图未见可对应此条的独立插图，暂不配图。",
       "page_idx": 1
     },
     {
@@ -48,8 +48,8 @@
     {
       "id": "vol2_5",
       "name": "海鹦鹉",
-      "image": "/images/vol2/page_5.webp",
-      "description": "海鹦鹉，嘴大而色鲜，五彩斑斓，状如鹦鹉，飞鸣滩涂。",
+      "image": null,
+      "description": "海鹦鹉，嘴大而色鲜，五彩斑斓，状如鹦鹉，飞鸣滩涂。当前底本切图未见可对应此条的独立插图，暂不配图。",
       "page_idx": 5
     },
     {

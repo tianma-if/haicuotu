@@ -46,6 +46,10 @@ export const allCreatures: Creature[] = volumes.flatMap((v, idx) =>
   }))
 );
 
+export const illustratedCreatures: Creature[] = allCreatures.filter(
+  creature => Boolean(creature.image)
+);
+
 const modernIdentificationById = new Map(
   (modernIdentifications as ModernIdentification[]).map(item => [item.id, item])
 );

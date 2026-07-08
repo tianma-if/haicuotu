@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CreatureGallery from '../components/CreatureGallery';
-import { allCreatures } from '../utils/data';
+import { illustratedCreatures } from '../utils/data';
 ---
 
 <Layout title="海错图谱数字化图鉴 - 奇物大观" description="探索清代聂璜手绘的海洋生物奇景，支持古今对照、美味危险指数。">
-  <CreatureGallery client:load initialCreatures={allCreatures} />
+  <CreatureGallery client:load initialCreatures={illustratedCreatures} />
 </Layout>
