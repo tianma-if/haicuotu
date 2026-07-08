@@ -1,0 +1,632 @@
+[
+  {
+    "id": "vol3_3_1",
+    "name": "鲼鱼",
+    "candidateModernName": "魟鱼、刺鳐类",
+    "scientificName": "Dasyatidae spp.",
+    "confidence": "high",
+    "rationale": "原文说形扁如盘、口在腹下、尾长有毒刺，正是魟鱼或刺鳐类的典型形态。清代文献中“鲼”常泛指扁平鳐类，而非单一物种。图像若呈宽盘状胸鳍和鞭状尾，应优先按刺鳐类处理。",
+    "caveats": "仅凭“鲼鱼”难以细分到具体属种，可能混入其他燕魟或蝠鲼类。"
+  },
+  {
+    "id": "vol3_3_2",
+    "name": "珠皮鲼",
+    "candidateModernName": "粗皮魟鱼、可制鲨鱼皮革的鳐类",
+    "scientificName": "Dasyatidae spp.",
+    "confidence": "medium",
+    "rationale": "“背部皮粗有白骨珠，可饰刀剑”指向传统所谓“鲨鱼皮”“珠皮”，常取自鲨鳐类盾鳞或粗糙皮面。名中仍作鲼，说明主体应是鳐类而非硬骨鱼。其重点是皮革材料属性，而不是生态或形态细节。",
+    "caveats": "“珠皮”可能是多种鲨鳐皮的商品名，不一定专指某一种鲼。"
+  },
+  {
+    "id": "vol3_4",
+    "name": "印鱼",
+    "candidateModernName": "印鱼、鮣鱼、长印鱼",
+    "scientificName": "Echeneis naucrates",
+    "confidence": "high",
+    "rationale": "头上有印状吸盘、吸附大鱼或船底，是鮣科鱼类最鲜明的特征。中文“印鱼”“印鳞鱼”与现代“鮣鱼”名义连续。若图像表现头背椭圆吸盘，可基本坐实为长印鱼或近缘鮣鱼。",
+    "caveats": "鮣科有多种相似种，未必一定是长印鱼。"
+  },
+  {
+    "id": "vol3_5",
+    "name": "海燕",
+    "candidateModernName": "海燕类、风暴海燕类",
+    "scientificName": "Hydrobatidae spp.",
+    "confidence": "medium",
+    "rationale": "描述为小型青黑色海鸟，贴水低飞且被渔人用作风候，符合海燕科或风暴海燕类的民间观察。它不是水族，而是海鸟条目，与后面的金丝燕同属海岛鸟类语境。古名“海燕”也常泛称近海小型黑色海鸟。",
+    "caveats": "“海燕”在地方文献中可泛指多种燕鸥、海燕或雨燕，需结合图像细节复核。"
+  },
+  {
+    "id": "vol3_6",
+    "name": "金丝燕",
+    "candidateModernName": "可食用燕窝金丝燕",
+    "scientificName": "Aerodramus fuciphagus",
+    "confidence": "high",
+    "rationale": "产闽粤海岛、吐唾筑巢于悬崖、巢即燕窝，明确指向可食燕窝的金丝燕类。现代商品燕窝主要来自金丝燕属，古人抓住了唾液巢这一核心特征。条目关注食药价值而非一般海鸟。",
+    "caveats": "中国沿海历史燕窝来源可能涉及多种金丝燕，物种级仍需产地材料佐证。"
+  },
+  {
+    "id": "vol3_7_1",
+    "name": "剑鲨",
+    "candidateModernName": "锯鳐",
+    "scientificName": "Pristis spp.",
+    "confidence": "medium",
+    "rationale": "吻部前突如剑、又说“鼻如锯”，比真正鲨鱼更接近锯鳐的长锯状吻。清代常把大型软骨鱼笼统称鲨，锯鳐被归入“鲨”并不意外。若图中吻缘带齿，则应优先定为锯鳐而非剑鱼。",
+    "caveats": "若图像只画长剑状吻而无侧齿，也可能混淆剑鱼、锯鲨或锯鳐。"
+  },
+  {
+    "id": "vol3_7_2",
+    "name": "青头鲨",
+    "candidateModernName": "蓝鲨或大型真鲨类",
+    "scientificName": "Prionace glauca",
+    "confidence": "low",
+    "rationale": "“头呈青色、巨口利齿、体大肉粗”可与蓝鲨的青蓝体色相合，但描述没有蓝鲨特有的细长体形和长胸鳍。它也可能只是沿海渔民对青灰色大型鲨鱼的泛称。卷三鲨类多按外貌取名，本条不宜定得过细。",
+    "caveats": "缺少牙形、鳍形和体斑信息，学名只能暂作低置信候选。"
+  },
+  {
+    "id": "vol3_8_1",
+    "name": "海钉",
+    "candidateModernName": "小型银白鱼群、鳀鱼或玉筋鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "原文说体小、灰黑、成群游于海面，并有“育鱼曰海钉”的地方说法，像是近岸小型饵料鱼的统称。名字“钉”可能来自细小密集的形态印象。无法从描述区分鳀、鲱、玉筋鱼或幼鱼群。",
+    "caveats": "“海钉”更像地方俗名，需地方志或图像细节才能进一步定位。"
+  },
+  {
+    "id": "vol3_8_2",
+    "name": "青鳗",
+    "candidateModernName": "颌针鱼、针鱼类",
+    "scientificName": "Belonidae spp.",
+    "confidence": "medium",
+    "rationale": "虽名为鳗，但“长身如蛇、吻突长、喙甚长”更像颌针鱼科的细长体和长喙。沿海俗名常把长条形鱼称鳗，未必是鳗鲡或海鳗。若图像显示上下颌延长，应从针鱼类解释。",
+    "caveats": "若图中无明显长喙，也可能是海鳗、蛇鳗或其他长形鱼。"
+  },
+  {
+    "id": "vol3_9",
+    "name": "梅花鲨",
+    "candidateModernName": "豹纹鲨、斑竹鲨类",
+    "scientificName": "Stegostoma tigrinum",
+    "confidence": "medium",
+    "rationale": "身有梅花状斑纹、体小、皮粗可磨错，指向有显著斑点的底栖鲨类。现代“豹纹鲨”幼体与成体均具醒目斑纹，中文语感也与“梅花”相近。也可能是斑竹鲨等小型近岸鲨。",
+    "caveats": "“梅花斑”是宽泛描述，不能排除其他猫鲨、竹鲨或幼年鲨。"
+  },
+  {
+    "id": "vol3_10",
+    "name": "潜龙鲨",
+    "candidateModernName": "传说化大型深海鲨鱼",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "“潜龙”之名、伏于深海礁石、有金黄鳞甲、极罕见，已经带有龙类和异兽叙事。鲨鱼没有真正鳞甲，所谓金黄鳞甲可能是误传、装饰化图像或对皮盾鳞的夸张。应作为传说化鲨类保守处理。",
+    "caveats": "可能有现实原型，但现有描述不足以对应现代物种。"
+  },
+  {
+    "id": "vol3_11_1",
+    "name": "犁头鲨",
+    "candidateModernName": "犁头鳐、吉他鱼类",
+    "scientificName": "Rhinobatidae spp.",
+    "confidence": "high",
+    "rationale": "头部前突如犁、体扁身长、有斑纹，符合犁头鳐或吉他鱼的扁平前躯与鲨形后躯。传统常把犁头鳐称为“犁头鲨”，属于鲨鳐混称。此条比真鲨更符合鳐类形态。",
+    "caveats": "犁头鳐类分类变动较多，图像不足以确定到具体属种。"
+  },
+  {
+    "id": "vol3_11_2",
+    "name": "双髻鲨",
+    "candidateModernName": "双髻鲨、锤头鲨",
+    "scientificName": "Sphyrna spp.",
+    "confidence": "high",
+    "rationale": "头横展如双髻、眼在两端，是双髻鲨属的决定性特征。古名“丫髻鲨”与现代锤头鲨类的头形描写完全吻合。卷三后续重复出现双髻、云头、方头，说明作者在记录同一类群的不同俗称或形态变体。",
+    "caveats": "未给出头缘曲直和体型，无法判定具体双髻鲨种。"
+  },
+  {
+    "id": "vol3_12",
+    "name": "锯鲨",
+    "candidateModernName": "锯鳐或锯鲨类",
+    "scientificName": "Pristis spp.",
+    "confidence": "medium",
+    "rationale": "吻前突出如长锯并用以击鱼，是锯鳐和锯鲨共有的外观叙述。中国沿海更常见的历史记录多指大型锯鳐，且民间常统称为鲨。若体形画得腹背扁平且鳃孔在腹面，应定为锯鳐。",
+    "caveats": "锯鲨和锯鳐在古籍中常混淆，需看鳃孔位置和体盘形态。"
+  },
+  {
+    "id": "vol3_13_1",
+    "name": "双髻鲨",
+    "candidateModernName": "双髻鲨、锤头鲨",
+    "scientificName": "Sphyrna spp.",
+    "confidence": "high",
+    "rationale": "本条再次强调头横展如双髻，并补充小身微灰。头形仍是锤头鲨类最可靠的识别点。它可能记录幼体或另一种小型双髻鲨，而非全新类群。",
+    "caveats": "与 vol3_11_2 可能重复或异图同物，需人工合并判断。"
+  },
+  {
+    "id": "vol3_13_2",
+    "name": "云头鲨",
+    "candidateModernName": "双髻鲨类",
+    "scientificName": "Sphyrna spp.",
+    "confidence": "high",
+    "rationale": "原文直接说云头鲨是双髻鲨之异名，头呈云朵状应是对锤形头部轮廓的再描绘。云头、双髻、丫髻都是以头部横展取象。现代对照可归入双髻鲨属。",
+    "caveats": "“云头”可能指头缘波曲的图像风格，不支持具体到种。"
+  },
+  {
+    "id": "vol3_14_1",
+    "name": "猫鲨",
+    "candidateModernName": "猫鲨或斑竹鲨类",
+    "scientificName": "Scyliorhinidae spp.",
+    "confidence": "medium",
+    "rationale": "头圆目圆、状如猫、伏岩礁间，符合小型底栖猫鲨类的生态与外貌印象。东亚沿海“猫鲨”也可能包含斑竹鲨、须鲨等近岸小鲨。描述重在圆眼和底栖习性，而非大型游泳鲨。",
+    "caveats": "中文猫鲨可泛指多类小型鲨，科级判断较稳，种级不稳。"
+  },
+  {
+    "id": "vol3_14_2",
+    "name": "白鲨",
+    "candidateModernName": "白斑小鲨或近岸鲨类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“身白背有黑点、翅微红”并不符合现代大白鲨的典型描述，更像地方按体色命名的小型鲨。皮细与红色鳍缘也提示可能是图像化或食用鱼市场名。应避免直接等同于噬人鲨。",
+    "caveats": "白鲨古今名义差异很大，需图像和地方名材料复核。"
+  },
+  {
+    "id": "vol3_14_3",
+    "name": "方头鲨",
+    "candidateModernName": "双髻鲨类",
+    "scientificName": "Sphyrna spp.",
+    "confidence": "medium",
+    "rationale": "“头横展如方斗”且“如髻形而头方”，明显仍围绕横展头部来命名。它可能是双髻鲨类中头叶较宽、图像被画成方形的一种。卷三把双髻、云头、方头并列，说明同一头形主题被细分。",
+    "caveats": "方头也可能是夸张图像名，不能据此确定具体双髻鲨种。"
+  },
+  {
+    "id": "vol3_15_1",
+    "name": "跨鲨",
+    "candidateModernName": "鲸鲨或大型鲸类误归鲨",
+    "scientificName": "Rhincodon typus",
+    "confidence": "low",
+    "rationale": "体大如山、背附藤壶，首先让人想到大型鲸类；但条目归入鲨类，又有白跨黑跨之分，也可疑为鲸鲨或大型鲨的传闻。鲸鲨体型巨大且常被古人视为巨鲨，但藤壶附生更常见于鲸。这里应把“鲨”理解为大型海兽的宽泛称谓。",
+    "caveats": "鲸鲨候选很不稳，可能其实是鲸或传说化巨鱼。"
+  },
+  {
+    "id": "vol3_15_2",
+    "name": "龙门撞",
+    "candidateModernName": "条纹鲨类或大型洄游鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "体狭长、有横斑、善跃，又被说成鲨鱼之名，可能是某种条纹幼鲨或大型快速游泳鱼。名字“龙门撞”强调跳跃和冲撞，带有民俗命名色彩。现有线索不足以排除鲭鲨、虎鲨幼体或非鲨类鱼。",
+    "caveats": "此名缺少稳定现代对应，应列入重点人工复核。"
+  },
+  {
+    "id": "vol3_15_3",
+    "name": "鼠鲨",
+    "candidateModernName": "鼠鲨、尖吻鲨类",
+    "scientificName": "Lamna spp.",
+    "confidence": "low",
+    "rationale": "现代中文“鼠鲨”可对应鼠鲨属，但原文只说头尖体小、状如鼠。它也可能只是小型尖头鲨的俗称，而不是今天严格意义的鼠鲨。与猫鲨并称，显示作者按动物形似命名。",
+    "caveats": "若无冷水大洋性特征，直接定为 Lamna 置信度较低。"
+  },
+  {
+    "id": "vol3_16_1",
+    "name": "错鱼",
+    "candidateModernName": "鲨鱼皮可作磨具的鲨类",
+    "scientificName": "Selachimorpha spp.",
+    "confidence": "medium",
+    "rationale": "原文直接说即鲨鱼，皮粗可为磨错之用，重点是鲨类盾鳞形成的砂纸效果。古代“错鱼”很可能是按用途命名，而非生物分类名。可暂归为鲨类总称。",
+    "caveats": "“错鱼”不支持物种级识别，也可能混用鳐类粗皮。"
+  },
+  {
+    "id": "vol3_16_2",
+    "name": "掏枪",
+    "candidateModernName": "棘鲨或带硬棘小鲨",
+    "scientificName": "Squalidae spp.",
+    "confidence": "low",
+    "rationale": "体小、背上有长刺如枪，比较接近背鳍前具硬棘的棘鲨类。名称“枪”应来自背棘的突出视觉印象。卷三鲨类语境支持将其放在小型鲨类中考察。",
+    "caveats": "也可能是有毒硬棘的其他鱼类，需看图中刺的位置。"
+  },
+  {
+    "id": "vol3_16_3",
+    "name": "瓜子肉",
+    "candidateModernName": "幼鲨腌制品",
+    "scientificName": "Selachimorpha spp.",
+    "confidence": "medium",
+    "rationale": "原文说即幼鲨之肉，闽人盐腌食之，显然是食材名而非活体分类名。可归入幼年鲨鱼或小鲨加工品。名称可能来自肉块形状或商品切片。",
+    "caveats": "无法知道实际来源是哪一种小鲨或幼鲨。"
+  },
+  {
+    "id": "vol3_17",
+    "name": "虎鲨",
+    "candidateModernName": "虎鲨",
+    "scientificName": "Galeocerdo cuvier",
+    "confidence": "high",
+    "rationale": "头大、身有虎纹、能噬人，与现代虎鲨的横带斑纹和大型掠食性相符。中文“虎鲨”古今名义相对连续。若图像有宽头、强壮体躯和体侧暗带，可作为高置信对应。",
+    "caveats": "幼年多种鲨鱼都有横纹，但“虎鲨”名和习性使本候选最合适。"
+  },
+  {
+    "id": "vol3_18",
+    "name": "海虎",
+    "candidateModernName": "传说化海兽或大型海豹类",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "状如虎、能登岸捕食，是典型以陆兽附会海兽的叙述。现实原型可能来自海豹、海狮或大型水獭的登陆行为，但“虎”形与捕食能力明显夸张。应作为海兽传说条目处理。",
+    "caveats": "若图像更像鳍足类，可在人工复核时降为低置信海豹类。"
+  },
+  {
+    "id": "vol3_19_1",
+    "name": "鹿鱼",
+    "candidateModernName": "传说化有角海兽",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "头生茸角、身有斑点、能化为鹿，属于明显的变形传说。海洋动物中没有与“茸角”相符的鱼类，可能由鹿角珊瑚、角状装饰或异闻拼合而来。现代对照不宜强行落到鱼类。",
+    "caveats": "可能存在误绘原型，但“化鹿”叙述使生物学识别不可用。"
+  },
+  {
+    "id": "vol3_19_2",
+    "name": "海豹",
+    "candidateModernName": "斑海豹或海豹类",
+    "scientificName": "Phoca largha",
+    "confidence": "medium",
+    "rationale": "身有斑文、足如鳍、多居海岛，与北太平洋斑海豹等海豹类相合。中国北方沿海历史上较常见斑海豹，但卷三未给明确产地。条目至少可高置信归入鳍足类海豹。",
+    "caveats": "若来源为南方传闻，也可能泛指其他海豹或海狮。"
+  },
+  {
+    "id": "vol3_20_1",
+    "name": "海獭",
+    "candidateModernName": "海獭",
+    "scientificName": "Enhydra lutris",
+    "confidence": "medium",
+    "rationale": "毛短黑而光、善潜水、前脚较长，与海獭或水獭类的外观接近。古书“海獭”有时确指海獭，有时泛指近海水獭。若图像表现圆头、密毛和爪足而非鳍足，应偏向海獭。",
+    "caveats": "东亚沿海也可能把欧亚水獭入海活动称作海獭。"
+  },
+  {
+    "id": "vol3_20_2",
+    "name": "海驴",
+    "candidateModernName": "海狮或海豹类",
+    "scientificName": "Otariidae spp.",
+    "confidence": "low",
+    "rationale": "状如驴、四足如鳍、声如驴，说明原型是能发出响亮叫声的鳍足类。海狮和海狗类较会群聚鸣叫，也比真海豹更容易被描述为有“足”。“皮可避水”则是皮毛或皮革用途的附会。",
+    "caveats": "“海驴”可能只是异兽名，未必能稳定对应海狮科。"
+  },
+  {
+    "id": "vol3_20_3",
+    "name": "海鼠",
+    "candidateModernName": "海参或小型海岸兽误称",
+    "scientificName": "Holothuroidea spp.",
+    "confidence": "low",
+    "rationale": "“体如鼠、穴于海礁石隙”若按无脊椎动物看，可联想到灰白色海参或海兔等礁隙生物。名称“海鼠”在旧文献中常与海参、海中软体虫状物相混。因它夹在海兽条目之后，也不排除指小型海岸哺乳动物的传闻。",
+    "caveats": "本条语境摇摆于海兽和软体海物之间，需图像复核。"
+  },
+  {
+    "id": "vol3_21",
+    "name": "海狶",
+    "candidateModernName": "江豚或小型齿鲸",
+    "scientificName": "Neophocaena asiaeorientalis",
+    "confidence": "medium",
+    "rationale": "“海狶”即海猪，体圆色黑、常群游，接近江豚、鼠海豚或小型齿鲸的民间称呼。中国沿海“海猪”常指江豚类，圆钝无明显吻部的印象与“猪”相合。原文“殊难信书”也显示作者面对海兽传闻时有所保留。",
+    "caveats": "若发生在远洋或南海，也可能泛指海豚而非江豚。"
+  },
+  {
+    "id": "vol3_22_1",
+    "name": "腽肭兽",
+    "candidateModernName": "海狗、北方海狗",
+    "scientificName": "Callorhinus ursinus",
+    "confidence": "high",
+    "rationale": "“腽肭兽”在本草传统中即海狗，且与腽肭脐药材相连。状如犬、四足如鳍、入药大补，正对应海狗或毛皮海狮类。现代可优先对照北方海狗，但也可泛称海狗类。",
+    "caveats": "药材贸易来源复杂，可能混入多种海狗、海狮或海豹。"
+  },
+  {
+    "id": "vol3_22_2",
+    "name": "野豕",
+    "candidateModernName": "海象或传说化有牙海兽",
+    "scientificName": "Odobenus rosmarus",
+    "confidence": "low",
+    "rationale": "海中野猪、有长牙、大者如牛且甚猛，最接近以长牙为核心特征的海象传闻。中国沿海不产海象，若出现多半来自北方贸易或二手异闻。也可能是把“海猪”类海兽与野猪形象混合。",
+    "caveats": "海象候选受地理限制很大，传说化成分明显。"
+  },
+  {
+    "id": "vol3_23_1",
+    "name": "潜牛",
+    "candidateModernName": "儒艮或传说化牛头鱼尾海兽",
+    "scientificName": "Dugong dugon",
+    "confidence": "low",
+    "rationale": "南海外、牛头鱼尾、潜于海岩，可能与儒艮这类被称作海牛的海生哺乳动物有关。儒艮无角，原文“双角”和红色体色显然带有异兽化加工。可把它视为“海牛”观念下的传说化对应。",
+    "caveats": "双角特征无法由儒艮解释，置信度只能低。"
+  },
+  {
+    "id": "vol3_23_2",
+    "name": "海狗",
+    "candidateModernName": "海狗、毛皮海狮类",
+    "scientificName": "Otariidae spp.",
+    "confidence": "medium",
+    "rationale": "身长、毛黄、足如鳍、似狗而小，符合海狗类或海狮科动物的民间外观描写。与前面的腽肭兽同属鳍足类药物和海兽语境，但本条更像普通俗名记录。黄色毛色可能来自干皮或季节性毛色印象。",
+    "caveats": "可能与腽肭兽重复，也可能泛指幼海豹。"
+  },
+  {
+    "id": "vol3_23_3",
+    "name": "刺鱼",
+    "candidateModernName": "河豚或刺鲀类",
+    "scientificName": "Diodontidae spp.",
+    "confidence": "medium",
+    "rationale": "遍体有刺、能化为箭猪，明显以“刺”和“箭猪”取象，最像刺鲀、二齿鲀一类可膨胀且具硬刺的鱼。海错图常有“化生”说法，这里可视为对刺鲀形态的神怪化解释。若图像圆胖带刺，应支持此判读。",
+    "caveats": "也可能指其他有刺鱼类，如鲉、魨或海胆鱼的地方名。"
+  },
+  {
+    "id": "vol3_24",
+    "name": "海马",
+    "candidateModernName": "传说化海马形海兽",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "描述明确说是状如马、身有红焰斑纹，且“非今之小海马”。这排除了海龙科小型海马，指向马形海兽或图像传说。应作为海兽卷中的异兽条目，而非硬套 Hippocampus。",
+    "caveats": "除非图像实际为小海马，否则不建议给出现代学名。"
+  },
+  {
+    "id": "vol3_25_1",
+    "name": "龙虱",
+    "candidateModernName": "龙虱、水生甲虫",
+    "scientificName": "Dytiscidae spp.",
+    "confidence": "medium",
+    "rationale": "体小色黑、状如甲虫、可食，与龙虱即水生食肉甲虫的传统名称吻合。虽然龙虱多为淡水昆虫，沿海湿地、咸淡水或市场记录中可能进入“海物”类。此条形态比海洋甲壳动物更像昆虫。",
+    "caveats": "若确为纯海产，可能是被误名的甲壳动物而非真正龙虱。"
+  },
+  {
+    "id": "vol3_25_2",
+    "name": "龙肠",
+    "candidateModernName": "海产多毛类或星虫状蠕虫",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "状如线、色红、生海涂，且称“无毛之螺虫”，说明是潮间带软体或蠕虫状动物。红色线状体可见于多毛类、纽虫或星虫幼小个体。古名“龙肠”强调细长肠状，分类价值有限。",
+    "caveats": "需要图像和地方食用名材料，暂不宜定科属。"
+  },
+  {
+    "id": "vol3_25_3",
+    "name": "海蚕",
+    "candidateModernName": "海蚕、沙蚕类",
+    "scientificName": "Nereididae spp.",
+    "confidence": "medium",
+    "rationale": "状如蚕、居海泥、长寸许、味鲜美，符合潮间带沙蚕等多毛类的民间食用品描述。海蚕之名在沿海常用于多毛环节动物。与龙肠同处泥涂小虫语境，也支持此类群。",
+    "caveats": "“海蚕”可能泛称多种多毛类，不能定到单一物种。"
+  },
+  {
+    "id": "vol3_26_1",
+    "name": "泥蛋",
+    "candidateModernName": "海鞘、海桃类",
+    "scientificName": "Ascidiacea spp.",
+    "confidence": "low",
+    "rationale": "形长圆、浅红，又名海红、海橘，容易联想到附着或埋栖的海鞘类，外形常似软囊或小果。名称中的“蛋”“橘”都强调圆囊状而非鱼形。若图像有两孔或囊状外皮，海鞘候选会增强。",
+    "caveats": "海红也可指贻贝等贝类，当前候选需重点复核。"
+  },
+  {
+    "id": "vol3_26_2",
+    "name": "海蜘蛛",
+    "candidateModernName": "海蜘蛛、海蛛类",
+    "scientificName": "Pycnogonida spp.",
+    "confidence": "medium",
+    "rationale": "多足、状如蜘蛛，直接对应海蛛纲的通俗形象。原文说产深僻处且有毒，可能夸张其怪异外观。若图像腿长、躯干小，应比螃蟹或蜘蛛蟹更接近海蜘蛛。",
+    "caveats": "民间也会把蜘蛛蟹或长腿蟹称海蜘蛛，需看是否有蟹甲。"
+  },
+  {
+    "id": "vol3_26_3",
+    "name": "海蜈蚣",
+    "candidateModernName": "海毛虫、多毛类",
+    "scientificName": "Amphinomidae spp.",
+    "confidence": "medium",
+    "rationale": "身长、多足、背微突、噬人有毒，符合海毛虫等多毛类以刚毛刺痛人的特征。旧名“海蜈蚣”常用于多足环节动物或海岸蠕虫。数尺之长可能夸张，但“有毒”与刚毛刺激吻合。",
+    "caveats": "也可能指大型海蟑螂、虾蛄或其他多足海物的误称。"
+  },
+  {
+    "id": "vol3_27_1",
+    "name": "土鳖",
+    "candidateModernName": "帽贝或石鳖类",
+    "scientificName": "Polyplacophora spp.",
+    "confidence": "low",
+    "rationale": "背微突、体圆而绿、吸粘海礁，说明是贴附岩面的低矮动物。石鳖和帽贝都符合“吸粘海礁”的生态，名称“土鳖”可能来自伏贴如鳖的外形。若图像有分节背板，应定为石鳖；若单壳圆锥，则是帽贝。",
+    "caveats": "缺少壳板或单壳信息，石鳖与帽贝之间无法取舍。"
+  },
+  {
+    "id": "vol3_27_2",
+    "name": "海参",
+    "candidateModernName": "海参",
+    "scientificName": "Holothuroidea spp.",
+    "confidence": "high",
+    "rationale": "产海泥中、遍体肉刺、滋补，并提到辽参和广参高下，是现代海参类的明确食药语境。肉刺和泥底栖息也是刺参、黑参等食用海参的典型印象。可定到海参纲，但不宜只定一种。",
+    "caveats": "“辽广二参”涉及不同商品来源，可能包含多种海参。"
+  },
+  {
+    "id": "vol3_28_1",
+    "name": "泥笋",
+    "candidateModernName": "可口革囊星虫、土笋冻原料",
+    "scientificName": "Phascolosoma esculenta",
+    "confidence": "high",
+    "rationale": "形如蚯蚓、色青蓝、味清美，又名泥绿，和闽南“土笋”“泥笋”所指星虫高度吻合。该类生于海涂泥沙中，常作食材。卷三后续泥丁、泥肠也在同一潮滩蠕虫食物系统中。",
+    "caveats": "地方“泥笋”也可能泛指近似星虫，物种级需产地确认。"
+  },
+  {
+    "id": "vol3_28_2",
+    "name": "桑鱼",
+    "candidateModernName": "柔鱼、鱿鱼类",
+    "scientificName": "Loliginidae spp.",
+    "confidence": "high",
+    "rationale": "原文直接说即柔鱼、鱿鱼，八足多肉，已给出现代类群线索。古人常把头足类腕足数目简化称八足，未必严格区分鱿鱼十腕。可归入枪乌贼或柔鱼类。",
+    "caveats": "“柔鱼”“鱿鱼”可跨多个头足类科，需图像区分枪乌贼与柔鱼。"
+  },
+  {
+    "id": "vol3_29_1",
+    "name": "章鱼",
+    "candidateModernName": "章鱼、蛸类",
+    "scientificName": "Octopoda spp.",
+    "confidence": "high",
+    "rationale": "身圆多足、藏墨，正是章鱼类的核心特征。古名“螺仙”反映其软体、无骨、可喷墨的神异化理解。与后面章巨、章鱼重复条目构成明确的头足类组。",
+    "caveats": "无法判断具体是普通章鱼、短蛸还是其他蛸类。"
+  },
+  {
+    "id": "vol3_29_2",
+    "name": "海和尚",
+    "candidateModernName": "传说化人首海兽",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "人首鳖身的描述明显属于怪异图像和海中异闻，不是可直接对应的现代动物。类似“海和尚”在古籍中常与人面鱼、海僧等传说相通。应避免把它硬定为海豹或海龟。",
+    "caveats": "若图像其实由海龟、海豹误绘而来，也只能作为可能原型另案讨论。"
+  },
+  {
+    "id": "vol3_29_3",
+    "name": "土肉",
+    "candidateModernName": "海鞘或肉质海产无脊椎动物",
+    "scientificName": "Ascidiacea spp.",
+    "confidence": "low",
+    "rationale": "大如臂、无骨、味如肥肉，又称生肉芝，指向肉质、囊状或块状的海产无脊椎动物。海鞘类常被民间比作肉块，也可食。名称“肉芝”带有药食和灵物想象，降低了分类可靠性。",
+    "caveats": "也可能是大型海参、星虫团块或菌芝式传说物。"
+  },
+  {
+    "id": "vol3_30_1",
+    "name": "鬼头鱼",
+    "candidateModernName": "大型章鱼",
+    "scientificName": "Octopoda spp.",
+    "confidence": "medium",
+    "rationale": "原文说是章鱼之大而悍者，说明应放在章鱼类内部理解。大而能缠人、带尖刺的叙述可能来自大型蛸类腕足吸盘、角质喙或图像夸张。名称“鬼头”强调头部巨大和怪异感。",
+    "caveats": "“尖刺”不符合普通章鱼，可能混入乌贼、鱿鱼或传说加工。"
+  },
+  {
+    "id": "vol3_30_2",
+    "name": "泥刺",
+    "candidateModernName": "泥涂海葵、海参或棘皮软体动物",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "大头、有刺、足软肉可食，显示它不是典型鱼类，而是泥涂软体或棘皮动物一类。处在章鱼、泥丁等条目之间，语境偏向可食无脊椎海物。名称“泥刺”可能指体表刺突或触手状结构。",
+    "caveats": "缺少形态关键点，需人工看图才能排除鱼类或虾蟹幼体。"
+  },
+  {
+    "id": "vol3_31_1",
+    "name": "泥丁",
+    "candidateModernName": "泥丁、星虫类",
+    "scientificName": "Sipuncula spp.",
+    "confidence": "medium",
+    "rationale": "状如丁香、闽中海涂特产，与闽粤沿海称“泥丁”的小型星虫或蠕虫状食材相符。晒干后如丁香的说法强调形状和商品形态。它与泥笋、泥钉、泥肠构成一组潮滩蠕虫名物。",
+    "caveats": "不同地方的泥丁可能对应不同星虫或多毛类。"
+  },
+  {
+    "id": "vol3_31_2",
+    "name": "海粉",
+    "candidateModernName": "海螺卵群或海兔卵带",
+    "scientificName": null,
+    "confidence": "medium",
+    "rationale": "原文明确说是海螺卵群，色黄绿，属于软体动物卵块而非成体动物。许多腹足类、海兔或螺类产卵呈胶质带状、团状，民间可称粉、虫或菜。应记录为卵群类名物。",
+    "caveats": "“海螺”范围过宽，无法确定产卵者是哪一类腹足动物。"
+  },
+  {
+    "id": "vol3_31_3",
+    "name": "朱蛙",
+    "candidateModernName": "红色蟾鱼、躄鱼或传说化海蛙",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "体红、目有金光、产温州平阳海涂，“蛙”可能来自头大、口阔、伏泥的鱼形，如蟾鱼或躄鱼类。海涂环境也适合把奇形底栖鱼误称为蛙。金目和朱色带有图像夸张。",
+    "caveats": "没有足、鳍和口形信息，可能是鱼、蟹、软体动物或传说名。"
+  },
+  {
+    "id": "vol3_32_1",
+    "name": "章巨",
+    "candidateModernName": "大型章鱼",
+    "scientificName": "Octopoda spp.",
+    "confidence": "high",
+    "rationale": "“似章鱼而大、头巨、能缠人”明确指大型章鱼类。古人常把大型蛸类的腕足缠绕能力夸张为能缠人。与前后章鱼条目互证，现代对照可定为章鱼目。",
+    "caveats": "具体是否为真蛸、短蛸或更大型种无法判断。"
+  },
+  {
+    "id": "vol3_32_2",
+    "name": "章鱼",
+    "candidateModernName": "章鱼、蛸类",
+    "scientificName": "Octopoda spp.",
+    "confidence": "high",
+    "rationale": "八足、多游潮际，并明示产浙闽海涂，符合沿海常见章鱼、短蛸等。潮间带捕获和食用语境也与现代章鱼类一致。与 vol3_29_1 相比，本条更像普通地方物产记录。",
+    "caveats": "无法仅凭“章鱼”确定到具体蛸类物种。"
+  },
+  {
+    "id": "vol3_33_1",
+    "name": "锁管",
+    "candidateModernName": "锁管、枪乌贼类",
+    "scientificName": "Loliginidae spp.",
+    "confidence": "high",
+    "rationale": "锁管是闽台沿海对小型鱿鱼、枪乌贼的常见称呼。无骨、体细长、有紫斑，与枪乌贼类透明细长胴部和色素斑相符。此条比章鱼更应归入十腕头足类。",
+    "caveats": "锁管可指多种枪乌贼或小鱿鱼，暂不能定到种。"
+  },
+  {
+    "id": "vol3_33_2",
+    "name": "泥钉",
+    "candidateModernName": "泥钉、星虫或海涂蠕虫",
+    "scientificName": "Sipuncula spp.",
+    "confidence": "medium",
+    "rationale": "如蚯蚓一段而有尾、味美，和泥笋、泥丁同属海涂蠕虫食材语境。星虫缩伸吻部后常呈短柱状，容易被形容为一段蚯蚓。名字“钉”强调短小坚实的干品或形态。",
+    "caveats": "“有尾”也可能指多毛类后端，星虫判断需复核图像。"
+  },
+  {
+    "id": "vol3_33_3",
+    "name": "泥肠",
+    "candidateModernName": "单环刺螠、海肠类",
+    "scientificName": "Urechis unicinctus",
+    "confidence": "medium",
+    "rationale": "状如猪肠、生海涂、又名土猪肠，强烈指向俗称海肠的螠虫类。海肠体呈粗软管状，生活在泥沙中，食用名也常带“肠”。若产地更偏北，单环刺螠尤其合适。",
+    "caveats": "南方海涂也可能有其他螠虫或星虫被称泥肠。"
+  },
+  {
+    "id": "vol3_33_4",
+    "name": "泥翘",
+    "candidateModernName": "竹蛏或长形双壳贝",
+    "scientificName": "Solenidae spp.",
+    "confidence": "low",
+    "rationale": "壳长四五寸、有骨有肉，并有“吸阴翘而起”的动作描写，像埋栖泥沙中的长形双壳贝。竹蛏、缢蛏等会伸缩水管，外壳修长，容易被称为泥中翘起之物。这里的“骨”应指贝壳。",
+    "caveats": "名称不常见，可能是地方贝类或其他管栖动物。"
+  },
+  {
+    "id": "vol3_34_1",
+    "name": "荷包蛇",
+    "candidateModernName": "海兔或囊状软体动物",
+    "scientificName": "Aplysiidae spp.",
+    "confidence": "low",
+    "rationale": "形如荷包、色微白、味同蛇鱼，说明是软囊状、可食的海产动物。海兔类体软、无明显硬壳，受刺激会化水或出汁的民间说法较常见。名中“蛇”可能来自软滑质感而非真正蛇形。",
+    "caveats": "也可能是水母、海鞘或卵囊类，需看图像是否有海兔耳状突起。"
+  },
+  {
+    "id": "vol3_34_2",
+    "name": "墨鱼子",
+    "candidateModernName": "乌贼卵",
+    "scientificName": "Sepiida spp.",
+    "confidence": "high",
+    "rationale": "原文明确说是乌贼卵，结如贯珠、黑褐色、散布海岩。乌贼卵常成串或成簇附着海草、岩石等基物，颜色可由墨囊物质变暗。它是繁殖体条目，不是独立动物种。",
+    "caveats": "具体产卵者可能是多种乌贼，无法定到物种。"
+  },
+  {
+    "id": "vol3_34_3",
+    "name": "石乳",
+    "candidateModernName": "海鞘、群体海鞘或岩生软体海物",
+    "scientificName": "Ascidiacea spp.",
+    "confidence": "low",
+    "rationale": "生海岩阴湿处、淡红紫色、软而可食，又名岩乳，指向附着岩面的软质囊状或群体动物。群体海鞘常呈胶质块、紫红色并附着硬底，较符合“乳”状印象。也可能是海葵或其他岩生软体海物。",
+    "caveats": "“石乳”在古籍中可指多种岩生生物，当前只能给类群级候选。"
+  },
+  {
+    "id": "vol3_34_4",
+    "name": "土花瓶",
+    "candidateModernName": "海鞘或柄海鞘类",
+    "scientificName": "Ascidiacea spp.",
+    "confidence": "low",
+    "rationale": "生海泥、形如花瓶、有海草附生，比较像具囊体和开口的海鞘类，尤其是形似小瓶的单体海鞘。海草附着说明其外表可成为附生基质。名称“花瓶”反映外形而非分类。",
+    "caveats": "也可能是管栖蠕虫、海绵或被海草覆盖的贝壳。"
+  },
+  {
+    "id": "vol3_35",
+    "name": "墨鱼",
+    "candidateModernName": "乌贼、墨鱼",
+    "scientificName": "Sepiida spp.",
+    "confidence": "high",
+    "rationale": "又称乌贼、身白有黑汁、骨名海螵蛸，完全对应现代乌贼类。海螵蛸即乌贼内壳，是传统药材名。此条可高置信归入乌贼目。",
+    "caveats": "未说明背纹和内壳形态，不能确定具体乌贼种。"
+  },
+  {
+    "id": "vol3_36_1",
+    "name": "蛇婆",
+    "candidateModernName": "海蜇、水母",
+    "scientificName": "Rhopilema esculentum",
+    "confidence": "medium",
+    "rationale": "原文直接说即海蜇、水母，身如笠，下有虾寄生，符合大型根口水母及其共生小虾现象。吴俗称海蜚，也与江浙沿海海蜇食用传统相合。现代食用海蜇可优先对照海蜇属。",
+    "caveats": "“水母”范围很宽，Rhopilema esculentum 是食用海蜇候选而非唯一可能。"
+  },
+  {
+    "id": "vol3_36_2",
+    "name": "金盏银台",
+    "candidateModernName": "小型水母",
+    "scientificName": "Scyphozoa spp.",
+    "confidence": "medium",
+    "rationale": "小水母、红顶白底、状如金盏，明显按伞部颜色和形状命名。与前一条蛇婆同页，语境指向水母类而非植物或贝类。红色伞面、白色下部可见于多种小型钵水母或水螅水母。",
+    "caveats": "颜色不足以定种，只能作为水母类形态名处理。"
+  }
+]

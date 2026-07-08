@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { allCreatures, getCreatureMeta, type Creature } from '../../utils/data';
+import { allCreatures, confidenceLabels, getCreatureMeta, type Creature } from '../../utils/data';
 import { ChevronLeft, Flame, ShieldAlert, Award, BookOpen, Compass } from 'lucide-react';
 
 export async function getStaticPaths() {
@@ -16,6 +16,7 @@ interface Props {
 
 const { creature } = Astro.props;
 const meta = getCreatureMeta(creature);
+const identification = meta.modernIdentification;
 ---
 
 <Layout 
@@ -126,9 +127,33 @@ const meta = getCreatureMeta(creature);
           </h3>
           
           <div class="space-y-2.5 text-xs font-sans text-ink-black/85 leading-relaxed">
-            <p>
-              <span class="font-bold text-deep-sea">【生态解读】</span> {meta.modernInfo}
-            </p>
+            {identification ? (
+              <>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-[11px] md:text-xs">
+                  <p>
+                    <span class="font-bold text-deep-sea">【候选对照】</span> {identification.candidateModernName}
+                  </p>
+                  <p>
+                    <span class="font-bold text-deep-sea">【可信度】</span> {confidenceLabels[identification.confidence]}
+                  </p>
+                  {identification.scientificName && (
+                    <p class="md:col-span-2">
+                      <span class="font-bold text-deep-sea">【学名】</span> <em>{identification.scientificName}</em>
+                    </p>
+                  )}
+                </div>
+                <p>
+                  <span class="font-bold text-deep-sea">【考证说明】</span> {identification.rationale}
+                </p>
+                <p>
+                  <span class="font-bold text-cinnabar-red">【存疑】</span> {identification.caveats}
+                </p>
+              </>
+            ) : (
+              <p>
+                <span class="font-bold text-deep-sea">【考证说明】</span> {meta.modernInfo}
+              </p>
+            )}
             <p>
               <span class="font-bold text-cinnabar-red">【食味评价】</span> {meta.deliciousComment}
             </p>

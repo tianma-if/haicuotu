@@ -1,0 +1,182 @@
+[
+  {
+    "id": "vol2_2",
+    "name": "海鹅",
+    "candidateModernName": "鲣鸟类或大型鸥类海鸟",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“状如鹅而大，色白，飞鸣海上”更像沿海渔民按体型和白色羽色命名的大型海鸟，而非真正的雁鹅。若强调远海、随风浪起落，可联想到鲣鸟科；若依据近海常见性，也可能是大型鸥类或鹭类被泛称为“海鹅”。其“知风向”的功能性叙述偏民俗观察，说明命名重点在海上飞行行为。",
+    "caveats": "缺少喙形、足形和翼端颜色等关键特征，暂不宜定到属种。"
+  },
+  {
+    "id": "vol2_3_1",
+    "name": "海鸥",
+    "candidateModernName": "黑尾鸥或近缘鸥类",
+    "scientificName": "Larus crassirostris",
+    "confidence": "medium",
+    "rationale": "“体白翼灰”“群飞于舟楫之后，逐鱼而食”符合东亚沿海鸥类的典型生态。黑尾鸥在中国近海和海岛常见，常随船觅食，体色也与描述相近。古名“海鸥”多为生态类群名，现代可先以黑尾鸥作为较合适代表。",
+    "caveats": "原文未提黑色尾带、喙端色斑等黑尾鸥诊断特征，也可能泛指鸥属其他种。"
+  },
+  {
+    "id": "vol2_4",
+    "name": "海燕",
+    "candidateModernName": "海燕科海鸟，可能为黑叉尾海燕",
+    "scientificName": "Oceanodroma monorhis",
+    "confidence": "medium",
+    "rationale": "“状如燕而小，色青黑”“大风将至则贴水低飞”正合海燕类小型远洋鸟的民间风候形象。黑叉尾海燕在西北太平洋繁殖、活动，体色暗，常贴近海面飞行觅食。古人以“燕”名之，主要取其小型、叉尾或燕形飞姿，而不是指家燕类。",
+    "caveats": "海燕类外观相近，未见白腰、尾形等细节，具体种名需复核图像和原题记。"
+  },
+  {
+    "id": "vol2_6",
+    "name": "金丝燕",
+    "candidateModernName": "食用燕窝金丝燕",
+    "scientificName": "Aerodramus fuciphagus",
+    "confidence": "high",
+    "rationale": "条目明说产闽粤海岛，并“吐唾筑巢于悬崖”，其巢即燕窝，这与食用燕窝金丝燕的巢材和采集语境高度一致。金丝燕并非普通燕科，而是雨燕目金丝燕类，唾液巢可食是识别核心。闽粤与南海贸易语境也支持此类燕窝来源。",
+    "caveats": "历史燕窝贸易还包含多种金丝燕，单定为食用燕窝金丝燕仍需结合产地原文。"
+  },
+  {
+    "id": "vol2_1",
+    "name": "海鸡",
+    "candidateModernName": "红冠水鸡或近缘秧鸡类",
+    "scientificName": "Gallinula chloropus",
+    "confidence": "low",
+    "rationale": "“状如鸡，冠红羽彩”最容易让人联想到具红色额甲或红喙的水鸡、秧鸡类，而“潮退则下滩啄食”说明它被观察为滨水涉禽。红冠水鸡体形似小鸡，额部鲜红，常在湿地边缘取食，可解释“海鸡”这一民间类比名。它并非真正海鸟，而可能是沿海滩涂或河口湿地鸟类被纳入海物谱。",
+    "caveats": "若图像表现为其他彩色滨鸟或传闻鸟，红冠水鸡只能作为暂定低置信候选。"
+  },
+  {
+    "id": "vol2_3_2",
+    "name": "海鸽",
+    "candidateModernName": "海雀科海鸠类",
+    "scientificName": "Cepphus sp.",
+    "confidence": "low",
+    "rationale": "“状如鸽，色青灰，飞翔海岛”与海雀科中俗称 sea pigeon 的海鸠、海鸽类有一定相合处，古名可能是按鸽形体态和海岛栖息来命名。海鸠类常在海岛、岩岸活动，外形对非专业观察者可被归入“鸽”。“其性驯，不畏人”也符合某些海岛繁殖鸟对人的低警戒叙述。",
+    "caveats": "中国沿海对应海鸠类记录有限，且描述过简，可能只是岛栖鸠鸽或其他海鸟的泛称。"
+  },
+  {
+    "id": "vol2_5",
+    "name": "海鹦鹉",
+    "candidateModernName": "海鹦，可能为簇羽海鹦",
+    "scientificName": "Fratercula cirrhata",
+    "confidence": "medium",
+    "rationale": "“嘴大而色鲜，五彩斑斓，状如鹦鹉”直指海鹦属鸟类，彩色大喙是最醒目的识别特征。若从北太平洋和东亚海域考虑，簇羽海鹦比大西洋海鹦更接近区域背景。古人称“海鹦鹉”，显然是以喙形、色彩类比陆生鹦鹉。",
+    "caveats": "簇羽海鹦并非常见闽粤滩涂鸟，条目可能来自传闻、贸易标本或对其他海雀科鸟的混称。"
+  },
+  {
+    "id": "vol2_15",
+    "name": "燕窝",
+    "candidateModernName": "金丝燕唾液巢",
+    "scientificName": "Aerodramus fuciphagus",
+    "confidence": "high",
+    "rationale": "条目直接说“金丝燕所筑之巢”，并区分白、红数种，这是燕窝作为海岛洞穴采集品和食材的典型记载。现代所谓食用燕窝主要来自金丝燕类唾液筑成的巢，而非家燕泥巢。红燕窝“血燕”之说更多关涉矿物染色、氧化或加工传说，可作为物产史内容处理。",
+    "caveats": "燕窝商品来源可能涉及多种 Aerodramus 金丝燕，红色成因也不宜沿用“大补血燕”的传统解释。"
+  },
+  {
+    "id": "vol2_17",
+    "name": "海市蜃楼",
+    "candidateModernName": "海上大气折射蜃景",
+    "scientificName": null,
+    "confidence": "high",
+    "rationale": "“楼台殿阁”“或在海上，或在空中，旋即消逝”描述的是海面温度层结造成的折射、全反射类蜃景。古说归因于“蜃吐气”，属于把自然光学现象附会到巨蛤或龙属神物。将其列入海物卷，反映的是海滨奇观和博物传闻的混合，而非生物条目。",
+    "caveats": "它不是物种，现代对照应作为自然现象保留，不能填写拉丁学名。"
+  },
+  {
+    "id": "vol2_18",
+    "name": "珠蚌",
+    "candidateModernName": "马氏珠母贝",
+    "scientificName": "Pinctada fucata martensii",
+    "confidence": "high",
+    "rationale": "“腹中育珠”明确指产珍珠的珠母贝类，而不是普通淡水蚌。华南沿海传统采珠和养珠的核心贝类之一是马氏珠母贝，贝壳内面有珍珠层，能形成海水珍珠。月盈月缺影响珠光的说法是传统物候和月令观念，不影响现代识别为珠母贝类。",
+    "caveats": "古代“珠蚌”也可能泛指多种珠母贝，具体到马氏珠母贝需结合产地和壳形。"
+  },
+  {
+    "id": "vol2_19",
+    "name": "江瑶柱",
+    "candidateModernName": "江珧，栉江珧",
+    "scientificName": "Atrina pectinata",
+    "confidence": "high",
+    "rationale": "“肉中有一柱，干之即干贝”说的是大型双壳贝的闭壳肌，正是“江瑶柱/江珧柱”的名称来源。江珧类壳大而楔形，闭壳肌洁白肥厚，晒干后作为珍贵海味。此处“柱”不是独立生物，而是江珧的可食部位。",
+    "caveats": "现代干贝也常由扇贝闭壳肌制成，但“江瑶”古名更贴近江珧类而非扇贝。"
+  },
+  {
+    "id": "vol2_21",
+    "name": "马蹄蛏",
+    "candidateModernName": "缢蛏或近缘蛏类",
+    "scientificName": "Sinonovacula constricta",
+    "confidence": "medium",
+    "rationale": "“居泥沙深处”“肉肥嫩”符合蛏类埋栖于潮间带泥沙中的生态。马蹄之名可能来自壳形较宽厚或壳端轮廓，而不一定是现代商品名中的某一固定物种。缢蛏是中国沿海常见食用蛏，能作为此类记载的优先候选。",
+    "caveats": "描述称“壳长圆如马蹄”与典型长条缢蛏略有差异，需与图像壳形或地方名再校。"
+  },
+  {
+    "id": "vol2_22",
+    "name": "大蚶",
+    "candidateModernName": "泥蚶或魁蚶类血蚶",
+    "scientificName": "Tegillarca granosa",
+    "confidence": "high",
+    "rationale": "“壳有纵沟如瓦垄，肉红，汁如血”是蚶科血蚶类非常典型的特征。泥蚶在华南、东南沿海食用历史久，壳面放射肋明显，血红色体液来自血红蛋白。传统“补血”说也正由其红色汁液和食疗观念而来。",
+    "caveats": "若原图体型特别巨大，也可能涉及魁蚶等大型蚶科种，需按壳肋数和轮廓复核。"
+  },
+  {
+    "id": "vol2_26",
+    "name": "珊瑚树",
+    "candidateModernName": "贵珊瑚，可能为日本红珊瑚",
+    "scientificName": "Corallium japonicum",
+    "confidence": "medium",
+    "rationale": "“色赤红，质坚如石，为至宝之玩”指向被采作饰物的红色贵珊瑚，而非造礁石珊瑚。树枝状群体和红色骨骼使古人称其为“珊瑚树”，并常解释为海中遗体或石化物。日本红珊瑚可作为东亚语境下的代表种。",
+    "caveats": "贸易珊瑚来源复杂，古代“珊瑚树”可泛称多种 Corallium 贵珊瑚，不宜只锁定一 species。"
+  },
+  {
+    "id": "vol2_28",
+    "name": "海葵",
+    "candidateModernName": "海葵目动物",
+    "scientificName": "Actiniaria",
+    "confidence": "high",
+    "rationale": "“状如菊花，生于礁石，触之则收敛如囊”非常符合海葵触手展开与受刺激收缩的形态行为。色艳、带刺胞微毒也与海葵捕食和防御特征一致。这里的“葵”是花形比喻，现代归入刺胞动物门珊瑚纲海葵目。",
+    "caveats": "海葵种类繁多，条目没有足以定科定种的颜色、触手排列或栖境细节。"
+  },
+  {
+    "id": "vol2_29",
+    "name": "紫菜",
+    "candidateModernName": "坛紫菜或近缘紫菜属海藻",
+    "scientificName": "Pyropia haitanensis",
+    "confidence": "medium",
+    "rationale": "“生于海石上，叶薄而紫，采暴干之作羹”对应潮间带岩石上采收、晒干食用的紫菜类红藻。若从闽粤沿海背景看，坛紫菜是很合适的现代候选。古代“紫菜”多按食用形态称呼，可能涵盖 Pyropia/Porphyra 多个近缘种。",
+    "caveats": "不见叶片形状、产季和产地细节，无法排除条斑紫菜等其他紫菜类。"
+  },
+  {
+    "id": "vol2_31",
+    "name": "石花菜",
+    "candidateModernName": "石花菜",
+    "scientificName": "Gelidium amansii",
+    "confidence": "high",
+    "rationale": "“附生海礁，色红黄，多枝”与石花菜属红藻的枝状体相符。煮烂后冷凝为凉粉，是石花菜富含琼胶、可制冻品的关键识别点。传统清暑食用法也与现代石花菜冻、洋菜用途一致。",
+    "caveats": "“石花菜”在民间也可泛称多种产琼胶红藻，具体种仍需地方藻类名录校验。"
+  },
+  {
+    "id": "vol2_32",
+    "name": "海带",
+    "candidateModernName": "海带",
+    "scientificName": "Saccharina japonica",
+    "confidence": "high",
+    "rationale": "“身长数丈，如宽带，色褐绿”准确抓住了海带大型褐藻、带状叶片的形态。条目又说“产自北海，能消瘿瘤”，与海带富碘、传统用于瘿瘤食疗的知识相合。现代分类中常用学名为 Saccharina japonica，旧文献亦常见 Laminaria japonica。",
+    "caveats": "古代“海带”有时也混指昆布、鹅掌菜等大型褐藻，需留意地方名差异。"
+  },
+  {
+    "id": "vol2_33",
+    "name": "龙虱",
+    "candidateModernName": "龙虱，食用龙虱",
+    "scientificName": "Cybister japonicus",
+    "confidence": "medium",
+    "rationale": "“体小色黑，状如水中甲虫”与龙虱科水生甲虫相符，闽粤食用龙虱的习俗也有文献和民俗延续。龙虱不是海产，而是淡水或水田、池沼昆虫，但可因滨海地区食俗被收入海错类物产。Cybister japonicus 是常被称为龙虱的东亚大型食用种之一。",
+    "caveats": "地方市场“龙虱”可能包含多种龙虱科昆虫，且本条海洋属性较弱。"
+  },
+  {
+    "id": "vol2_36",
+    "name": "石乳",
+    "candidateModernName": "可食海葵，俗称石乳、岩乳",
+    "scientificName": null,
+    "confidence": "medium",
+    "rationale": "“生海岩洞隙阴湿处，淡红紫色，软而可食”不合矿物钟乳石，反而符合附着岩隙、体壁柔软的海葵类动物。现代《海错图》解读中常将“石乳”指向沿海可食海葵，日本名“矶巾着”一类也提示其收缩成囊、附石如乳的形态。它与同卷“海葵”可能是不同民名或不同种类的海葵物产。",
+    "caveats": "“石乳”缺少触手、口盘等明确描述，可能与海鞘、软珊瑚或其他附岩可食无脊椎动物混淆。"
+  }
+]

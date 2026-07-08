@@ -1,0 +1,650 @@
+[
+  {
+    "id": "vol1_8_1",
+    "name": "鲈鱼",
+    "candidateModernName": "海鲈",
+    "scientificName": "Lateolabrax japonicus",
+    "confidence": "high",
+    "rationale": "条文已明说“此则海鲈”，并以松江鲈作比较，说明作者区分淡水名物与闽海所产。大口、细鳞、身有黑点，符合东亚近海常见海鲈幼成鱼的外观。闽中沿海也正是海鲈入河口、近岸捕获的典型场景。",
+    "caveats": "海鲈类近缘种和地方商品名复杂，需结合图像斑点与产地进一步排除其他花鲈属鱼。"
+  },
+  {
+    "id": "vol1_8_2",
+    "name": "鱼虎",
+    "candidateModernName": "豪猪鱼或刺鲀类",
+    "scientificName": "Diodontidae",
+    "confidence": "medium",
+    "rationale": "“状如河豚而大”“遍身有硬刺”很像豪猪鱼科，受惊膨胀并竖刺的特征容易被写成虎形凶猛。剥皮为鼓也合于硬皮、刺皮可干制利用的民间经验。口内有齿、能咬鱼鳖，则可能把大型刺鲀的喙状齿夸张为虎齿。",
+    "caveats": "“鱼虎”在方志中也可能指其他凶猛鱼，若图像不是膨胀刺鲀形，学名只能保留到科级。"
+  },
+  {
+    "id": "vol1_9_1",
+    "name": "鲻鱼",
+    "candidateModernName": "鲻鱼",
+    "scientificName": "Mugil cephalus",
+    "confidence": "high",
+    "rationale": "青黑色、体表多黏液、可晒鲞，均与沿海河口常见鲻鱼相符。闽海鲻鱼是传统食用鱼，既可鲜食也可干制。古名“鲻”延续性强，不必另寻罕见种。",
+    "caveats": "鲻科有多种地方混称，若只凭文字不能完全排除鮻、棱鲻等近缘种。"
+  },
+  {
+    "id": "vol1_9_2",
+    "name": "江鱼",
+    "candidateModernName": "银鱼类或小型鳀类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“长二三寸，色银白，极细小，宜作羹”可指银鱼类，也可指闽海沿岸捕作小鱼羹的鳀科幼小鱼。古名“江鱼”与产于闽海并列，可能指江海交汇处成群小白鱼，而非严格淡水鱼。描述缺少鳍、吻、透明度等关键识别点。",
+    "caveats": "此条很可能是地方商品小鱼名，需核对图像和闽地方言鱼名后再定。"
+  },
+  {
+    "id": "vol1_9_3",
+    "name": "海鳅鱼",
+    "candidateModernName": "海鳅类，可能为鳚科或蛇鳚类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“状如泥鳅而大，生于海中岩石间”提示细长、底栖、岩礁生活的近岸小型鱼，而非真正淡水泥鳅。青黑色和肉质坚实，可指鳚科、蛇鳚科或其他被俗称海鳅的长形鱼。古名是形态类比，信息不足以落到种级。",
+    "caveats": "现代“海鳅”在不同地区所指差异很大，须以图像体形和鳍型复核。"
+  },
+  {
+    "id": "vol1_10",
+    "name": "河豚",
+    "candidateModernName": "河鲀类",
+    "scientificName": "Takifugu spp.",
+    "confidence": "high",
+    "rationale": "触之膨胀如球、无明显鳞、肝卵血有毒，是河鲀类最典型的民间识别。闽海沿岸多产东方鲀属，古籍常以“河豚”统称海水与河口河鲀。食用美味而有致命风险，也符合历史食俗。",
+    "caveats": "未给出斑纹和鳍色，不能精确到红鳍东方鲀、虫纹东方鲀等具体种。"
+  },
+  {
+    "id": "vol1_11_1",
+    "name": "七里香",
+    "candidateModernName": "小型针状银白海鱼，可能为玉筋鱼或银汉鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“身狭长如针，轻而美”说明是细长小鱼，名称“七里香”更像以气味或食味得名的闽海俗称。若其成群近岸、可作小鲜，则可能接近玉筋鱼、银汉鱼或小型鳀类。文字没有说明长吻或翼状胸鳍，故不宜直接定为针鱼。",
+    "caveats": "该名现代对应不稳定，必须与图像长度比例、口吻形态和地方名录交叉确认。"
+  },
+  {
+    "id": "vol1_11_2",
+    "name": "鱽鱼",
+    "candidateModernName": "刀鲚或近似鲚属鱼",
+    "scientificName": "Coilia nasus",
+    "confidence": "medium",
+    "rationale": "“亦称刀鱼”“身狭长而扁，色白如银，后尾尖细，其形如刀”直接指向鲚属刀鱼形态。闽地江海交汇环境可见鲚类，古人常不严格区分江刀、海刀和其他鲚鱼。银白扁长的描述比带鱼短小，故不宜混同带鱼。",
+    "caveats": "若画中有长丝状胸鳍则更支持刀鲚；否则也可能是其他鲚属或小型刀形海鱼。"
+  },
+  {
+    "id": "vol1_12_1",
+    "name": "划腮鱼",
+    "candidateModernName": "阔嘴鱼，可能为沙鮻或鰕虎鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "别名“阔嘴鱼”、口阔、浅沙中游行，提示近岸沙底伏栖或游动的底层鱼。身有黑斑可见于沙鮻、鰕虎鱼、牛尾鱼等多个类群。古名“划腮”可能来自鳃盖形态或处理鱼时的地方称呼，现有文字不足以缩小范围。",
+    "caveats": "这是高风险俗名，对照需要图像中头口比例、腹鳍形态和是否有棘刺。"
+  },
+  {
+    "id": "vol1_12_2",
+    "name": "小鱼",
+    "candidateModernName": "鱼苗或小型海产杂鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "条文直接说是“海中幼鱼之总称”，并非一个稳定物种名。晒干作羹的用途，说明可能是鳀、沙丁鱼、银鱼等多种小型鱼或幼鱼混捕。现代对照宜保留为渔业商品类群。",
+    "caveats": "不能从该条推出单一学名，除非图像明显描绘某一种固定鱼形。"
+  },
+  {
+    "id": "vol1_12_3",
+    "name": "飞鱼",
+    "candidateModernName": "飞鱼类",
+    "scientificName": "Exocoetidae",
+    "confidence": "high",
+    "rationale": "“有翅如蝉翼，能飞跃水面数丈”是飞鱼科以扩大的胸鳍滑翔的典型描写。闽海位于西北太平洋暖水飞鱼分布区，渔民常见其受惊跃水。身形类鲻鱼的说法也符合古人以常见鱼比附新奇海鱼。",
+    "caveats": "飞鱼科种类较多，未见卵须、鳍色和体长，不能定到属种。"
+  },
+  {
+    "id": "vol1_13_1",
+    "name": "铜盆鱼",
+    "candidateModernName": "鲷科红色圆扁鱼，可能为真鲷或黄鳍棘鲷类",
+    "scientificName": "Sparidae",
+    "confidence": "medium",
+    "rationale": "身圆而扁、红黄如铜盆、礁石间出没，整体很像闽海常见的鲷科鱼。鲷类体侧高而侧扁，颜色可呈红、黄、铜色，是古人以器物比形色的典型对象。若图像呈高背圆盘状，则“铜盆”之名更贴切。",
+    "caveats": "鲷科多种形色相近，若缺少齿列和鳍棘特征，只能保守到科级。"
+  },
+  {
+    "id": "vol1_13_2",
+    "name": "蝘虎鱼",
+    "candidateModernName": "弹涂鱼或鰕虎鱼类",
+    "scientificName": "Gobiidae",
+    "confidence": "medium",
+    "rationale": "“状如守宫，常缘石而行”把鱼比作壁虎，符合鰕虎鱼、弹涂鱼等能贴附或爬行于石滩泥滩的形象。灰黑色、小型底栖，也与近岸鰕虎鱼类一致。闽海潮间带环境可提供这种观察场景。",
+    "caveats": "如果图像明显有突出眼和泥滩跳跃姿态，可进一步指向弹涂鱼；否则仍是鰕虎鱼类泛称。"
+  },
+  {
+    "id": "vol1_14_1",
+    "name": "海鱘",
+    "candidateModernName": "鲟鱼或江海洄游大型硬骨鱼",
+    "scientificName": "Acipenseridae",
+    "confidence": "low",
+    "rationale": "“淡水与海水交界处”“骨硬”“肉厚”容易令人想到鲟类，古名“鱘”也常指鲟鱼。可是“身有黄黑斑点”不很典型，且闽海并非鲟类最常见叙述中心。也可能是把其他具硬骨板或斑纹的大型鱼误称为海鱘。",
+    "caveats": "需复核图像是否有鲟类长吻、骨板和下位口，否则此对照风险较高。"
+  },
+  {
+    "id": "vol1_14_2",
+    "name": "鲨鱼",
+    "candidateModernName": "小型鲨鱼类",
+    "scientificName": "Selachimorpha",
+    "confidence": "high",
+    "rationale": "口在腹下、齿利、体狭长，是鲨类的核心形态。条文称“小鲨”，说明作者面对的是近岸常捕的小型鲨，而非大型远洋鲨的精确种名。闽海渔获中狗鲨、猫鲨、真鲨类均可能被统称为鲨鱼。",
+    "caveats": "鲨类种级需要背鳍、尾形、斑纹和齿形，目前只能定为鲨类总称。"
+  },
+  {
+    "id": "vol1_15_1",
+    "name": "海银鱼",
+    "candidateModernName": "银鱼类",
+    "scientificName": "Salangidae",
+    "confidence": "medium",
+    "rationale": "“长三四寸，通体洁白如银，晶莹透明”与银鱼类半透明小鱼十分贴合。条文称产辽东海中，显示其可能来自北方贡品或传闻，而非闽海本地常见物。古名“海银鱼”强调海产或沿海，而非淡水湖银鱼。",
+    "caveats": "银鱼类种间差异细微，且产地叙述不在闽中，不能给出可靠种名。"
+  },
+  {
+    "id": "vol1_15_2",
+    "name": "鲳鱼",
+    "candidateModernName": "银鲳",
+    "scientificName": "Pampus argenteus",
+    "confidence": "high",
+    "rationale": "身扁而圆、肉细腻，是鲳鱼尤其银鲳的传统识别。闽海鲳鱼长期为重要食用鱼，成群被网捕也符合鲳类洄游聚群。古名“鲳”延续到现代，语义稳定。",
+    "caveats": "白鲳、灰鲳和近似鲳科鱼可能混称，若图像鳍形不清仍需复核。"
+  },
+  {
+    "id": "vol1_15_3",
+    "name": "毯鱼",
+    "candidateModernName": "团扇鳐或圆形鳐类",
+    "scientificName": "Rajiformes",
+    "confidence": "low",
+    "rationale": "体圆如毯、随潮漂浮，可能指盘状或扁平的鳐类，也可能是水母一类被误入鱼部。别名“毬鱼”提示圆形而非一般鱼形，红褐波浪纹又不像常见硬骨鱼。若图像为扁盘带尾，则更接近鳐类。",
+    "caveats": "“随潮漂浮”也可能指腔肠动物或传闻化图像，现代动物门类需图像复核。"
+  },
+  {
+    "id": "vol1_16_1",
+    "name": "松鱼",
+    "candidateModernName": "海鲶类",
+    "scientificName": "Ariidae",
+    "confidence": "medium",
+    "rationale": "“状如猫，多须”强烈指向鲶形鱼，闽海环境中更可能是海鲶科而非淡水鲶。身青黑、肉细，也符合一些沿海鲶类的食用记录。别名“鲃鱼”可能为地方音转或混称，不能按现代鲃亚科理解。",
+    "caveats": "若图像无须或有鳞，则该判断要下调，需与“鲃鱼”地方名资料核对。"
+  },
+  {
+    "id": "vol1_16_2",
+    "name": "鹞毛鱼",
+    "candidateModernName": "未定，可能为小型飞鱼或会跃水的银汉鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“飞跃水面，状如鹞子之毛”说明识别核心在轻薄、跃水或似羽毛，而不是稳定的解剖特征。它可能是小型飞鱼、半喙鱼或银汉鱼类的地方名。与前条“飞鱼”相比，此处体小且名取“毛”，可能指幼体或另一类跃水小鱼。",
+    "caveats": "缺少口吻、胸鳍大小和体长，无法排除多种近岸小鱼。"
+  },
+  {
+    "id": "vol1_16_3",
+    "name": "青鲋",
+    "candidateModernName": "未定，可能为海鲫、雀鲷或小型鲷类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“状如鲫而青，多生于海滨浅水”只是以淡水鲫鱼比拟一种近岸侧扁小鱼。闽海浅水中多种雀鲷、鲷科幼鱼或海鲫形鱼都可呈青灰色并被称鲋。古名“鲋”并不保证与现代鲫属有亲缘关系。",
+    "caveats": "需依图像是否有鲷科高背、雀鲷短体或海鲫胎生特征来缩小范围。"
+  },
+  {
+    "id": "vol1_17_1",
+    "name": "鳏鱼",
+    "candidateModernName": "未定，可能为海龟或鲎形传闻复合体",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“身有甲，形似鳖而大”首先让人想到海龟或大型甲壳动物，而不似普通鱼。背上纹如印点、极罕见，又带有异物志式的夸张。若古人把海龟纳入“鱼”部并不罕见，但“鳏鱼”名与现代鱼名缺乏稳定对应。",
+    "caveats": "需看图像是否有四肢龟甲、鲎尾或鱼形甲板，否则不能定类。"
+  },
+  {
+    "id": "vol1_17_2",
+    "name": "印鱼",
+    "candidateModernName": "印鱼，可能为䲟鱼",
+    "scientificName": "Echeneidae",
+    "confidence": "high",
+    "rationale": "“常随大鱼游行”是䲟鱼用头背吸盘附着大型鱼类的典型生态。所谓背上斑纹如印章，很可能是把吸盘结构或色斑解释为“印”。能避水祸的说法也源于其随大鱼、船只而行的传闻。",
+    "caveats": "若图像没有头背吸盘而只是斑纹小鱼，则需改判为带斑随游鱼类。"
+  },
+  {
+    "id": "vol1_17_3",
+    "name": "鳔鱼",
+    "candidateModernName": "石首鱼科小型鱼或鱼鳔原料鱼",
+    "scientificName": "Sciaenidae",
+    "confidence": "medium",
+    "rationale": "条文称其鳔可制胶，说明命名重点在鱼鳔利用，而石首鱼科多以鳔发达、可制鱼胶著称。体小、色白、成群游于海面，可指某些小黄鱼或白姑鱼类幼成鱼。古名“鳔鱼”不一定是单一物种，而可能是取鳔鱼的渔业类群。",
+    "caveats": "缺少头部耳石、鳔形和体侧线描述，不能直接等同某一种石首鱼。"
+  },
+  {
+    "id": "vol1_18_1",
+    "name": "顶甲鱼",
+    "candidateModernName": "吸盘鱼或头甲状底栖鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "头部有坚硬如甲之骨，能附礁吸水，提示一种有吸附能力的底栖或附着鱼。可能与喉盘鱼、䲟鱼幼体、或头部骨板明显的杜父鱼类相混。闽海礁石语境支持潮间带小型附着鱼，但名称不稳定。",
+    "caveats": "要确认是否真有吸盘位置，必须看图像腹面或头部结构，文字不足以定科。"
+  },
+  {
+    "id": "vol1_18_2",
+    "name": "鳂鱼",
+    "candidateModernName": "金鳞鱼类",
+    "scientificName": "Holocentridae",
+    "confidence": "medium",
+    "rationale": "体红、鳞大、多刺、性鸷，与金鳞鱼科常见的红色大鳞、鳍棘明显相合。闽海珊瑚礁和岩礁环境中可见此类夜行鱼，被视为珍品也合理。古名“鳂”在鱼名中常与红色礁鱼相关。",
+    "caveats": "若图像不是红色大眼棘鳍鱼，也可能是鮋科或笛鲷类。"
+  },
+  {
+    "id": "vol1_19_1",
+    "name": "枫叶鱼",
+    "candidateModernName": "叶形拟态鱼，可能为蝙蝠鱼幼体或叶鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“状扁，色殷红如深秋枫叶”说明名称来自叶形和红色，未必是稳定鱼类学名称。热带近岸鱼中有幼体似枯叶或体形极扁者，蝙蝠鱼幼体、叶鱼或某些鲉形鱼都可能被这样描绘。与“竹鱼同出海峡”显示作者强调奇形异色的海峡物产。",
+    "caveats": "此条高度依赖图像轮廓，若只是红色扁鱼，也可能落入鲷科或鲳科。"
+  },
+  {
+    "id": "vol1_19_2",
+    "name": "草蜢鱼",
+    "candidateModernName": "未定，可能为海龙、海蛾鱼或拟虫形小鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“状如草蜢，身翠绿，长四五寸”显然以昆虫比形，可能指有棱角、突吻或胸鳍特化的小型鱼。翠绿色和游速快可见于海草环境中的海龙、隆头鱼幼体或其他拟态鱼。仅凭“草蜢”难以判断是形似头胸足，还是颜色和跃动像昆虫。",
+    "caveats": "需查看画中是否有虫足状鳍、长吻或海草背景，否则不宜定名。"
+  },
+  {
+    "id": "vol1_20",
+    "name": "石首鱼",
+    "candidateModernName": "大黄鱼或黄鱼类",
+    "scientificName": "Larimichthys crocea",
+    "confidence": "high",
+    "rationale": "脑中有白石二枚正是石首鱼科耳石发达的古典解释。色黄白、肉嫩、席上珍馐，尤其符合闽浙沿海历史上著名的大黄鱼。石首鱼也可泛指石首鱼科，但此处色味和区域都支持黄鱼类。",
+    "caveats": "若图像体型较小或银白，可能是小黄鱼或其他石首鱼科成员。"
+  },
+  {
+    "id": "vol1_21_1",
+    "name": "黄鱨鱼",
+    "candidateModernName": "黄颡鱼或近似江海鲇形鱼",
+    "scientificName": "Tachysurus fulvidraco",
+    "confidence": "medium",
+    "rationale": "“鱨”常用于黄颡鱼一类鲇形鱼，体色金黄、江海之交也可对应河口淡咸水环境。黄颡鱼虽非典型海鱼，但闽地水网与河口渔获可能被纳入海错。肉嫩味甘也合于黄颡鱼食用经验。",
+    "caveats": "若图像显示海水大型鱼而非有须鲇形鱼，则此处可能是另一个地方“黄鱨”。"
+  },
+  {
+    "id": "vol1_21_2",
+    "name": "四腮鲈",
+    "candidateModernName": "松江鲈",
+    "scientificName": "Trachidermus fasciatus",
+    "confidence": "high",
+    "rationale": "条文直接说产松江，并解释鳃部红线如四腮，这正是松江鲈的传统名实。身有斑点、味鲜也与历史上“四鳃鲈”名物相合。该条虽列于闽海卷，但明显是以名品比较和补录。",
+    "caveats": "现代松江鲈资源稀少，古画形态需避免被后人按传说重绘而影响判断。"
+  },
+  {
+    "id": "vol1_22_1",
+    "name": "海鲫鱼",
+    "candidateModernName": "海鲫或近似海鲫科鱼",
+    "scientificName": "Ditrema temminckii",
+    "confidence": "medium",
+    "rationale": "名称“海鲫”延续到现代，通常指体形似鲫的近岸海鱼。体大、色灰黑、骨硬，与海鲫科或近似胎生海鲫类相容。闽海岩岸和浅海可见这类鱼，古人以淡水鲫比形也合理。",
+    "caveats": "海鲫一名也可泛指多种鲷形小鱼，给出具体种需谨慎。"
+  },
+  {
+    "id": "vol1_22_2",
+    "name": "红鱼",
+    "candidateModernName": "未定，可能为红色隆头鱼或鹦嘴鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "全身绯红、翅尾翠色，显然是以艳色命名的礁区鱼。别名“新妇鱼”带有妆饰联想，常用于色彩鲜丽的隆头鱼、鹦嘴鱼或鲷类。闽海南部暖水礁区确有这类红绿相间鱼，但文字没有齿、吻、体形信息。",
+    "caveats": "色彩类俗名跨科严重，需以图像体型和尾鳍形态复核。"
+  },
+  {
+    "id": "vol1_23_1",
+    "name": "鳎鱼",
+    "candidateModernName": "鳎类或舌鳎类",
+    "scientificName": "Cynoglossidae",
+    "confidence": "high",
+    "rationale": "身扁如鞋底、两目并于一面，是鲆鲽类的典型形态。名称“鳎沙”在沿海俗名中常指舌鳎或近似鳎鱼。条文还区分鲆、鲽左右眼，说明作者认知对象就是比目鱼类。",
+    "caveats": "鳎、鲆、鲽在古文中有交叉，若图像轮廓较宽短，也可能不是舌鳎科而是其他鲆鲽类。"
+  },
+  {
+    "id": "vol1_23_2",
+    "name": "箬鱼",
+    "candidateModernName": "舌鳎或鞋底鱼类",
+    "scientificName": "Cynoglossidae",
+    "confidence": "medium",
+    "rationale": "“状如竹叶，扁薄多肉，口偏于一侧”非常像舌鳎类细长扁平的轮廓。俗呼鞋底鱼，与上一条鳎鱼共享民间比喻，但“竹叶”提示更狭长。它可能是另一种舌鳎，或同一类按形状分名。",
+    "caveats": "与前条鳎鱼边界不清，需避免在没有图像细节时强分到不同物种。"
+  },
+  {
+    "id": "vol1_24_1",
+    "name": "海鱵",
+    "candidateModernName": "针鱼或颌针鱼类",
+    "scientificName": "Belonidae",
+    "confidence": "high",
+    "rationale": "尖嘴如针、青白色、骨微青，是颌针鱼科常见描述。古名“鱵”本就用于长吻针鱼类，闽海近岸常见。与后文“针鱼”可能是同类异名或不同图例复出。",
+    "caveats": "海鱵与针鱼两条可能重复，需核对图像是否表现不同种或只是异名分列。"
+  },
+  {
+    "id": "vol1_24_2",
+    "name": "井鱼",
+    "candidateModernName": "鲸类幼体",
+    "scientificName": "Cetacea",
+    "confidence": "medium",
+    "rationale": "条文直接解释为“鲸之幼者”，头顶喷水如井，显然来自鲸类呼吸喷气的观察。古籍常把鲸归入鱼部，且“井”是对喷孔水柱的形象命名。巨口和大体型也支持鲸类而非硬骨鱼。",
+    "caveats": "“幼者”未必准确，图像和文字可能混合了鲸、海兽和传闻夸张。"
+  },
+  {
+    "id": "vol1_25_1",
+    "name": "麻鱼",
+    "candidateModernName": "电鳐",
+    "scientificName": "Torpediniformes",
+    "confidence": "high",
+    "rationale": "条文已明言“即电鳐”，且“人触之则手麻痹”正是电鳐放电特征。体圆扁、黄褐色也符合多种电鳐的外观。名称“麻鱼”来自触电麻木，语义非常直接。",
+    "caveats": "电鳐目下种类不少，未给眼位、斑纹和尾形，不能精确到种。"
+  },
+  {
+    "id": "vol1_25_2",
+    "name": "马鲛鱼",
+    "candidateModernName": "马鲛鱼，可能为蓝点马鲛",
+    "scientificName": "Scomberomorus niphonius",
+    "confidence": "high",
+    "rationale": "身青有斑、头尖、肉可作丸，正合闽粤沿海常见马鲛鱼食俗。马鲛属鱼体长纺锤形，侧有斑点，适于古文所称“头尖味美”。现代中文名与古名连续性强。",
+    "caveats": "闽海马鲛属可能有多种，蓝点马鲛只是最稳妥候选之一。"
+  },
+  {
+    "id": "vol1_26_1",
+    "name": "鳓鱼",
+    "candidateModernName": "鳓",
+    "scientificName": "Ilisha elongata",
+    "confidence": "high",
+    "rationale": "银白、狭扁、多细刺、五月盛出并晒鲞，符合鳓鱼在东南沿海的传统渔期与加工方式。鳓鱼腹缘棱鳞明显，食用时多刺这一点也常被记述。古今名称高度一致。",
+    "caveats": "鲱科近缘鱼有时同作鳓类商品，种级仍需图像体形确认。"
+  },
+  {
+    "id": "vol1_26_2",
+    "name": "比目鱼",
+    "candidateModernName": "鲆鲽类",
+    "scientificName": "Pleuronectiformes",
+    "confidence": "high",
+    "rationale": "两目并于一面、伏泥沙，是鲆鲽目鱼类的基本特征。古人“须两鱼并游方能行”的说法是比目鱼传说，但不影响其生物原型。条文还能区分左鲆右鲽，显示观察对象明确。",
+    "caveats": "这是目级或类群名，不应据此指定某个单一种。"
+  },
+  {
+    "id": "vol1_27_1",
+    "name": "鳗鲡",
+    "candidateModernName": "鳗鲡或鳗形鱼类",
+    "scientificName": "Anguilla japonica",
+    "confidence": "medium",
+    "rationale": "“状如蛇，无鳞”符合鳗鲡类外形，闽粤晒干食用也合理。条文又说“亦名海鳗”，显示古名可能混合淡水鳗鲡和海中鳗形鱼。若强调鳗鲡本名，可候选日本鳗鲡；若强调利齿凶猛，则可能偏海鳗。",
+    "caveats": "本条与后面的“海鳗”边界模糊，需看图像和原书是否有意区分。"
+  },
+  {
+    "id": "vol1_27_2",
+    "name": "鳗腮鱼",
+    "candidateModernName": "未定，可能为海鳗类或合鳃鱼类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "体滑无鳞、灰黑、腮部多肉，说明是鳗形或鳝形鱼，但“鳗腮”这个名称不稳定。若“腮部多肉”是识别重点，可能指头鳃区域肥厚的海鳗；若来自地方俗名，也可能是合鳃鱼类。闽海语境偏向海水鳗形鱼。",
+    "caveats": "缺少牙齿、胸鳍和鳃孔描述，不能给出可信学名。"
+  },
+  {
+    "id": "vol1_28_1",
+    "name": "海鳗",
+    "candidateModernName": "海鳗",
+    "scientificName": "Muraenesox cinereus",
+    "confidence": "high",
+    "rationale": "闽广海中俱有、长数尺、齿利凶猛，与海鳗科尤其灰海鳗高度相合。海鳗为东南沿海传统渔获，常被晒干或入馔。与前条鳗鲡相比，本条更明确指向海产大型利齿鳗。",
+    "caveats": "海鳗科和康吉鳗类在俗名中可能混称，需凭头吻和齿形进一步确认。"
+  },
+  {
+    "id": "vol1_28_2",
+    "name": "竹鱼",
+    "candidateModernName": "未定，可能为竹荚鱼、虾虎鱼或具横斑礁鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“如竹节而扁，青黄横斑，岩石隙中”说明名称来自横节纹和礁隙生活。现代“竹荚鱼”虽有竹名，但其体形和岩隙生态未必吻合；许多礁栖隆头鱼、鰕虎鱼或鳚类也有竹节状横斑。此处更像地方观形命名。",
+    "caveats": "需看图像是否长纺锤、短扁或底栖，才能决定是否可与现代竹荚鱼关联。"
+  },
+  {
+    "id": "vol1_28_3",
+    "name": "龙头鱼",
+    "candidateModernName": "龙头鱼",
+    "scientificName": "Harpadon nehereus",
+    "confidence": "high",
+    "rationale": "闽海口产、无鳞、洁白、骨软、味鲜嫩，正是龙头鱼，又称豆腐鱼、九肚鱼的典型描述。其身体柔软含水量高，古人以骨软和嫩味识别很准确。古今名称也基本连续。",
+    "caveats": "局部地区“龙头鱼”也可能泛称软体白色小海鱼，但本条特征已很集中。"
+  },
+  {
+    "id": "vol1_29_1",
+    "name": "水沫鱼",
+    "candidateModernName": "银鱼类或透明小型幼鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“极微小，半透明如水沫，晒干作汤”与银鱼或多种幼鱼干制品相似。名称强调透明和微小，而非成体形态，很可能是小鱼苗商品名。闽海小鱼干传统丰富，常以成群幼鱼混捕。",
+    "caveats": "无法判断是银鱼科、鳀科幼鱼还是其他透明幼体，不应给学名。"
+  },
+  {
+    "id": "vol1_29_2",
+    "name": "鹤鱼",
+    "candidateModernName": "颌针鱼或长吻鱼类",
+    "scientificName": "Belonidae",
+    "confidence": "medium",
+    "rationale": "口如鹤喙而细长、齿尖，明显指向长吻掠食性表层鱼。青绿色、飞掠海上，也与颌针鱼科在水面快速游动和跃水相符。名称“鹤鱼”来自长喙比拟，和海鱵、针鱼可能相邻或重叠。",
+    "caveats": "若图像有极大胸鳍，则可能转向飞鱼；若只是长吻，则才支持针鱼类。"
+  },
+  {
+    "id": "vol1_29_3",
+    "name": "黄鲋",
+    "candidateModernName": "未定，可能为黄色海鲫形小鱼或小型鲷类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“色黄如金，鳞细，海滨，味美”信息过于宽泛，只能说明是一种近岸黄色小鱼。古名以“鲋”比形，可能是体侧扁、似鲫的海鱼，而非真正鲫鱼。闽海浅滩小型鲷、海鲫、雀鲷都可能符合。",
+    "caveats": "缺少体形、鳍、斑纹和大小，暂不宜定到科。"
+  },
+  {
+    "id": "vol1_30_1",
+    "name": "钱串鱼",
+    "candidateModernName": "未定，可能为钱蝶鱼或有圆斑的礁鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "黄色圆纹如钱串、青蓝色体，提示有醒目圆斑或串珠状斑列的观赏性礁鱼。闽海暖水区的蝶鱼、刺尾鱼或隆头鱼都有可能以斑纹得名。名称显然来自图案，而不是现代分类特征。",
+    "caveats": "需图像确认圆斑位置和体形，不能仅按“钱”字联想到某个现代俗名。"
+  },
+  {
+    "id": "vol1_30_2",
+    "name": "参蕉鱼",
+    "candidateModernName": "未定，可能为宁海地方小型青色鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "体极微小、色青、产于宁海，说明是地方性很强的小鱼名。名称“参蕉”现代对应不清，可能来自音转、产地俗称或形似植物。它不像一个可直接映射的通行鱼名。",
+    "caveats": "高风险条目，需查宁海、闽浙沿海方言鱼名和图像后再判断。"
+  },
+  {
+    "id": "vol1_30_3",
+    "name": "兜甲鱼",
+    "candidateModernName": "鲎",
+    "scientificName": "Tachypleus tridentatus",
+    "confidence": "medium",
+    "rationale": "头有硬甲、四足、尾尖，形态上很像鲎被归入“鱼”部的古籍传统。其头胸甲如兜鍪，长尾剑状，符合“兜甲”二字。闽海潮间带 historically 有鲎分布，语境也支持。",
+    "caveats": "若图像确为有四足的鱼形怪物而非节肢动物，可能是传闻化或另指海龟幼体。"
+  },
+  {
+    "id": "vol1_31",
+    "name": "带鱼",
+    "candidateModernName": "带鱼",
+    "scientificName": "Trichiurus lepturus",
+    "confidence": "high",
+    "rationale": "身长如带、无鳞、银白、尾尖细，是带鱼的标志性形态。冬春之交成群洄游和闽粤常食，也与东海、南海带鱼渔业相符。古今名称稳定。",
+    "caveats": "带鱼属近似种和白带鱼复合群存在分类争议，传统名不必强限定单一种。"
+  },
+  {
+    "id": "vol1_32_1",
+    "name": "针鱼",
+    "candidateModernName": "针鱼或颌针鱼类",
+    "scientificName": "Belonidae",
+    "confidence": "high",
+    "rationale": "嘴尖如针、青白色、骨微青，与海鱵条几乎同文，典型为颌针鱼类。闽海表层长吻鱼常被称针鱼、青针等。此条很可能是同类异名或以另一图像重出。",
+    "caveats": "需与“海鱵”“鹤鱼”三条合并比较，避免重复建立多个现代物种。"
+  },
+  {
+    "id": "vol1_32_2",
+    "name": "血鳗",
+    "candidateModernName": "红色海鳗或蛇鳗类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "通体赤红如血、产深海，提示红色鳗形鱼，可能为蛇鳗、康吉鳗或某些海鳗。古名“血鳗”显然以颜色命名，现代并无单一稳定对应。深海红色也可能被传闻夸张。",
+    "caveats": "若无图像齿、吻和鳍特征，不能在多个鳗形类群间取舍。"
+  },
+  {
+    "id": "vol1_33_1",
+    "name": "空头鱼",
+    "candidateModernName": "未定，可能为头骨膨大或头腔明显的底栖鱼",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“头部硬而空，无鳞，体灰黑”可能来自处理鱼头时发现头骨腔大，也可能是对奇形鱼的传闻。无鳞和硬头可见于鲉形鱼、鮟鱇类或箱鲀类，但“空头”没有稳定现代名。闽海底栖怪形鱼常被古籍夸张记录。",
+    "caveats": "该条需优先图像复核，尤其看是否有大口、头甲或箱状躯体。"
+  },
+  {
+    "id": "vol1_33_2",
+    "name": "跳鱼",
+    "candidateModernName": "弹涂鱼",
+    "scientificName": "Periophthalmus modestus",
+    "confidence": "high",
+    "rationale": "条文明说“即弹涂鱼”，且生于海涂、善跳跃，是弹涂鱼属或近缘鰕虎鱼的典型生态。闽海泥滩、红树林和河口潮间带均有此类鱼。肉肥嫩、味鲜也见于地方食俗。",
+    "caveats": "弹涂鱼类有多种，若未见背鳍和体斑，具体到大弹涂鱼或青弹涂鱼仍需谨慎。"
+  },
+  {
+    "id": "vol1_34_1",
+    "name": "蠓鱼",
+    "candidateModernName": "未定，可能为小型附着鱼或䲟鱼幼体",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "体小、青黑、常附海石，说明是附着或贴伏在岩石上的近岸小鱼。所谓“能御大鱼”可能来自小鱼附体、躲避捕食或传闻赋能。名称“蠓”强调微小，无法直接对应现代物种。",
+    "caveats": "需要图像显示是否有吸盘、硬刺或虫形轮廓，才可继续判断。"
+  },
+  {
+    "id": "vol1_34_2",
+    "name": "鼠鲇鱼",
+    "candidateModernName": "鼠鲨、鼠尾鳕或鼠形鲇状鱼未定",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“头顶尾全似鼠，灰黑，无鳞”说明古人以鼠形比拟，未必真是鲇。若有须和无鳞，可向鲶形鱼考虑；若尾细长如鼠尾，则可能是深海鼠尾鳕一类被传闻化。闽海渔民偶获异形深水鱼时常以兽名命名。",
+    "caveats": "该名现代对应很不明，必须依图像和是否具须来判别。"
+  },
+  {
+    "id": "vol1_35",
+    "name": "海翁",
+    "candidateModernName": "鲸类，夹杂巨鱼传说",
+    "scientificName": "Cetacea",
+    "confidence": "legendary",
+    "rationale": "“海中巨鲸”“喷水如瀑”有真实鲸类原型，但“背积沙生草木”“巨口吞舟”属于典型巨鲸岛屿化传说。古名“海翁”把鲸拟人化、神异化，不是可直接定种的自然史记录。闽海航海传闻很容易把鲸背、浮岛和海怪合并。",
+    "caveats": "只能作为鲸类传说复合体处理，不宜给具体鲸种。"
+  },
+  {
+    "id": "vol1_36",
+    "name": "蛟龙",
+    "candidateModernName": "龙蛇类传说复合体",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "能兴云雨、翻江倒海、变化无端，已进入神怪叙述，而非可识别动物。蛟龙在海错语境中可能吸收鳄、巨蛇、海兽、风暴和水灾经验。图像若有鳞介形态，也只是传说图式的一部分。",
+    "caveats": "不可硬配现代物种，最多讨论其可能吸收的鳄类或大蛇意象。"
+  },
+  {
+    "id": "vol1_37_1",
+    "name": "人鱼",
+    "candidateModernName": "人鱼传说，可能混合儒艮、海豹或海女传闻",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "体似人、有发、见人则笑，明显是人鱼传说语汇。东南海域的儒艮、海兽目动物或潜水采集者传闻，均可能为其现实触发点。红黄斑色和乘风潮往来则显示图像化、故事化成分很强。",
+    "caveats": "闽海不宜直接定为儒艮，除非另有乳腺、尾鳍和摄食海草等证据。"
+  },
+  {
+    "id": "vol1_37_2",
+    "name": "龙鱼",
+    "candidateModernName": "未定，可能为海马、海龙或龙形传说鱼",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "头如龙、有角、四足如鳍、青绿色，已经明显带龙形图像母题。若寻找现实原型，海马、海龙或某些带角突的鱼可提供“龙头”意象，但“四足”更像图像拼合。深海产的说法也增加了传闻色彩。",
+    "caveats": "应标作神异化鱼名，不宜直接等同现代亚洲龙鱼或海马。"
+  },
+  {
+    "id": "vol1_38_1",
+    "name": "螭虎鱼",
+    "candidateModernName": "龙形传说鱼，可能吸收海马或蜥蜴鱼意象",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "金色鳞甲、头如龙而无角、有四足，接近“螭”这一无角龙的图像传统。它可能受海马、海龙、石龙子或四足怪鱼传闻影响，但文本主要在描述神异形象。名称里的“虎”也可能强调威猛，而非分类线索。",
+    "caveats": "除非图像显然是海马或海龙，否则应保留为传说复合体。"
+  },
+  {
+    "id": "vol1_38_2",
+    "name": "刺鲇",
+    "candidateModernName": "有刺海鲶类",
+    "scientificName": "Ariidae",
+    "confidence": "medium",
+    "rationale": "“有刺之鲇鱼”“头有硬刺”符合海鲶类胸鳍、背鳍硬棘明显且可伤人的特征。灰黑色、海滨出没也与河口海鲶生态相合。古人把有须、无鳞或少鳞的海水鲶形鱼称鲇很自然。",
+    "caveats": "若图像缺少须或显示鲉科毒棘鱼，则“刺鲇”可能只是刺鱼的泛称。"
+  },
+  {
+    "id": "vol1_39_1",
+    "name": "虬龙",
+    "candidateModernName": "有角龙传说",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "有角、四足、兴云雨、飞翔云雾，完全符合龙属神怪分类中的虬龙形象。这里的重点是龙的不同图式，而非某种海洋动物。若有现实来源，也只能说可能借用了大蛇、鳄或海兽的轮廓。",
+    "caveats": "不可作现代生物对照，只能进入图像史和神怪谱系考证。"
+  },
+  {
+    "id": "vol1_39_2",
+    "name": "神龙",
+    "candidateModernName": "神龙传说",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "五爪、能大能小、升天入地、变化无穷，是制度化和神话化的龙形象。它不含可验证的动物生态特征，而是海错卷中将鳞介之长纳入奇物谱的表现。与蛟、虬、螭等条构成龙类图像系统。",
+    "caveats": "不宜寻找具体物种原型，最多比较龙图像与海兽传闻的关系。"
+  },
+  {
+    "id": "vol1_40_1",
+    "name": "海鳝",
+    "candidateModernName": "海鳝或裸胸鳝类",
+    "scientificName": "Muraenidae",
+    "confidence": "medium",
+    "rationale": "体长无鳞、齿尖利、海滨生境，符合裸胸鳝科或其他海水鳝形鱼。色赤红可能指某些礁栖海鳝的体色，或是图像夸张。与海鳗相比，海鳝多礁洞栖息、齿利，更贴近“海滨”岩礁经验。",
+    "caveats": "若图像显示长胸鳍和普通鳗形，则可能是海鳗或康吉鳗而非裸胸鳝。"
+  },
+  {
+    "id": "vol1_40_2",
+    "name": "盐龙",
+    "candidateModernName": "卤虫或盐田小型水生动物传说化",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“体小，多生于海盐中”说明现实线索可能在盐田、盐卤中的小动物，而非真正海龙。盐田中常见卤虫等微小甲壳动物，古人或以“龙”称其异形小物。若图像画成龙状，则是把微小盐生动物神异化。",
+    "caveats": "现代“卤虫”只是方向性猜测，需查原图和盐政地方名。"
+  },
+  {
+    "id": "vol1_41_1",
+    "name": "刺鱼",
+    "candidateModernName": "鲉科毒棘鱼或刺鲀类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "体小、遍身硬刺、伏沙石间，较像鲉科、鬼鲉科等底栖有毒棘鱼，也可能是小型刺鲀。伏于沙石间这一生态更支持石头鱼、虎鱼等伪装性底栖鱼。古名“刺鱼”过于泛化，只能按特征归类。",
+    "caveats": "需图像判断是圆鼓刺鲀，还是头大胸鳍宽的鲉形鱼。"
+  },
+  {
+    "id": "vol1_41_2",
+    "name": "海蛇",
+    "candidateModernName": "海蛇类",
+    "scientificName": "Hydrophiinae",
+    "confidence": "high",
+    "rationale": "身有环纹、青黑相间、多毒，符合海蛇亚科许多种类的外观和毒性认知。居海岛岩礁间并能上岸捕食，则可能混入海蛇与两栖性海岸蛇的观察。闽粤沿海和南海岛礁环境中海蛇传闻常见。",
+    "caveats": "“能上岸捕食”并非所有真海蛇都有，可能混称海蛇、海 kraits 或普通水蛇。"
+  },
+  {
+    "id": "vol1_42",
+    "name": "鳄鱼",
+    "candidateModernName": "湾鳄或鳄类传闻",
+    "scientificName": "Crocodylus porosus",
+    "confidence": "medium",
+    "rationale": "硬甲、巨口利齿、能吞人畜，与鳄类无疑相符。产于广南潮湿海滨，较接近历史上华南、岭南沿海对湾鳄或大型鳄类的记忆。俗传龙种之恶者，说明该条同时具有真实猛兽和龙类神怪化解释。",
+    "caveats": "闽海本地并非现代鳄类常见分布，具体为湾鳄仍需历史地理证据支持。"
+  }
+]

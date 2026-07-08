@@ -1,0 +1,1055 @@
+[
+  {
+    "id": "vol4_1",
+    "name": "鲎鱼",
+    "candidateModernName": "中国鲎",
+    "scientificName": "Tachypleus tridentatus",
+    "confidence": "high",
+    "rationale": "古名“鲎”与描述“状如马鞍，壳黑硬，有尾如刺”完全符合鲎类的背甲和剑尾。雌雄相负而行是鲎繁殖季常见的抱对现象，蓝色血液也正是鲎血蓝蛋白的特征。",
+    "caveats": "东亚沿海还见圆尾鲎等种，若仅据画面需再看尾剑和体形比例。"
+  },
+  {
+    "id": "vol4_2",
+    "name": "鲎负火",
+    "candidateModernName": "未定：幼鲎或附会性发光鲎类",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "“鲎负火”仍以鲎为名，身小多刺可解释为幼体或误认的小型鲎形动物。所谓“负火游行，见人则灭”更像夜间磷光、发光生物附着或民间异闻，不是鲎的稳定分类特征。",
+    "caveats": "此条的“火”难与现代物种性状对应，宜保留为传说性记录。"
+  },
+  {
+    "id": "vol4_3_1",
+    "name": "响螺",
+    "candidateModernName": "法螺类",
+    "scientificName": "Charonia tritonis",
+    "confidence": "medium",
+    "rationale": "“壳厚，口大，吹之能作声”指向大型可作号角的法螺类，东亚常见对照为大法螺。聂璜所谓老来变蟹，应是寄居蟹占据空螺壳后被误作螺变蟹。",
+    "caveats": "若图中螺塔、壳口外唇与法螺不合，也可能是其他大型号螺。"
+  },
+  {
+    "id": "vol4_3_2",
+    "name": "大香螺",
+    "candidateModernName": "香螺",
+    "scientificName": "Neptunea cumingii",
+    "confidence": "medium",
+    "rationale": "“香螺”在中国海产语境中多指蛾螺科的大型可食螺，肉味鲜而壳可作器。描述强调螺旋深、大者为杯，与大型香螺或近缘蛾螺相符。",
+    "caveats": "“大香螺”可能是商品名，未必限定为单一现代种。"
+  },
+  {
+    "id": "vol4_4_1",
+    "name": "羊角螺",
+    "candidateModernName": "未定：角螺或牙螺类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“弯曲如羊角，色莹白，小而坚”不像普通螺旋壳，更接近牙贝或弯管状角螺的外观。古人常以“羊角”命名细长弯曲的贝壳，而非严格分类名。",
+    "caveats": "需核对原图是否为单壳管状，才可在牙贝、角螺或小型螺之间取舍。"
+  },
+  {
+    "id": "vol4_4_2",
+    "name": "手巾螺",
+    "candidateModernName": "纺锤螺类",
+    "scientificName": "Fusinus sp.",
+    "confidence": "low",
+    "rationale": "“如拧紧之手巾”说明壳体长而有旋扭感，青褐细纹也符合纺锤螺、峨螺一类的纵肋与螺旋纹。此类壳形常被民间以日用品形象命名。",
+    "caveats": "没有壳口和水管沟细节，暂不能确定到具体属种。"
+  },
+  {
+    "id": "vol4_4_3",
+    "name": "蛇螺",
+    "candidateModernName": "蛇螺科管栖螺",
+    "scientificName": "Vermetidae",
+    "confidence": "medium",
+    "rationale": "“状如蛇盘”与蛇螺科不规则盘绕、固着于岩礁的管状壳很相近。青绿纹可能来自附着藻类或壳表染色，而非物种本色。",
+    "caveats": "若图中是规则高螺塔，则需改判为蛇纹类海螺而非蛇螺科。"
+  },
+  {
+    "id": "vol4_4_4",
+    "name": "铜槵螺",
+    "candidateModernName": "滨螺类",
+    "scientificName": "Littorinidae",
+    "confidence": "low",
+    "rationale": "“大如指头，生于海岩石隙中”很符合潮间带滨螺类的生态。黄黑如铜的色调也常见于岩礁小型螺，但“槵”字更多是形色比拟，分类信息有限。",
+    "caveats": "潮间带小螺类群很多，需凭壳口、螺塔高度进一步区分。"
+  },
+  {
+    "id": "vol4_5_1",
+    "name": "螄螺",
+    "candidateModernName": "未定：锥螺类",
+    "scientificName": "Turritellidae",
+    "confidence": "low",
+    "rationale": "此条说“壳细长，多纹理，生于沙石间”，最接近高塔状、具密螺层的锥螺或塔螺类。古名“螄螺”常泛指小型长塔形螺，未必等同淡水螺蛳。",
+    "caveats": "需要图像确认壳层是否呈塔状，才可排除峨螺幼体等可能。"
+  },
+  {
+    "id": "vol4_5_2",
+    "name": "火焰螺",
+    "candidateModernName": "骨螺类",
+    "scientificName": "Murex sp.",
+    "confidence": "low",
+    "rationale": "红绿火斑与“旁生青绿尖角”提示壳上有棘、肋或翼状突起，较接近骨螺科的多棘壳形。名称“火焰”更像依据色斑和突棘形成的视觉印象。",
+    "caveats": "骨螺科形态变化大，单凭色彩命名不宜定种。"
+  },
+  {
+    "id": "vol4_5_3",
+    "name": "砚台螺",
+    "candidateModernName": "帽贝或石鳖类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳重，黑色，形如砚台，可蓄水磨墨”暗示壳体低平、坚厚，可能是大型帽贝、石鳖板片或被加工利用的贝壳。它不像普通高螺塔，更像可作器物的扁厚海产壳。",
+    "caveats": "“可磨墨”可能含文玩夸饰，现代对应需看原图轮廓。"
+  },
+  {
+    "id": "vol4_6_1",
+    "name": "红螺",
+    "candidateModernName": "红螺或赤旋螺类",
+    "scientificName": "Rapana venosa",
+    "confidence": "low",
+    "rationale": "“红螺”是宽泛俗名，岩礁间产且壳色鲜红可指红染的骨螺、赤旋螺或其他大型海螺。若作为可陈设的珊瑚般红壳，重点在色彩而非食用名。",
+    "caveats": "现代“红螺”各地所指不一，本条只能暂置于大型红色海螺类。"
+  },
+  {
+    "id": "vol4_6_2",
+    "name": "九孔螺",
+    "candidateModernName": "杂色鲍",
+    "scientificName": "Haliotis diversicolor",
+    "confidence": "high",
+    "rationale": "“壳形扁平，边缘有九孔”是鲍属的典型孔列特征，中文沿海俗称“九孔螺”。东南沿海常见的杂色鲍正是小型九孔鲍类，肉亦为食用对象。",
+    "caveats": "孔数随个体和保存状态变化，不能把“九孔”机械视为固定九枚开孔。"
+  },
+  {
+    "id": "vol4_6_3",
+    "name": "钞螺",
+    "candidateModernName": "宝螺类",
+    "scientificName": "Cypraeidae",
+    "confidence": "medium",
+    "rationale": "“上有白点，置水中光烛如银”很像宝螺光滑发亮、带斑点的瓷质壳面。古代贝币传统也使宝螺容易与“钞”“钱”一类名称相连。",
+    "caveats": "永嘉产地和腥味描述不足以锁定某一种宝螺。"
+  },
+  {
+    "id": "vol4_7_1",
+    "name": "梭螺",
+    "candidateModernName": "梭螺类",
+    "scientificName": "Volutidae",
+    "confidence": "medium",
+    "rationale": "“两端尖而中宽，形如织梭”直接对应纺锤形或梭形的大型海螺。传统贝壳名中的“梭螺”常落在涡螺、梭螺一类壳体饱满而两端收尖的类群。",
+    "caveats": "若原图壳口狭长、外唇齿列明显，也可能转向宝螺或榧螺类。"
+  },
+  {
+    "id": "vol4_7_2",
+    "name": "巨螺",
+    "candidateModernName": "大法螺",
+    "scientificName": "Charonia tritonis",
+    "confidence": "medium",
+    "rationale": "“大如斗，壳厚，海人取以为杯或号筒”明显指大型海螺被用作器具和吹号。东亚海域最典型者为大法螺，也可能包括其他大型凤螺或唐冠螺。",
+    "caveats": "“口红褐色”还需与图像壳口形态合看，不能仅凭巨大定为大法螺。"
+  },
+  {
+    "id": "vol4_7_3",
+    "name": "扁螺",
+    "candidateModernName": "日月贝或扁卷螺类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "描述强调“壳扁平，螺旋浅，质洁白”，可能是低螺塔的海螺，也可能被泛称为螺的扁平贝壳。晒干为玩物说明食用价值弱、观赏属性强。",
+    "caveats": "“扁螺”形容性太强，需要原图判断是否真为腹足类。"
+  },
+  {
+    "id": "vol4_8_1",
+    "name": "铁蛳",
+    "candidateModernName": "珠螺或蝾螺类",
+    "scientificName": "Turbo sp.",
+    "confidence": "low",
+    "rationale": "“壳坚如铁，色青黑”符合潮间带蝾螺、珠螺等厚壳小螺的观感。此类常附岩礁，壳体坚厚，民间容易按颜色和硬度命名。",
+    "caveats": "铁色小螺也可能是玉黍螺或蜑螺，需看壳口和厣。"
+  },
+  {
+    "id": "vol4_8_2",
+    "name": "短蛳",
+    "candidateModernName": "蜑螺类",
+    "scientificName": "Neritidae",
+    "confidence": "low",
+    "rationale": "“壳短而扁，螺旋极密，产潮际”与蜑螺类低矮厚壳、常见潮间带的习性相合。古名“蛳”在海边常泛指小型可食或可采的螺。",
+    "caveats": "若图上有明显塔形螺层，则不应归入蜑螺。"
+  },
+  {
+    "id": "vol4_8_3",
+    "name": "铜蛳",
+    "candidateModernName": "未定：铜色潮间带小螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“青黄如铜，小而多肉”仍是以色泽和食用体量命名的小型海螺。它可能与铁蛳、白蛳同属一组地方采食的潮间带螺，而不是独立现代种名。",
+    "caveats": "缺乏壳形细节，暂不宜强配具体科属。"
+  },
+  {
+    "id": "vol4_8_4",
+    "name": "白蛳",
+    "candidateModernName": "未定：白色潮间带小螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳莹白如玉，小而多肉”显示它与前几种“蛳”并列，可能是按颜色区分的同类小螺。白色壳面可能来自物种本色，也可能是磨蚀或死亡空壳的状态。",
+    "caveats": "以颜色分类的古名容易混入多个不相干小螺。"
+  },
+  {
+    "id": "vol4_9_1",
+    "name": "刺螺",
+    "candidateModernName": "骨螺类",
+    "scientificName": "Muricidae",
+    "confidence": "medium",
+    "rationale": "“壳有长棘如角，色红褐，生于礁石缝中”是骨螺科常见外形和生态。许多骨螺有发达棘肋，正符合“刺螺”的直观命名。",
+    "caveats": "骨螺科内可选物种很多，仍需看棘列数量和水管沟。"
+  },
+  {
+    "id": "vol4_9_2",
+    "name": "鹦鹉螺",
+    "candidateModernName": "鹦鹉螺",
+    "scientificName": "Nautilus pompilius",
+    "confidence": "medium",
+    "rationale": "古名已是“鹦鹉螺”，其“形类鹦鹉嘴”符合鹦鹉螺壳口和整体名称来源。深绿色描述未必准确，可能是图绘着色或与其他壳混称。",
+    "caveats": "若画面不是平面卷曲分室壳，则需考虑被误名的鹦鹉嘴形海螺。"
+  },
+  {
+    "id": "vol4_9_3",
+    "name": "手卷螺",
+    "candidateModernName": "卷管螺或卷轴螺类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳如卷轴，质薄色绿”更像依据卷曲姿态和色泽形成的文玩名。它可能是薄壳的卷管螺、泡螺或幼贝，而非稳定俗称。",
+    "caveats": "此条缺少壳口、螺塔和生态信息，现代归属很不稳。"
+  },
+  {
+    "id": "vol4_10_1",
+    "name": "桃红螺",
+    "candidateModernName": "未定：桃红色小型海螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "描述只给出“色殷红如桃，小而可爱，壳薄多纹”，明显是色彩型命名。可能涉及小型骨螺、榧螺或樱蛤样贝壳被称作螺的情况。",
+    "caveats": "缺少结构特征，不能仅凭桃红色判定科属。"
+  },
+  {
+    "id": "vol4_10_2",
+    "name": "螄螺",
+    "candidateModernName": "紫螺类",
+    "scientificName": "Janthina sp.",
+    "confidence": "medium",
+    "rationale": "“又名苏合螺，壳扁而黄，常群游于水面”提示漂浮性生活，这与紫螺类借泡沫筏漂浮海面的生态很吻合。古人见其群浮，容易与普通底栖螺区分。",
+    "caveats": "壳色“黄”与典型紫螺有差异，可能来自褪色或地方异名。"
+  },
+  {
+    "id": "vol4_10_3",
+    "name": "黄螺",
+    "candidateModernName": "黄口荔枝螺或黄螺类",
+    "scientificName": "Thais luteostoma",
+    "confidence": "low",
+    "rationale": "“壳色焦黄，肉肥，味微甘”显示它是可食海螺，沿海“黄螺”常可指黄口荔枝螺等岩礁螺。焦黄色壳或壳口颜色是主要线索。",
+    "caveats": "黄螺为多地俗称，未见图像细节前只能作类群级对照。"
+  },
+  {
+    "id": "vol4_11_1",
+    "name": "鸭舌螺",
+    "candidateModernName": "未定：具舌状壳口或厣的小型海螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“口内有物如舌，状似鸭舌”可能指螺的厣、外套膜或壳口内伸出的软体。它以局部形态命名，尚不足以对应现代分类。",
+    "caveats": "若所谓“舌”其实是斧足或水管，也可能不是腹足类螺。"
+  },
+  {
+    "id": "vol4_11_2",
+    "name": "维斑螺",
+    "candidateModernName": "织纹螺类",
+    "scientificName": "Nassariidae",
+    "confidence": "low",
+    "rationale": "产琉球且壳纹“维妙”说明重点在网格或织纹状花纹，现代可暂放在织纹螺、榧螺或小型宝螺一类观赏壳。名称中的“斑”支持以壳表图案为识别依据。",
+    "caveats": "“维斑”未见通行现代名，需以图像花纹复核。"
+  },
+  {
+    "id": "vol4_11_3",
+    "name": "空心螺",
+    "candidateModernName": "梯螺或塔螺类",
+    "scientificName": "Epitoniidae",
+    "confidence": "low",
+    "rationale": "“壳螺旋高，中空无杂，吹之有哨音”提示高塔状、壳腔连通的小型薄壳螺。梯螺类常有高螺塔和精细肋纹，可产生玲珑观感。",
+    "caveats": "能吹出哨音可能是人为加工或偶然壳形效应。"
+  },
+  {
+    "id": "vol4_12_1",
+    "name": "棱瓣螺",
+    "candidateModernName": "海菊蛤或牡蛎类附着贝",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“形如花瓣叠合，棱角分明”不太像普通螺，更像放射肋发达的附着双壳贝或牡蛎状贝壳。古籍中“螺”“贝”常混用，花瓣状棱肋是判断重点。",
+    "caveats": "若原图存在明显螺旋轴，则应改回棘肋海螺类。"
+  },
+  {
+    "id": "vol4_12_2",
+    "name": "八口螺",
+    "candidateModernName": "未定：八角形骨螺或多口状畸形螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳有八处凹口，形似八角”可能指壳缘缺刻、棘间凹陷，而非真的有八个壳口。多棘骨螺或畸形观赏螺都可能被如此命名。",
+    "caveats": "“八口”可能是夸饰性计数，现代分类价值有限。"
+  },
+  {
+    "id": "vol4_12_3",
+    "name": "象鼻螺",
+    "candidateModernName": "长鼻螺或凤螺类",
+    "scientificName": "Strombidae",
+    "confidence": "low",
+    "rationale": "“突起长管如象鼻”可指长水管沟或伸出的吻部，凤螺、骨螺、蛾螺均有可能。若图中壳口扩张并有长前沟，则较接近凤螺或长鼻螺一类。",
+    "caveats": "缺少图像细节时，不能在凤螺、骨螺和蛾螺间定案。"
+  },
+  {
+    "id": "vol4_13_1",
+    "name": "鹌鹑螺",
+    "candidateModernName": "鹑螺",
+    "scientificName": "Tonna perdix",
+    "confidence": "medium",
+    "rationale": "“形色如鹌鹑，质薄如蛋壳”非常符合鹑螺属薄而膨圆、带斑纹的壳。现代中文也有“鹑螺”之名，与古名连续性较好。",
+    "caveats": "鹑螺属内多种有鹌鹑状斑纹，具体种需按壳纹确认。"
+  },
+  {
+    "id": "vol4_13_2",
+    "name": "白贝",
+    "candidateModernName": "货贝或白色宝螺",
+    "scientificName": "Monetaria moneta",
+    "confidence": "medium",
+    "rationale": "“腹白而背有花纹”符合宝螺腹面洁白、背面带斑的典型二面性。古称“贝”常指宝螺类，白贝尤其可能与货贝、环纹货贝等小型宝螺相连。",
+    "caveats": "若壳为双壳贝而非宝螺，则需另判为白色蛤贝类。"
+  },
+  {
+    "id": "vol4_13_3",
+    "name": "豹纹贝",
+    "candidateModernName": "豹纹宝螺",
+    "scientificName": "Macrocypraea cervus",
+    "confidence": "low",
+    "rationale": "“黑色圆斑如豹，质坚如玉”是宝螺类最典型的瓷质壳和斑点审美。候选可放在豹纹宝螺或其他斑点宝螺，但中国沿海来源未必与现代商品名一致。",
+    "caveats": "豹纹只是花纹描述，不能直接等同某一现代“豹纹宝螺”。"
+  },
+  {
+    "id": "vol4_14",
+    "name": "各种贝类",
+    "candidateModernName": "未定：混合小型贝壳群",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "此条本身说明为“五彩斑斓，形状万千”的各种小贝，显然是集合性图谱而非单一物种。可涵盖宝螺、蛤、扇贝、螺壳等多种小型贝壳。",
+    "caveats": "应在后续按画面逐枚拆分，而不是给单一现代学名。"
+  },
+  {
+    "id": "vol4_15_1",
+    "name": "泥螺",
+    "candidateModernName": "泥螺",
+    "scientificName": "Bullacta exarata",
+    "confidence": "high",
+    "rationale": "“又名吐铁，体圆壳薄，常伏于泥中，腌食极美”正是中国沿海泥螺的传统描述。泥滩栖息、薄壳和腌食习惯都与现代泥螺高度吻合。",
+    "caveats": "不同海区也有近似泡螺被混称泥螺，但本条可信度很高。"
+  },
+  {
+    "id": "vol4_15_2",
+    "name": "盖螺",
+    "candidateModernName": "具厣海螺类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳有坚硬石盖，闭合极严”指腹足类的厣，尤其是蝾螺、马蹄螺等石灰质厣显著的类群。名称不是单一物种，而是抓住“盖”这一防御结构。",
+    "caveats": "多数海螺都有厣，必须看壳形才能继续缩小范围。"
+  },
+  {
+    "id": "vol4_15_3",
+    "name": "花螺",
+    "candidateModernName": "方斑东风螺",
+    "scientificName": "Babylonia areolata",
+    "confidence": "medium",
+    "rationale": "“壳有红褐斑点，肉质脆嫩，味极鲜美”与现代食用“花螺”东风螺类非常接近。东南沿海餐桌上的花螺常以斑点壳和脆嫩肉质识别。",
+    "caveats": "现代花螺也可指其他东风螺属种，需看斑块排列定种。"
+  },
+  {
+    "id": "vol4_16_1",
+    "name": "小香螺",
+    "candidateModernName": "小型香螺或蛾螺类",
+    "scientificName": "Buccinidae",
+    "confidence": "low",
+    "rationale": "“如常螺而小，色黄褐有斑”说明它是大香螺的缩小型或近似食用品。香螺在民间常泛指多种蛾螺科可食螺，不宜直接定种。",
+    "caveats": "小型香螺可能只是幼体或地方商品规格名。"
+  },
+  {
+    "id": "vol4_16_2",
+    "name": "手掌螺",
+    "candidateModernName": "蜘蛛螺或水字螺类",
+    "scientificName": "Harpago chiragra",
+    "confidence": "medium",
+    "rationale": "“尾三歧如伸指掌”很像凤螺科蜘蛛螺类外唇伸出指状突起。现代水字螺、蜘蛛螺常以手指状壳缘闻名，和“手掌”命名相通。",
+    "caveats": "若只有三歧而非多指，具体可能不是水字螺本种。"
+  },
+  {
+    "id": "vol4_16_3",
+    "name": "青螺",
+    "candidateModernName": "蜑螺或青口小螺类",
+    "scientificName": "Nerita sp.",
+    "confidence": "low",
+    "rationale": "“壳青黑，生于石畔”很符合岩礁潮间带蜑螺、滨螺等小螺。肉质滑嫩说明它是采食对象，未必是观赏壳。",
+    "caveats": "“青螺”在古今俗名中范围极宽，暂不宜定种。"
+  },
+  {
+    "id": "vol4_16_4",
+    "name": "深纹螺",
+    "candidateModernName": "织纹螺或峨螺类",
+    "scientificName": "Nassariidae",
+    "confidence": "low",
+    "rationale": "“壳有深沟纵纹，质厚”提示壳表雕刻强烈的小中型海螺。织纹螺、峨螺和部分骨螺都可能有深纵纹，古名以壳纹命名而非生态命名。",
+    "caveats": "需看是否有水管沟和壳口齿，才能排除有毒织纹螺类或其他科。"
+  },
+  {
+    "id": "vol4_17_1",
+    "name": "梅螺",
+    "candidateModernName": "未定：梅形圆壳小螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳圆而色淡，状似青梅”主要描述圆钝轮廓和淡色。候选可能是蜑螺、玉黍螺或小型宝螺，但没有壳口线索。",
+    "caveats": "“梅”是形色比喻，分类指向很弱。"
+  },
+  {
+    "id": "vol4_17_2",
+    "name": "相思螺",
+    "candidateModernName": "未定：牡蛎附着的小型岩礁螺",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“有牡蛎附生其上，共生海石间”说明这是岩礁固着环境中的小型螺壳，名称“相思”来自伴生意象。可能是滨螺、蜑螺或幼年骨螺被牡蛎附着。",
+    "caveats": "附生关系不能作为物种特征，需看主体螺壳形态。"
+  },
+  {
+    "id": "vol4_17_3",
+    "name": "石门螺",
+    "candidateModernName": "帽贝类",
+    "scientificName": "Patellogastropoda",
+    "confidence": "low",
+    "rationale": "“壳扁如石，附于石门崖壁”很像紧贴岩面的帽贝或笠贝。它的生活方式比名称更有价值，指向潮间带岩面吸附型腹足类。",
+    "caveats": "如果图中有卷曲螺塔，则“扁如石”可能只是壳色质感描述。"
+  },
+  {
+    "id": "vol4_17_4",
+    "name": "掩螺",
+    "candidateModernName": "玉螺类",
+    "scientificName": "Naticidae",
+    "confidence": "low",
+    "rationale": "“体扁如钱，常掩闭于沙土”适合沙中潜伏的玉螺或月螺类。玉螺壳圆滑，常在沙底活动，古人容易以“掩”形容其埋藏习性。",
+    "caveats": "“扁如钱”与典型玉螺的圆球形不完全吻合，仍需看图。"
+  },
+  {
+    "id": "vol4_18_1",
+    "name": "观音螺",
+    "candidateModernName": "冠螺或唐冠螺类",
+    "scientificName": "Cassis cornuta",
+    "confidence": "low",
+    "rationale": "“壳上有髻，螺形如观音盘坐”提示壳体宽大、有冠状突起或厚唇。唐冠螺一类常因外形庄重、壳顶突起而被赋予神像比喻。",
+    "caveats": "宗教形象命名主观性强，具体需与壳口厚唇、冠棘对照。"
+  },
+  {
+    "id": "vol4_18_2",
+    "name": "辣螺",
+    "candidateModernName": "疣荔枝螺",
+    "scientificName": "Reishia clavigera",
+    "confidence": "medium",
+    "rationale": "沿海“辣螺”常指荔枝螺、疣荔枝螺等岩礁肉食螺，味感辛辣或刺激。描述“壳有刺，味辛辣”与荔枝螺类粗疣棘状壳面相合。",
+    "caveats": "辣螺是食用俗名，可能包括多种岩礁骨螺。"
+  },
+  {
+    "id": "vol4_18_3",
+    "name": "簪螺",
+    "candidateModernName": "牙贝类",
+    "scientificName": "Dentalium sp.",
+    "confidence": "medium",
+    "rationale": "“状如玉簪，色白质坚”与牙贝细长、白色、稍弯的管状壳很吻合。古人常将牙贝、角贝类按簪、管、角等器物命名。",
+    "caveats": "若原图呈螺旋形，则此判断需改为长塔形螺。"
+  },
+  {
+    "id": "vol4_19_1",
+    "name": "化生螺",
+    "candidateModernName": "未定：花瓣状小贝壳传说",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "“由落花在海中化生而成”属于典型化生叙事，说明古人以花形、花色解释某种小壳来源。它可能对应薄片状贝壳或花瓣形螺，但文本不给出可检验形态。",
+    "caveats": "此条应作为民俗性解释保存，不宜强行归入现代种。"
+  },
+  {
+    "id": "vol4_19_2",
+    "name": "寄居螺",
+    "candidateModernName": "寄居蟹",
+    "scientificName": "Paguroidea",
+    "confidence": "high",
+    "rationale": "“空螺壳中寄居小蟹，共生共存，移动自如”正是寄居蟹利用腹足类空壳保护柔软腹部的行为。古名称“螺”是因外观先见壳，实为甲壳动物。",
+    "caveats": "只能确定为寄居蟹总科，无法据此定到属种。"
+  },
+  {
+    "id": "vol4_19_3",
+    "name": "沙蟣",
+    "candidateModernName": "沙蟹类",
+    "scientificName": "Ocypodidae",
+    "confidence": "medium",
+    "rationale": "“极小之蟹，群行于海沙上，望之如蚁”符合沙滩小型蟹类成群奔走的景象。沙蟹科、和尚蟹科的小型成员都可能被称作沙蟣，但此条强调沙面群行。",
+    "caveats": "“沙蟣”可能混用小蟹和端足类，需图像确认是否为蟹形。"
+  },
+  {
+    "id": "vol4_20_1",
+    "name": "台郡溪蟹",
+    "candidateModernName": "溪蟹类",
+    "scientificName": "Potamidae",
+    "confidence": "medium",
+    "rationale": "“产台州溪涧中”显示它不是海蟹，而是淡水或近淡水溪蟹。壳青黄、螯小敏捷也符合溪蟹科常见形态。",
+    "caveats": "台州溪蟹类地方种多，缺少采地和形态细节无法定种。"
+  },
+  {
+    "id": "vol4_20_2",
+    "name": "合浦斑蟹",
+    "candidateModernName": "斑纹梭子蟹类",
+    "scientificName": "Portunidae",
+    "confidence": "low",
+    "rationale": "合浦海滨、肉肥美和身有斑纹，指向沿海可食的梭子蟹科或近缘海蟹。若背甲宽扁、后足适游，则可能是远海梭子蟹或三疣梭子蟹一类。",
+    "caveats": "“斑蟹”只是花纹名，不能排除石蟹、青蟹幼体等其他海蟹。"
+  },
+  {
+    "id": "vol4_20_3",
+    "name": "拥剑蟹",
+    "candidateModernName": "招潮蟹类",
+    "scientificName": "Gelasiminae",
+    "confidence": "high",
+    "rationale": "“一螯极大如持长剑，迎潮挥舞”正是雄性招潮蟹不对称大螯和挥螯展示行为。古名“拥剑”与“招潮”在本卷中互相呼应，均指同一类潮滩小蟹。",
+    "caveats": "招潮蟹属级分类近年多有调整，草案只定到亚科或类群。"
+  },
+  {
+    "id": "vol4_21_1",
+    "name": "升仙蟹",
+    "candidateModernName": "长足蜘蛛蟹类",
+    "scientificName": "Majoidea",
+    "confidence": "low",
+    "rationale": "“足长而轻盈，行如飞升”强调细长步足和轻快姿态，较像蜘蛛蟹总科或长脚蟹类。温州海滨产地也符合东海沿岸浅海蟹类环境。",
+    "caveats": "“升仙”是拟态性命名，若图中背甲圆小则也可能是和尚蟹类。"
+  },
+  {
+    "id": "vol4_21_2",
+    "name": "百戏蟹",
+    "candidateModernName": "未定：行为夸饰的小型沙滩蟹",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“能作种种戏舞状”说明古人观察到挥螯、群行或翻身等行为，并以戏舞命名。形圆如盘、足多的描述可能指和尚蟹或豆蟹样小蟹，但不足以确定。",
+    "caveats": "此条行为色彩强，现代分类需图像和原文旁注复核。"
+  },
+  {
+    "id": "vol4_21_3",
+    "name": "篆背蟹",
+    "candidateModernName": "未定：背甲具篆纹的海蟹",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“背上有白色斑纹如篆文”是依据背甲纹样命名，不是现代分类性状。可能对应馒头蟹、关公蟹、鬼面蟹等背甲有显著图案的小型海蟹。",
+    "caveats": "背纹个体差异和绘画夸张都很大，暂不宜定种。"
+  },
+  {
+    "id": "vol4_22_1",
+    "name": "老寿蟹",
+    "candidateModernName": "馒头蟹或关公蟹类",
+    "scientificName": "Calappidae",
+    "confidence": "low",
+    "rationale": "“背纹如老翁面孔，眉目皆具”指背甲图案拟人化，与关公蟹、鬼面蟹、馒头蟹等圆厚背甲蟹类的民间命名方式接近。寿星之象更多是图像联想。",
+    "caveats": "需要看螯是否能覆面、背甲是否圆拱，才能判断是否为馒头蟹科。"
+  },
+  {
+    "id": "vol4_22_2",
+    "name": "中蟹",
+    "candidateModernName": "青蟹或绒螯蟹类未定",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“寻常螃蟹，色青绿，螯足有毛”可能指常见食用蟹的中等规格。螯足有毛让人想到绒螯蟹类，但海中语境和青绿色又可指青蟹或普通海蟹。",
+    "caveats": "“中蟹”像商品大小名，分类信息不足。"
+  },
+  {
+    "id": "vol4_22_3",
+    "name": "拨棹",
+    "candidateModernName": "梭子蟹类",
+    "scientificName": "Portunidae",
+    "confidence": "high",
+    "rationale": "“后足扁平如桨，善在水中游泅”是梭子蟹科最关键的游泳足特征。拨棹之名正是把末对步足比作船桨。",
+    "caveats": "可确定到梭子蟹科，具体是三疣梭子蟹还是其他属需看背甲和额齿。"
+  },
+  {
+    "id": "vol4_23_1",
+    "name": "蛎虱",
+    "candidateModernName": "牡蛎寄生小蟹或豆蟹",
+    "scientificName": "Pinnotheridae",
+    "confidence": "medium",
+    "rationale": "“附生于牡蛎壳上之小甲虫，微红如虱”很像寄居在牡蛎或贝类体内外的小型豆蟹。古人称其为虱，是以体小和附着关系命名。",
+    "caveats": "也可能是牡蛎壳上的小型甲壳动物或寄生虫，需图像确认是否为蟹。"
+  },
+  {
+    "id": "vol4_23_2",
+    "name": "石蟹",
+    "candidateModernName": "岩礁蟹类",
+    "scientificName": "Grapsidae",
+    "confidence": "low",
+    "rationale": "“壳青黑硬如石，常居海石罅中，螯力极强”符合岩礁间生活的方蟹、岩蟹或石蟹类。名称以栖所和硬壳为主，而非专门现代石蟹属。",
+    "caveats": "中国沿岸多个科的蟹都可俗称石蟹，需看背甲形状。"
+  },
+  {
+    "id": "vol4_23_3",
+    "name": "槟榔蟹",
+    "candidateModernName": "斑纹馒头蟹或关公蟹类",
+    "scientificName": "Calappidae",
+    "confidence": "low",
+    "rationale": "“红黄斑点，似槟榔剖破，两螯如胭衬玉”说明背甲和螯有强烈斑纹对比。圆厚观赏性海蟹，尤其馒头蟹、关公蟹一类，常因背纹被赋予物象名。",
+    "caveats": "槟榔状色斑不是稳定物种特征，需与图像形态合判。"
+  },
+  {
+    "id": "vol4_24_1",
+    "name": "花蟹",
+    "candidateModernName": "远海梭子蟹",
+    "scientificName": "Portunus pelagicus",
+    "confidence": "medium",
+    "rationale": "“花蟹，即花蠘”，身有红蓝白条纹且肉甜，符合南方沿海对花蟹、蓝花蟹的常见称呼。梭子蟹科花纹鲜艳、食用价值高，与描述一致。",
+    "caveats": "“花蟹”也可指三疣梭子蟹等花斑个体，需看背甲侧齿和游泳足。"
+  },
+  {
+    "id": "vol4_24_2",
+    "name": "沙蟣",
+    "candidateModernName": "沙蟹类或和尚蟹幼小群体",
+    "scientificName": "Ocypodidae",
+    "confidence": "medium",
+    "rationale": "“体极小，色如沙，常万群游，晒干为蟹酱”指潮滩大量出现的小型蟹类。群体性、沙色和加工成酱的用途，符合沙蟹、和尚蟹等小型滩涂蟹的民俗利用。",
+    "caveats": "若“万群游”指水中浮游，也可能混入糠虾或小虾蟹苗。"
+  },
+  {
+    "id": "vol4_24_3",
+    "name": "海线",
+    "candidateModernName": "阳遂足或蛇尾类",
+    "scientificName": "Ophiuroidea",
+    "confidence": "low",
+    "rationale": "“状如线，有五歧，依附海草，随水漂流”显示五条细长腕，最像蛇尾纲或幼小海星类。它虽列在蟹谱附近，但形态上已不是虾蟹。",
+    "caveats": "若图中为线状群体动物，也可能是海藻、管水母或多毛类误入。"
+  },
+  {
+    "id": "vol4_25_1",
+    "name": "眼蠘",
+    "candidateModernName": "斑点梭子蟹类",
+    "scientificName": "Portunus sp.",
+    "confidence": "low",
+    "rationale": "“螯足有圆目状斑，行速”暗示可食海蟹，且“蠘”在闽浙语境常与梭子蟹类相关。圆眼状斑可能是步足或背甲的眼斑纹。",
+    "caveats": "眼斑可见于多种海蟹，具体种名需依背甲齿和花纹。"
+  },
+  {
+    "id": "vol4_25_2",
+    "name": "拥雪蟹",
+    "candidateModernName": "白螯招潮蟹类",
+    "scientificName": "Gelasiminae",
+    "confidence": "medium",
+    "rationale": "“两螯大而洁白如拥抱积雪”与雄性招潮蟹白色大螯的视觉效果相近。卷中另有拥剑、招潮等同类，说明作者关注不对称或显著大螯的小蟹。",
+    "caveats": "若确为双螯都大且对称，则可能不是招潮蟹而是其他观赏性小蟹。"
+  },
+  {
+    "id": "vol4_25_3",
+    "name": "长脚蟹",
+    "candidateModernName": "蜘蛛蟹类",
+    "scientificName": "Majoidea",
+    "confidence": "medium",
+    "rationale": "“足极长，壳小，行如蜘蛛，产深海沙泥中”非常贴近蜘蛛蟹总科的外形印象。壳小足长是此类区别于一般梭子蟹、青蟹的主要特征。",
+    "caveats": "“长脚蟹”可覆盖多个蜘蛛蟹科属，无法定为某一种。"
+  },
+  {
+    "id": "vol4_26_1",
+    "name": "蟛蜞",
+    "candidateModernName": "相手蟹或小型方蟹类",
+    "scientificName": "Sesarmidae",
+    "confidence": "medium",
+    "rationale": "“体小色黑，多毛，生于海滩潮水所及之处”符合蟛蜞在江海潮滩、盐沼中生活的传统所指。蟛蜞常为小型方蟹、相手蟹类，可盐渍食用。",
+    "caveats": "各地蟛蜞所指复杂，可能混含拟相手蟹和弧边招潮蟹等。"
+  },
+  {
+    "id": "vol4_26_2",
+    "name": "瓯郡溪蟹",
+    "candidateModernName": "温州溪蟹类",
+    "scientificName": "Potamidae",
+    "confidence": "medium",
+    "rationale": "“产自温州溪岩”明确是溪流岩石环境的淡水蟹。中国东南溪蟹科种类丰富，褐绿体色和清鲜味均符合地方溪蟹描述。",
+    "caveats": "没有采集点和腹肢、额区形态，无法细分到温州具体种。"
+  },
+  {
+    "id": "vol4_26_3",
+    "name": "沙蟹",
+    "candidateModernName": "沙蟹属或鬼蟹类",
+    "scientificName": "Ocypode sp.",
+    "confidence": "medium",
+    "rationale": "“体极小，色如沙，奔跑极速，随潮出没”是沙滩蟹尤其鬼蟹、沙蟹类的典型行为。它们体色与沙相近，退潮后快速活动。",
+    "caveats": "若个体极小且成群，可能是和尚蟹或其他沙蟹科小蟹而非鬼蟹属。"
+  },
+  {
+    "id": "vol4_27_1",
+    "name": "席蟹",
+    "candidateModernName": "扁平梭子蟹或扁蟹类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“状扁平，色如草席，伏于滩涂浅草间”以扁平和草席色为主要线索。候选包括扁蟹、梭子蟹幼体或善伏藏的滩涂蟹。",
+    "caveats": "“席”字可能只描绘颜色纹理，分类意义有限。"
+  },
+  {
+    "id": "vol4_27_2",
+    "name": "虎蜉",
+    "candidateModernName": "虾蛄类",
+    "scientificName": "Stomatopoda",
+    "confidence": "low",
+    "rationale": "“状如虎，有黑黄斑纹，性鸷猛，食小鱼”比普通蟹更像捕食性强、具斑纹的虾蛄类。若图像呈长身甲壳动物而非横宽蟹体，这一判断更稳。",
+    "caveats": "名称中无“虾蛄”信息，也可能是斑纹凶猛海蟹的拟名。"
+  },
+  {
+    "id": "vol4_28_1",
+    "name": "拥剑蠘",
+    "candidateModernName": "招潮蟹类",
+    "scientificName": "Gelasiminae",
+    "confidence": "high",
+    "rationale": "“一螯粗大”是招潮蟹雄体最醒目的性状，“拥剑”进一步指大螯如剑。紫色体色可见于某些招潮蟹或绘画着色，不影响类群判断。",
+    "caveats": "“能夹断铁丝”显然夸张，不能作为力量性状采信。"
+  },
+  {
+    "id": "vol4_28_2",
+    "name": "小蟹",
+    "candidateModernName": "未定：小型海蟹",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "原文只称“海中寻常小蟹，色淡黄，螯力小”，没有特异形态。它可能是沙蟹、豆蟹、幼年梭子蟹或其他小型潮间带蟹。",
+    "caveats": "此条必须依赖原图和相邻条目语境才能继续细化。"
+  },
+  {
+    "id": "vol4_29",
+    "name": "福州膏蟹",
+    "candidateModernName": "锯缘青蟹",
+    "scientificName": "Scylla paramamosain",
+    "confidence": "high",
+    "rationale": "“福州产青蟹，膏肥而满”直接指东南沿海著名食用青蟹的膏蟹阶段。闽浙常见青蟹现代多归入拟穴青蟹或近缘锯缘青蟹复合群，其中福州膏蟹以雌蟹膏满为名。",
+    "caveats": "Scylla 属种界曾有调整，历史记录无法保证精确到单一种。"
+  },
+  {
+    "id": "vol4_30_1",
+    "name": "拥雪",
+    "candidateModernName": "白螯招潮蟹类",
+    "scientificName": "Gelasiminae",
+    "confidence": "medium",
+    "rationale": "此条与“拥雪蟹”重复，仍以白色大螯为识别中心。招潮蟹雄性挥舞浅色大螯，在潮滩上很容易被比作捧雪。",
+    "caveats": "若图中为对称双大螯，则招潮蟹判断需下调。"
+  },
+  {
+    "id": "vol4_30_2",
+    "name": "红蟹",
+    "candidateModernName": "红色岩蟹或红蟹类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“壳色殷红如丹砂，煮熟更显红艳”主要是颜色描述，食味清甜则说明为可食海蟹。可能对应红色岩蟹、馒头蟹或其他浅海蟹，而非单一现代红蟹。",
+    "caveats": "很多蟹煮熟后变红，必须看生时红色和体形才能细化。"
+  },
+  {
+    "id": "vol4_30_3",
+    "name": "篆背蟹",
+    "candidateModernName": "未定：背甲具文字状斑纹的海蟹",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "与前一“篆背蟹”同名，重点仍是背部白斑工整如篆字。它可能是同一类群的另一图，也可能是不同蟹种因背纹相似而共名。",
+    "caveats": "背纹拟字化很容易受画家想象影响，需人工比图复核。"
+  },
+  {
+    "id": "vol4_31_1",
+    "name": "和尚蟹",
+    "candidateModernName": "和尚蟹",
+    "scientificName": "Mictyris brevidactylus",
+    "confidence": "high",
+    "rationale": "“体圆如丸，色青蓝，群行沙滩”高度符合和尚蟹类退潮后成群活动的习性。望之如僧徒合掌是中文“和尚蟹”的经典民间解释。",
+    "caveats": "东亚和尚蟹近缘种需按地区和形态细分，草案暂取常见种。"
+  },
+  {
+    "id": "vol4_31_2",
+    "name": "关公蟹",
+    "candidateModernName": "关公蟹类",
+    "scientificName": "Dorippe sinica",
+    "confidence": "medium",
+    "rationale": "“背甲有赤红面孔如关羽”与现代民间所谓关公蟹、鬼面蟹一类背甲拟人图案相合。候选可放在关公蟹科或馒头蟹样圆背甲蟹中，需借图形判断。",
+    "caveats": "现代“关公蟹”俗名不统一，Dorippe sinica 只是较可能对照。"
+  },
+  {
+    "id": "vol4_31_3",
+    "name": "鬼面蟹",
+    "candidateModernName": "鬼面蟹或关公蟹类",
+    "scientificName": "Dorippidae",
+    "confidence": "medium",
+    "rationale": "“壳上有纹如鬼神面孔”说明其背甲图案具有强烈拟面性，与关公蟹、鬼面蟹类俗称体系一致。青红相间和“不宜食”更强调观赏、避忌属性。",
+    "caveats": "鬼面状纹样可能见于多个蟹科，现代学名需图像复核。"
+  },
+  {
+    "id": "vol4_31_4",
+    "name": "蟛蜞",
+    "candidateModernName": "相手蟹或小型方蟹类",
+    "scientificName": "Sesarmidae",
+    "confidence": "medium",
+    "rationale": "此条强调“江海之交”和泥腥味，符合蟛蜞常见于河口潮滩、可食但带泥味的地方经验。它很可能与卷中另一蟛蜞同属小型方蟹类。",
+    "caveats": "河口小蟹种类多，单凭俗名无法定种。"
+  },
+  {
+    "id": "vol4_32_1",
+    "name": "招潮蟹",
+    "candidateModernName": "招潮蟹类",
+    "scientificName": "Gelasiminae",
+    "confidence": "high",
+    "rationale": "“一螯极大，潮来时常举螯如招手”是招潮蟹名称和行为的直接说明。洁白大螯也与许多雄性招潮蟹的展示特征相符。",
+    "caveats": "只能确定为招潮蟹类，具体属种需依据大螯形状和眼柄等特征。"
+  },
+  {
+    "id": "vol4_32_2",
+    "name": "蝤蛑",
+    "candidateModernName": "锯缘青蟹",
+    "scientificName": "Scylla paramamosain",
+    "confidence": "high",
+    "rationale": "原文已说“即青蟹”，且膏满者名膏蟹，完全符合东南沿海蝤蛑、青蟹、膏蟹的传统称谓系统。螯巨善泅也符合青蟹的体型和活动能力。",
+    "caveats": "Scylla 属在中国沿海可能有多种，历史俗名未必只指 S. paramamosain。"
+  },
+  {
+    "id": "vol4_33_1",
+    "name": "蟞蝔",
+    "candidateModernName": "大竹蛏或蛏类",
+    "scientificName": "Solenidae",
+    "confidence": "medium",
+    "rationale": "描述明说“海中大蛏，壳长三四寸，肉肥多脂”，应是长筒形双壳蛏类。它虽列于蟹虾附近，但文本已把现代类群指向蛏。",
+    "caveats": "“大蛏”可指竹蛏、缢蛏等多种长形蛏贝，暂定到科级。"
+  },
+  {
+    "id": "vol4_33_2",
+    "name": "和尚蟹",
+    "candidateModernName": "和尚蟹",
+    "scientificName": "Mictyris brevidactylus",
+    "confidence": "high",
+    "rationale": "“体圆而小，群行于退潮后之沙滩”是和尚蟹最具识别力的生态画面。与前一和尚蟹重复出现，说明卷中可能按产地或图幅收了同类不同形态。",
+    "caveats": "需注意是否为幼体或近缘和尚蟹种，而非同一物种重复。"
+  },
+  {
+    "id": "vol4_33_3",
+    "name": "六九蟹",
+    "candidateModernName": "未定：微小滩涂蟹",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“背有六九之形，极其微小，晒干作羹”是按背纹数字形状命名的小蟹。可能与沙蟣、和尚蟹幼体或小型沙蟹类有关，食用方式也接近小蟹群体加工。",
+    "caveats": "数字状背纹高度主观，无法作为定种依据。"
+  },
+  {
+    "id": "vol4_34_1",
+    "name": "绿蟹",
+    "candidateModernName": "绿蟹或青蟹幼体类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“体色翠绿，生于海石罅中”指岩礁间绿色小蟹，可能是方蟹、岩蟹或青蟹幼体。它不像膏蟹、蝤蛑那样有明确青蟹商品名，故只能保守。",
+    "caveats": "绿色体色受环境和个体变化影响大，需看背甲和后足。"
+  },
+  {
+    "id": "vol4_34_2",
+    "name": "拨棹",
+    "candidateModernName": "梭子蟹类",
+    "scientificName": "Portunidae",
+    "confidence": "high",
+    "rationale": "再一次以“后足扁平，游泳极其迅速”为核心，明确属于具有游泳足的梭子蟹科。产量丰也符合沿海常捕的游泳蟹类。",
+    "caveats": "具体种需看背甲宽度、侧齿和花纹。"
+  },
+  {
+    "id": "vol4_34_3",
+    "name": "老寿蟹",
+    "candidateModernName": "馒头蟹或鬼面蟹类",
+    "scientificName": "Calappidae",
+    "confidence": "low",
+    "rationale": "“体黑，背纹奇特，多生于海岩深处”与前面老寿蟹的拟面背纹相呼应。圆拱厚壳的馒头蟹类或有图案的岩栖蟹都可能被称作老寿。",
+    "caveats": "缺少螯形和背甲轮廓，仍只是类群假设。"
+  },
+  {
+    "id": "vol4_34_4",
+    "name": "拥剑",
+    "candidateModernName": "招潮蟹类",
+    "scientificName": "Gelasiminae",
+    "confidence": "high",
+    "rationale": "“巨螯高举”再次符合招潮蟹雄性的视觉特征，和本卷拥剑蟹、拥剑蠘为同一命名系列。防大鱼之袭是对大螯用途的民间解释。",
+    "caveats": "实际大螯主要用于展示、争斗和求偶，防御解释需谨慎。"
+  },
+  {
+    "id": "vol4_36_1",
+    "name": "虾公蝌",
+    "candidateModernName": "未定：虾蟹幼体或蝌蚪状甲壳动物",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "“在陆如蝌蚪，在水能划行直游，化而为虾蟹”混合了幼体观察和化生观念。可能源于对蟹幼体、糠虾或蝌蚪状小甲壳动物的误解。",
+    "caveats": "“化而为虾蟹”不符合现代发育学，应作为传说性自然史记录。"
+  },
+  {
+    "id": "vol4_36_2",
+    "name": "拖脐螂",
+    "candidateModernName": "未定：长腹虾类或虾蛄幼体",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“背青足黄，腹长如拖脐，直行而游”提示有延长腹部的甲壳动物，可能是虾类、虾蛄幼体或异尾类。名称中的“螂”可能只是形态怪异的虫名化表达。",
+    "caveats": "没有螯、尾扇和分节细节，现代归属很不确定。"
+  },
+  {
+    "id": "vol4_37_1",
+    "name": "蝗玉",
+    "candidateModernName": "未定：甲壳动物卵团或海漂卵囊传说",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "“蝗虫卵在海中孵化之异虫”明显是跨环境化生传说。色绿质脆可能对应某种卵团、藻团或透明小甲壳动物，但文本解释不具现代分类意义。",
+    "caveats": "应视作异闻，不宜把“蝗虫卵”作为真实来源。"
+  },
+  {
+    "id": "vol4_37_2",
+    "name": "虾化蜻蛉_1",
+    "candidateModernName": "未定：虾化蜻蜓传说",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "红虾化为红蜻蛉属于古代常见的化生、变态误解，把水生甲壳动物和蜻蜓成虫联系起来。真实蜻蜓由水虿羽化，与虾无亲缘连续关系。",
+    "caveats": "可作为对蜻蜓羽化或虾群消长的民俗解释保存。"
+  },
+  {
+    "id": "vol4_37_3",
+    "name": "虾化蜻蛉_2",
+    "candidateModernName": "未定：虾化蜻蜓传说",
+    "scientificName": null,
+    "confidence": "legendary",
+    "rationale": "青虾化为青蜻蛉与上一条同属颜色分型的化生叙事。展翅飞翔的描写来自蜻蜓成虫，而不是虾类生命周期。",
+    "caveats": "此条不能对应现代虾类或蜻蜓物种。"
+  },
+  {
+    "id": "vol4_38_1",
+    "name": "虾兵管",
+    "candidateModernName": "玻璃虾或透明樱虾类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“体透明如冰，常在深海游行”指透明小型虾类，可能是樱虾、玻璃虾或深海浮游虾。名称“兵管”也许来自成群列队或管状透明感。",
+    "caveats": "透明性在多类虾中常见，无法确定科属。"
+  },
+  {
+    "id": "vol4_38_2",
+    "name": "深洋绿虾",
+    "candidateModernName": "未定：绿体大型海虾",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“体大色绿，螯足有锯齿，产闽粤深海”可能是大型对虾、长臂虾或螯虾样甲壳动物。锯齿螯足提示捕食或防御结构，但“绿虾”不是稳定现代名。",
+    "caveats": "需看是否有真正螯足，才能在对虾和龙虾、螯虾样类群间判断。"
+  },
+  {
+    "id": "vol4_38_3",
+    "name": "大蚶虾",
+    "candidateModernName": "未定：大型红色螯虾或虾蛄类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“螯粗如蚶，色红，肉质坚实爽脆”强调粗大前肢和红色体表，可能是螯虾状甲壳动物、龙虾近缘或虾蛄。蚶的比喻可能指螯端厚圆。",
+    "caveats": "中国海产真螯虾与龙虾、虾蛄俗名常混，需看身体分节。"
+  },
+  {
+    "id": "vol4_39_1",
+    "name": "长须白虾",
+    "candidateModernName": "长臂虾或白虾类",
+    "scientificName": "Palaemonidae",
+    "confidence": "medium",
+    "rationale": "“须长数尺，白质红斑”符合长触角的长臂虾、沼虾或近海白虾类的总体印象。闽海产地和食用语境也支持常见海虾而非龙虾。",
+    "caveats": "长须是多种十足虾共有特征，科级判断较稳，种级不稳。"
+  },
+  {
+    "id": "vol4_39_2",
+    "name": "黄虾",
+    "candidateModernName": "中华管鞭虾或黄虾类",
+    "scientificName": "Solenocera crassicornis",
+    "confidence": "low",
+    "rationale": "“体色金黄，江海之交，肉嫩味甘”可与俗称黄虾的近海经济虾类相连。候选包括管鞭虾、对虾或河口长臂虾，颜色和生境是主要线索。",
+    "caveats": "“黄虾”现代俗名分歧很大，此处学名只能作待核候选。"
+  },
+  {
+    "id": "vol4_40_1",
+    "name": "大红虾",
+    "candidateModernName": "中国明对虾或大型红虾类",
+    "scientificName": "Penaeus chinensis",
+    "confidence": "low",
+    "rationale": "“身长数寸，通体红艳，极具美味”指大型食用对虾或深水红虾。若产自近岸市场，明对虾、须赤虾等都有可能被古人统称大红虾。",
+    "caveats": "虾体死后或煮熟变红，需确认是否活体本色。"
+  },
+  {
+    "id": "vol4_40_2",
+    "name": "变种虾",
+    "candidateModernName": "未定：小型红色虾类",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“体极小而缩颈，色红，多产于闽海”可能是小型樱虾、糠虾或对虾幼体。变种之名显示作者也把它看作异常或变体，而非明确常名。",
+    "caveats": "体小虾类需显微形态，古图难以定到现代类群。"
+  },
+  {
+    "id": "vol4_41",
+    "name": "空须龙虾",
+    "candidateModernName": "锦绣龙虾或长须龙虾类",
+    "scientificName": "Panulirus ornatus",
+    "confidence": "medium",
+    "rationale": "“须长数尺，中空，通体青红”指无大螯、触角极长的龙虾类。青红花纹与锦绣龙虾等热带龙虾相近，“空须”可能形容粗长触角的管状感。",
+    "caveats": "龙虾属多种具长须和彩纹，需按图中色带和刺列确认。"
+  },
+  {
+    "id": "vol4_42_1",
+    "name": "白虾",
+    "candidateModernName": "脊尾白虾或近缘白虾",
+    "scientificName": "Exopalaemon carinicauda",
+    "confidence": "medium",
+    "rationale": "“通体莹白，壳极薄，晒干为海米之冠”与中国沿海白虾类作为海米原料的用途吻合。脊尾白虾是常见近岸白虾候选。",
+    "caveats": "海米原料可包括多种小虾，不能仅凭白色定为脊尾白虾。"
+  },
+  {
+    "id": "vol4_42_2",
+    "name": "尿虾",
+    "candidateModernName": "虾蛄",
+    "scientificName": "Oratosquilla oratoria",
+    "confidence": "high",
+    "rationale": "“捕之易喷水，肉肥有膏”正是皮皮虾、虾蛄在民间又称尿虾的原因。尾部尖、多棘也符合虾蛄尾扇和末端刺状结构。",
+    "caveats": "虾蛄类有多种，Oratosquilla oratoria 为常见候选而非唯一可能。"
+  },
+  {
+    "id": "vol4_42_3",
+    "name": "虾蛄",
+    "candidateModernName": "口虾蛄",
+    "scientificName": "Oratosquilla oratoria",
+    "confidence": "high",
+    "rationale": "原文已说明“即皮皮虾”，尾有锐刺、弹伤人手和膏肥美均为虾蛄类典型特征。中国沿海常见食用虾蛄以口虾蛄为主要对照。",
+    "caveats": "地方市场也可能包括黑斑口虾蛄等近缘种。"
+  },
+  {
+    "id": "vol4_42_4",
+    "name": "天虾",
+    "candidateModernName": "飞虾或鼓虾类未定",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“体大，飞掠水面”可能记录虾类受惊跃出水面的行为，而非真正飞行。也可能混入飞鱼、螳螂虾跃动或大型对虾跳跃的观察。",
+    "caveats": "“天虾”缺少稳定现代对应，应保守为跳跃性大型虾类。"
+  },
+  {
+    "id": "vol4_43_1",
+    "name": "白虾",
+    "candidateModernName": "白虾类",
+    "scientificName": "Exopalaemon sp.",
+    "confidence": "medium",
+    "rationale": "“小而白，成群游于海面，味极鲜”符合近岸小型白虾或长臂虾类。与前一白虾相比，此条更强调小型群游，可能是另一种或不同生长期。",
+    "caveats": "白虾是商品总称，需结合产地和额角形态确定。"
+  },
+  {
+    "id": "vol4_43_2",
+    "name": "红虾",
+    "candidateModernName": "毛虾或赤虾类",
+    "scientificName": "Acetes sp.",
+    "confidence": "low",
+    "rationale": "“色微红，晒干作羹”可指小型红色虾类，毛虾、樱虾或赤虾都常用于干制调味。若体小成群，毛虾类是较合理候选。",
+    "caveats": "文本未明说体型，若为较大个体则不应归入毛虾。"
+  },
+  {
+    "id": "vol4_43_3",
+    "name": "紫虾",
+    "candidateModernName": "未定：紫红色小型海虾",
+    "scientificName": null,
+    "confidence": "low",
+    "rationale": "“色紫红，体常群游，佐膳佳品”依色彩和群游描述，可能是小型樱虾、毛虾或赤虾类。紫红色可能来自活体色素，也可能是干制或熟制后的颜色。",
+    "caveats": "紫虾缺乏现代稳定俗名，建议保留待图像和产地复核。"
+  },
+  {
+    "id": "vol4_44",
+    "name": "龙虾",
+    "candidateModernName": "中国龙虾或锦绣龙虾类",
+    "scientificName": "Panulirus stimpsoni",
+    "confidence": "medium",
+    "rationale": "“须长数尺，通体青绿花纹”说明为长触角、无大螯的海产龙虾类，而非淡水小龙虾。中国沿海可对照中国龙虾，若图中彩纹更艳则也可能是锦绣龙虾。",
+    "caveats": "龙虾类需根据头胸甲刺、触角板和彩纹确认具体种。"
+  }
+]

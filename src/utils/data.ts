@@ -2,6 +2,7 @@ import vol1 from '../data/vol1.json';
 import vol2 from '../data/vol2.json';
 import vol3 from '../data/vol3.json';
 import vol4 from '../data/vol4.json';
+import modernIdentifications from '../data/modern-identifications.json';
 
 export interface Creature {
   id: string;
@@ -19,6 +20,18 @@ export interface VolumeData {
   creatures: Creature[];
 }
 
+export type IdentificationConfidence = 'high' | 'medium' | 'low' | 'legendary';
+
+export interface ModernIdentification {
+  id: string;
+  name: string;
+  candidateModernName: string;
+  scientificName: string | null;
+  confidence: IdentificationConfidence;
+  rationale: string;
+  caveats: string;
+}
+
 export const volumes: VolumeData[] = [
   { ...vol1, volume: 1 } as VolumeData,
   { ...vol3, volume: 2 } as VolumeData, // Swap physical Second Volume sharks (vol3.json) to Volume 2
@@ -32,6 +45,17 @@ export const allCreatures: Creature[] = volumes.flatMap((v, idx) =>
     volume: idx + 1 // Assign correct displayed volume based on index (1, 2, 3, 4)
   }))
 );
+
+const modernIdentificationById = new Map(
+  (modernIdentifications as ModernIdentification[]).map(item => [item.id, item])
+);
+
+export const confidenceLabels: Record<IdentificationConfidence, string> = {
+  high: '较可靠',
+  medium: '可参考',
+  low: '存疑',
+  legendary: '传说/非物种'
+};
 
 // Map creature index to custom metadata (danger rating, flavor/edibility rating, types)
 // Since we are SSG, we can define a deterministic mapping based on ID or name hash.
@@ -154,59 +178,10 @@ export function getCreatureMeta(creature: Creature) {
     category = '草木类'; // Plants
   }
   
-  let modernInfo = FAMOUS_CREATURES_MAP[creature.name];
-  if (!modernInfo) {
-    // Generate a highly realistic dynamic scientific interpretation!
-    const suffix = creature.name.slice(-1);
-    
-    const templates = [
-      `根据古籍所描述的“{traits}”，在现代生物分类学中，可能是指{family}下的某种生物。`,
-      `这可能是古人对近海浅滩中{type}的一种地方性称呼，其“{traits}”的描述与现代的{modern_match}极为相近。`,
-      `古人记载的“{traits}”，为我们还原了该物种的某些典型生态特征。现代考证其极有可能是{family}在浙闽沿海的早期记录。`,
-      `这是一种在古文献中具有独特生态特征的{type}。其“{traits}”展示了其独特的身体结构，推测与{modern_match}有关。`
-    ];
-    
-    const templateIdx = Math.abs(hash % templates.length);
-    const chosenTemplate = templates[templateIdx];
-    
-    // Extract traits from the description
-    const phrases = creature.description.split(/[，。；]/).map(p => p.trim()).filter(p => p.length >= 4 && p.length <= 15);
-    const trait1 = phrases[Math.abs(hash) % phrases.length] || "形态奇异";
-    const trait2 = phrases[Math.abs(hash + 1) % phrases.length] || "多见于海滨";
-    const traits = `${trait1}、${trait2}`;
-    
-    let family = "海洋无脊椎动物科属";
-    let type = "海洋生物";
-    let modern_match = "某种未完全确定的海产动物";
-    
-    if (category === '介类' || suffix === '螺' || suffix === '贝' || suffix === '蛤' || suffix === '蚶') {
-      family = "软体动物门（腹足纲或双壳纲）";
-      type = "贝介类软体动物";
-      modern_match = "某种螺类、蛤蜊或双壳贝类的近亲";
-    } else if (category === '鱼类' || suffix === '鱼' || suffix === '鲚' || suffix === '鲋' || suffix === '鳉') {
-      family = "硬骨鱼纲或软骨鱼纲科属";
-      type = "近海鱼类";
-      modern_match = "某种底栖鱼类或近海洄游性鱼类的幼体";
-    } else if (category === '兽类' || suffix === '兽' || suffix === '狗' || suffix === '猫' || suffix === '马' || suffix === '驴' || suffix === '猪') {
-      family = "海洋哺乳动物或两栖爬行纲";
-      type = "海生哺乳动物";
-      modern_match = "鳍足类（如海狗、海豹）或海牛目哺乳动物的古代俗名";
-    } else if (category === '草木类' || suffix === '藻' || suffix === '草' || suffix === '树' || suffix === '花' || suffix === '茸') {
-      family = "浅海藻类植物门或刺胞动物门（如海葵）";
-      type = "海洋植物或刺胞生物";
-      modern_match = "某种附生在礁石上的褐藻、红藻或石花菜";
-    } else if (category === '怪类' || suffix === '怪' || suffix === '蛟' || suffix === '龙' || suffix === '神' || suffix === '仙') {
-      family = "深海未确认巨型科属或带有神话色彩的物种";
-      type = "传说中的奇特海怪";
-      modern_match = "古人目击巨型头足类、鲸鱼或海市蜃楼风暴后的艺术重塑";
-    }
-    
-    modernInfo = chosenTemplate
-      .replace("{traits}", traits)
-      .replace("{family}", family)
-      .replace("{type}", type)
-      .replace("{modern_match}", modern_match);
-  }
+  const modernIdentification = modernIdentificationById.get(creature.id);
+  const modernInfo = modernIdentification
+    ? modernIdentification.rationale
+    : FAMOUS_CREATURES_MAP[creature.name] || '暂未完成逐条考证；需回到原图、题记与地方名资料继续核验。';
 
   // Delicious commentary based on delicious rating and name hash
   let deliciousComment = '口感尚可，或有特殊药用价值，但需谨慎烹饪。';
@@ -243,6 +218,7 @@ export function getCreatureMeta(creature: Creature) {
     delicious,
     danger,
     category,
+    modernIdentification,
     modernInfo,
     deliciousComment
   };
