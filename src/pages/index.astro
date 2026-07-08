@@ -2,8 +2,31 @@
 import Layout from '../layouts/Layout.astro';
 import CreatureGallery from '../components/CreatureGallery';
 import { illustratedCreatures } from '../utils/data';
+
+const title = "海错图数字化图鉴 - 清代聂璜海洋生物古籍图谱";
+const description = "在线浏览清代聂璜《海错图》数字化图鉴，收录海洋生物、海怪异兽、原文释义与现代生物考证，适合古籍、博物、海洋文化爱好者检索阅读。";
 ---
 
-<Layout title="海错图谱数字化图鉴 - 奇物大观" description="探索清代聂璜手绘的海洋生物奇景，支持古今对照、美味危险指数。">
+<Layout
+  title={title}
+  description={description}
+  canonical="/"
+  image="/images/vol1/page_35.webp"
+  imageAlt="《海错图》数字化图鉴中的海洋生物插图"
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": title,
+    "description": description,
+    "url": new URL("/", Astro.site).toString(),
+    "inLanguage": "zh-CN",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "海错图数字化图鉴",
+      "url": new URL("/", Astro.site).toString()
+    },
+    "about": ["海错图", "聂璜", "清代古籍", "海洋生物"]
+  }}
+>
   <CreatureGallery client:load initialCreatures={illustratedCreatures} />
 </Layout>

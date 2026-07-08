@@ -4,12 +4,36 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  canonical?: string;
+  image?: string | null;
+  imageAlt?: string;
+  type?: 'website' | 'article';
+  keywords?: string[];
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const { 
   title = "海错图数字化图鉴 - 发现东方海洋神秘生物", 
-  description = "清代画家聂璜手绘的海洋生物图鉴《海错图》开源数字化版本。探索三百年前的神秘海怪、珍奇鱼类，支持古今生物对照、美味指数、每日运势抽签，一键生成精美海报分享。"
+  description = "清代画家聂璜手绘的海洋生物图鉴《海错图》开源数字化版本。探索三百年前的神秘海怪、珍奇鱼类，支持古今生物对照、美味指数、每日运势抽签，一键生成精美海报分享。",
+  canonical,
+  image = "/images/vol1/page_35.webp",
+  imageAlt = "《海错图》数字化图鉴插图",
+  type = "website",
+  keywords = ["海错图", "聂璜", "古籍数字化", "故宫博物院", "海洋生物", "海怪", "中国古籍", "国风图鉴"],
+  structuredData
 } = Astro.props;
+
+const siteUrl = Astro.site ?? new URL(Astro.url.origin);
+const canonicalUrl = new URL(canonical ?? Astro.url.pathname, siteUrl).toString();
+const imageUrl = image ? new URL(image, siteUrl).toString() : undefined;
+const jsonLd = structuredData ?? {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "海错图数字化图鉴",
+  "url": new URL("/", siteUrl).toString(),
+  "inLanguage": "zh-CN",
+  "description": "清代聂璜《海错图》的开源数字化图鉴，收录海洋生物、异兽与古今考证信息。"
+};
 ---
 
 <!doctype html>
@@ -22,18 +46,30 @@ const {
     <!-- SEO Optimization -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="海错图, 聂璜, 古籍数字化, 故宫博物院, 海怪, 国风设计, 艺术科普, 零成本建站" />
+    <meta name="keywords" content={keywords.join(", ")} />
+    <meta name="author" content="Haicuotu Project" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#b23a2f" />
+    <link rel="canonical" href={canonicalUrl} />
     
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="海错图数字化图鉴" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/og-image.jpg" />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    {imageUrl && <meta property="og:image:alt" content={imageAlt} />}
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <!-- Google Fonts for Modern Typography & Noto Serif SC for Elegant Chinese Serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

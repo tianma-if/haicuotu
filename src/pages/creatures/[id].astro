@@ -18,11 +18,38 @@ const { creature } = Astro.props;
 const meta = getCreatureMeta(creature);
 const identification = meta.modernIdentification;
 const sourceName = creature.volume === 4 ? '台北故宫博物院藏本' : '故宫博物院藏本';
+const title = `${creature.name} - 《海错图》数字化图鉴与现代考证`;
+const description = `《海错图》第${creature.volume}册${creature.name}条目，含聂璜原文释义、${meta.category}分类、古今生物对照与食味危险指数。${creature.description.slice(0, 70)}`;
+const canonical = `/creatures/${creature.id}`;
 ---
 
 <Layout 
-  title={`${creature.name} - 《海错图》智能图鉴`} 
-  description={`清代聂璜《海错图》第${creature.volume}册记载的神秘生物——${creature.name}。包含古文释义：${creature.description.slice(0, 80)}`}
+  title={title}
+  description={description}
+  canonical={canonical}
+  image={creature.image}
+  imageAlt={`《海错图》${creature.name}插图`}
+  type="article"
+  keywords={["海错图", creature.name, "聂璜", meta.category, "古籍数字化", "海洋生物", "现代考证"]}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "url": new URL(canonical, Astro.site).toString(),
+    "image": creature.image ? new URL(creature.image, Astro.site).toString() : undefined,
+    "inLanguage": "zh-CN",
+    "author": {
+      "@type": "Organization",
+      "name": "Haicuotu Project"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "海错图数字化图鉴",
+      "url": new URL("/", Astro.site).toString()
+    },
+    "about": [creature.name, meta.category, "海错图", "清代博物图谱"]
+  }}
 >
   <div class="space-y-5 md:space-y-6">
     <!-- Breadcrumb & Back button -->

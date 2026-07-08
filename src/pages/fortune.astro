@@ -2,8 +2,30 @@
 import Layout from '../layouts/Layout.astro';
 import FortuneCard from '../components/FortuneCard';
 import { illustratedCreatures } from '../utils/data';
+
+const title = "每日海怪运势签 - 《海错图》海洋灵兽抽签";
+const description = "从清代聂璜《海错图》数字化图鉴中抽取今日海洋灵兽，生成带有国风插图、吉凶提示与分享海报的每日运势签。";
 ---
 
-<Layout title="每日海怪运势签 - 《海错图》智能求签" description="心诚则灵，求取今日海洋灵兽，预测运势吉凶。">
+<Layout
+  title={title}
+  description={description}
+  canonical="/fortune"
+  image="/images/vol1/page_35.webp"
+  imageAlt="《海错图》每日海怪运势签"
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": title,
+    "description": description,
+    "url": new URL("/fortune", Astro.site).toString(),
+    "inLanguage": "zh-CN",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "海错图数字化图鉴",
+      "url": new URL("/", Astro.site).toString()
+    }
+  }}
+>
   <FortuneCard client:load creatures={illustratedCreatures} />
 </Layout>
