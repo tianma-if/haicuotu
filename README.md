@@ -19,11 +19,8 @@
 
 本项目采用现代前端与 Python 数据流工具链构建：
 
-1. **前端框架 (Frontend)**:
-   * **[Astro v7.0](https://astro.build/)**: 采用极速的岛屿架构（Islands Architecture）和完全静态化生成（SSG），实现近乎为零的客户端 JS 开销。
-   * **React 19**: 渲染复杂的物种互动卡片、抽卡及图鉴交互组件。
-   * **TailwindCSS v4**: 全新的原生层级样式引擎，打造极具艺术感、微动效的中国传统色（海蓝、绯红、黛绿、铜黄）暗黑国潮风格。
-   * **TypeScript**: 强类型保障。
+1. **前端与样式 (Frontend & Styling)**:
+   * **[Astro v7.0](https://astro.build/)** + **React 19** + **TailwindCSS v4** + **TypeScript**
 
 2. **数据与裁剪流水线 (Data & Image Pipeline)**:
    * **Python 3 + PyMuPDF (fitz)**: 直接读取故宫博物院高分辨率 PDF 页面并渲染成无损像素缓存。
@@ -54,20 +51,20 @@ haicuotu/
 
 ---
 
-##  Genie 运行指南 (Commands)
+## 🚀 运行指南 (Commands)
 
 ### 1. 安装前端依赖
 ```sh
-npm install
+bun install
 ```
 
 ### 2. 启动开发服务器 (Astro 后台运行模式)
 ```sh
-astro dev --background
+bun x astro dev --background
 ```
-* 查看状态：`npx astro dev status`
-* 查看日志：`npx astro dev logs`
-* 停止服务：`npx astro dev stop`
+* 查看状态：`bun x astro dev status`
+* 查看日志：`bun x astro dev logs`
+* 停止服务：`bun x astro dev stop`
 
 ### 3. 重建并对齐图片数据库 (需激活 `.venv` 虚拟环境)
 ```sh
@@ -76,7 +73,7 @@ astro dev --background
 
 ### 4. 编译静态站点 (Production Build)
 ```sh
-npm run build
+bun run build
 ```
 
 ---
