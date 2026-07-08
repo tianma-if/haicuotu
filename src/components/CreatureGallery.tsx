@@ -168,7 +168,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
                       <p className="text-[10px] text-ink-black/30 font-sans mt-1">（序言段落或排版无插图）</p>
                     </div>
                   )}
-                  <div className="absolute top-2 right-2 bg-cinnabar-red/10 border border-cinnabar-red/35 text-cinnabar-red px-1.5 py-0.5 text-[10px] font-display font-bold shadow-sm rounded-sm">
+                  <div className="hidden sm:block absolute top-2 right-2 text-[10px] font-sans text-ink-black/25">
                     卷 {creature.volume}
                   </div>
                 </div>
