@@ -2,6 +2,23 @@
 
 > **对清代聂璜绘制的海洋生物奇书《海错图》进行 100% 精准的“单图-单物种”数字化映射与对齐审计项目。**
 
+[![Astro](https://img.shields.io/badge/Astro-7.0-orange)](https://astro.build/)
+[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
+**在线浏览**: <https://haicuotu.tianma-if.com>  
+**GitHub**: <https://github.com/tianma-if/haicuotu>
+
+![《海错图》数字化图鉴预览](./public/images/vol1/page_35.webp)
+
+## ✨ 项目亮点 (Highlights)
+
+- **279 个独立图鉴条目**：覆盖《海错图》四册中可独立浏览的鱼类、海鸟、贝类、虾蟹与传说异兽。
+- **单图单物种裁切**：解决古籍图谱中常见的多物种同框、图文错配、页面偏移问题。
+- **可检索静态数据库**：数据编译为 `src/data/vol[1-4].json`，无需后端即可浏览与部署。
+- **现代物种考证入口**：通过 `src/data/modern-identifications.json` 记录候选现代名、学名、置信度与 caveats。
+- **适合数字人文复用**：可作为古籍 OCR、图像裁切、博物图谱结构化和文化数据集整理案例。
+
 ---
 
 ## 🎯 项目定位 (Positioning)
@@ -96,6 +113,25 @@ bun run build
 | **第三册** | `海错图.第三册.三十九开.清.聂璜绘.北京故宫` | 20 | ✅ 100% 精确对齐 (海鸟与贝类) |
 | **第四册** | `海错图.第四册.四十四开.清.聂璜绘.台北故宫` | 117 | ✅ 100% 精确对齐 (虾蟹螺贝) |
 | **合计** | | **279 个独立图鉴** | **✅ 100% 完整收录并消除多物种同框** |
+
+---
+
+## 🤝 参与贡献 (Contributing)
+
+欢迎提交 issue 或 pull request，尤其是：
+
+- 纠正图文错配、裁切偏差、条目缺漏；
+- 补充现代物种候选名、学名、考证依据与不确定性说明；
+- 改进移动端浏览、可访问性、SEO 与分享体验；
+- 补充古籍版本、博物学、地方名和海洋生物资料来源。
+
+详细说明见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+---
+
+## 📄 许可与来源说明 (License)
+
+本仓库代码与项目文档采用 [MIT License](./LICENSE)。`src/data/` 与 `public/images/` 中的数据和裁切图片基于历史文献材料整理而成；如需商业复用图片资产或原始扫描件，请先核验原收藏机构或来源平台的使用条款。
 
 ---
 
