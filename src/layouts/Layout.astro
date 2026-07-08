@@ -78,27 +78,27 @@ const jsonLd = structuredData ?? {
   </head>
   <body class="paper-scroll text-ink-black min-h-screen flex flex-col font-sans selection:bg-cinnabar-red selection:text-paper-light">
     <!-- Header -->
-    <header class="border-b border-paper-dark/30 py-4 md:py-6 px-4 md:px-8 bg-paper-light/90 backdrop-blur-md sticky top-0 z-40">
+    <header class="border-b border-paper-dark/30 py-2 px-4 md:px-8 bg-paper-light/90 backdrop-blur-md sticky top-0 z-40">
       <div class="max-w-6xl mx-auto flex flex-row justify-between items-center gap-3 md:gap-4">
         <!-- Logo -->
-        <a href="/" class="flex items-center gap-3 group">
-          <div class="bg-cinnabar-red text-paper-light w-9 h-9 md:w-10 md:h-10 flex items-center justify-center font-display text-xl md:text-2xl font-bold rounded-sm shadow-md group-hover:scale-105 transition-transform duration-300">
+        <a href="/" class="flex items-center gap-2 group">
+          <div class="bg-cinnabar-red text-paper-light w-8 h-8 flex items-center justify-center font-display text-lg font-bold rounded-sm shadow-md group-hover:scale-105 transition-transform duration-300">
             海
           </div>
           <div>
-            <h1 class="font-display text-xl md:text-2xl font-black tracking-wide">海错图</h1>
-            <p class="hidden sm:block text-xs text-ink-black/60 uppercase tracking-widest font-sans">Facsimile Digital Album</p>
+            <h1 class="font-display text-lg md:text-xl font-black tracking-wide leading-none">海错图</h1>
+            <p class="hidden sm:block text-[11px] text-ink-black/60 uppercase tracking-widest font-sans leading-tight">Facsimile Digital Album</p>
           </div>
         </a>
 
         <!-- Navigation Links -->
-        <nav class="flex items-center gap-3 md:gap-4 font-display text-base md:text-lg font-bold">
-          <a href="/" class="inline-flex h-8 items-center hover:text-cinnabar-red transition-colors duration-300">画廊图鉴</a>
-          <a href="/fortune" class="inline-flex h-8 items-center gap-1 hover:text-cinnabar-red transition-colors duration-300">
+        <nav class="flex items-center gap-3 md:gap-4 font-display text-sm md:text-base font-bold">
+          <a href="/" class="inline-flex h-7 items-center hover:text-cinnabar-red transition-colors duration-300">画廊图鉴</a>
+          <a href="/fortune" class="inline-flex h-7 items-center gap-1 hover:text-cinnabar-red transition-colors duration-300">
             运势签 <span class="inline-flex h-4 items-center bg-cinnabar-red text-paper-light text-[10px] px-1 rounded-full uppercase tracking-tighter">New</span>
           </a>
-          <a href="https://github.com/tianma-if/haicuotu" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库" title="GitHub 仓库" class="hidden sm:inline-flex w-8 h-8 items-center justify-center rounded-full border border-ink-black/20 bg-paper-light/50 text-ink-black/75 hover:text-cinnabar-red hover:bg-paper-dark/20 transition-colors duration-300">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <a href="https://github.com/tianma-if/haicuotu" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库" title="GitHub 仓库" class="hidden sm:inline-flex w-7 h-7 items-center justify-center rounded-full border border-ink-black/20 bg-paper-light/50 text-ink-black/75 hover:text-cinnabar-red hover:bg-paper-dark/20 transition-colors duration-300">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
               <path d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.95c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.59.69.49A10.14 10.14 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z" />
             </svg>
           </a>
@@ -107,18 +107,18 @@ const jsonLd = structuredData ?? {
     </header>
 
     <!-- Main Content Slot -->
-    <main class="flex-grow max-w-6xl w-full mx-auto px-4 md:px-8 py-6 md:py-8">
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 md:px-8 py-4 md:py-5">
       <slot />
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-paper-dark/40 py-8 px-4 md:px-8 bg-deep-sea text-paper-light">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-paper-light/75">
+    <footer class="border-t border-paper-dark/40 py-5 md:py-6 px-4 md:px-8 bg-deep-sea text-paper-light">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-paper-light/70">
         <div class="text-center md:text-left">
-          <p class="font-display text-base font-bold mb-1">《海错图》由清代聂璜绘，现分藏于北京故宫博物院（一至三册）与台北故宫博物院（第四册）</p>
-          <p class="font-sans text-xs">本项目为开源数字化呈现，由 magic-pdf 支持图文智能提取，部署于 Cloudflare Pages。</p>
+          <p class="font-display text-sm font-bold mb-0.5 leading-relaxed">《海错图》由清代聂璜绘，现分藏于北京故宫博物院（一至三册）与台北故宫博物院（第四册）</p>
+          <p class="font-sans text-[11px] leading-relaxed">本项目为开源数字化呈现，由 magic-pdf 支持图文智能提取，部署于 Cloudflare Pages。</p>
         </div>
-        <div class="flex items-center gap-4 font-sans text-xs">
+        <div class="flex items-center gap-3 font-sans text-[11px]">
           <a href="https://github.com/tianma-if/haicuotu" class="hover:underline hover:text-white">GitHub 仓库</a>
           <span>•</span>
           <span>© 2026 Haicuotu Project. All Rights Reserved.</span>

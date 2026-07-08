@@ -59,24 +59,24 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
   ].filter(Boolean).length;
 
   return (
-    <div className="space-y-5 md:space-y-6">
-      <div className="text-center space-y-2 max-w-2xl mx-auto">
-        <h2 className="font-display text-3xl md:text-4xl font-black tracking-tight text-deep-sea leading-tight">
+    <div className="space-y-4 md:space-y-5">
+      <div className="text-center space-y-1.5 max-w-2xl mx-auto">
+        <h2 className="font-display text-2xl md:text-3xl font-black tracking-tight text-deep-sea leading-tight">
           海错图谱 <span className="text-cinnabar-red">奇物大观</span>
         </h2>
-        <p className="text-sm text-ink-black/70 leading-6 font-sans">
+        <p className="text-xs md:text-sm text-ink-black/70 leading-5 font-sans">
           「错」者，杂也。清康熙年间，画家聂璜考察东南沿海，手绘数百种海洋异兽。
         </p>
       </div>
 
-      <div className="bg-paper-light border border-paper-dark/30 p-4 md:p-6 rounded-sm shadow-sm space-y-4">
-        <div className="flex flex-col md:flex-row gap-3 md:gap-4">
+      <div className="bg-paper-light border border-paper-dark/30 p-3 md:p-4 rounded-sm shadow-sm space-y-3">
+        <div className="flex flex-col md:flex-row gap-3">
           <div className="relative flex-grow">
-            <Search className="absolute left-3 top-3.5 h-4 w-4 text-ink-black/40" />
+            <Search className="absolute left-3 top-3 h-4 w-4 text-ink-black/40" />
             <input
               type="text"
               placeholder="搜索海怪名称、古文记载（例如：人鱼、沙鲨）..."
-              className="w-full pl-10 pr-4 py-3 bg-white border border-paper-dark/40 rounded-sm focus:outline-none focus:border-cinnabar-red transition-colors text-sm font-sans"
+              className="w-full pl-10 pr-4 py-2.5 bg-white border border-paper-dark/40 rounded-sm focus:outline-none focus:border-cinnabar-red transition-colors text-sm font-sans"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -85,7 +85,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
           <button
             type="button"
             onClick={() => setFiltersOpen(open => !open)}
-            className="md:hidden inline-flex items-center justify-center gap-2 border border-paper-dark/50 bg-white px-3 py-3 rounded-sm text-xs font-bold text-deep-sea"
+            className="md:hidden inline-flex items-center justify-center gap-2 border border-paper-dark/50 bg-white px-3 py-2.5 rounded-sm text-xs font-bold text-deep-sea"
             aria-expanded={filtersOpen}
           >
             <SlidersHorizontal className="w-4 h-4" />
@@ -100,7 +100,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
           <div className={`${filtersOpen ? 'flex' : 'hidden'} md:flex items-center gap-2`}>
             <span className="text-xs font-bold text-ink-black/60 whitespace-nowrap">排序方式：</span>
             <select
-              className="w-full md:w-auto bg-white border border-paper-dark/40 px-3 py-3 rounded-sm text-xs font-sans focus:outline-none focus:border-cinnabar-red"
+              className="w-full md:w-auto bg-white border border-paper-dark/40 px-3 py-2.5 rounded-sm text-xs font-sans focus:outline-none focus:border-cinnabar-red"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
             >
@@ -111,7 +111,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
           </div>
         </div>
 
-        <div className={`${filtersOpen ? 'flex' : 'hidden'} md:flex flex-wrap items-center gap-y-3 gap-x-6 text-xs border-t border-paper-dark/20 pt-4`}>
+        <div className={`${filtersOpen ? 'flex' : 'hidden'} md:flex flex-wrap items-center gap-y-2 gap-x-5 text-xs border-t border-paper-dark/20 pt-3`}>
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className="font-bold text-ink-black/50 flex items-center gap-0.5"><Layers className="w-3.5 h-3.5" /> 按册：</span>
             <button
