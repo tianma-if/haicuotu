@@ -6,8 +6,8 @@ import glob
 from PIL import Image
 
 # Setup paths
-PDF_DIR = "/Users/tianma/Downloads/海错图"
-WORKSPACE_DIR = "/Users/tianma/Developer/Projects/haicuotu"
+WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PDF_DIR = os.environ.get("HAICUOTU_PDF_DIR", os.path.join(WORKSPACE_DIR, "raw-pdfs"))
 RAW_OUT_DIR = os.path.join(WORKSPACE_DIR, "extracted_raw")
 DATA_OUT_DIR = os.path.join(WORKSPACE_DIR, "src/data")
 PUBLIC_IMG_DIR = os.path.join(WORKSPACE_DIR, "public/images")

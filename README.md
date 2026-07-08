@@ -35,6 +35,7 @@
 haicuotu/
 ├── public/
 │   └── images/              # 自动裁剪生成的高清物种 WebP 切片 (vol1 - vol4)
+├── raw-pdfs/                # 本地原始 PDF 放置目录（PDF 文件不提交 Git）
 ├── scripts/
 │   ├── rebuild_accurate_database.py  # 核心：高精度切片算子与数据库重建脚本 (Venv 依赖 fitz/Pillow)
 │   └── curate_haicuotu.py            # 数据文本微调与润色辅助脚本
@@ -67,8 +68,16 @@ bun x astro dev --background
 * 停止服务：`bun x astro dev stop`
 
 ### 3. 重建并对齐图片数据库 (需激活 `.venv` 虚拟环境)
+先从书格《海错图》页面下载四册原始 PDF：<https://www.shuge.org/view/hai_cuo_tu/>。下载后将 PDF 文件放入 `raw-pdfs/`。PDF 文件体积较大，不纳入 Git 版本控制；目录内的说明文件会保留在仓库中。
+
 ```sh
 .venv/bin/python3 scripts/rebuild_accurate_database.py
+```
+
+如需从其它目录读取 PDF，可设置：
+
+```sh
+HAICUOTU_PDF_DIR=/path/to/pdf-folder .venv/bin/python3 scripts/rebuild_accurate_database.py
 ```
 
 ### 4. 编译静态站点 (Production Build)

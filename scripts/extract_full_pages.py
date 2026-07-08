@@ -4,8 +4,9 @@ import os
 import glob
 from PIL import Image
 
-PDF_DIR = "/Users/tianma/Downloads/海错图"
-PUBLIC_IMG_DIR = "public/images"
+WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PDF_DIR = os.environ.get("HAICUOTU_PDF_DIR", os.path.join(WORKSPACE_DIR, "raw-pdfs"))
+PUBLIC_IMG_DIR = os.path.join(WORKSPACE_DIR, "public/images")
 
 # Find PDF files and sort them alphabetically
 # This gives the same alphabetical ordering: Vol 1 (第一册), Vol 2 (第三册), Vol 3 (第二册), Vol 4 (第四册)

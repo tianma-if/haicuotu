@@ -7,6 +7,8 @@ dist/
 # dependencies
 node_modules/
 .venv/
+__pycache__/
+*.py[cod]
 
 # logs
 npm-debug.log*
@@ -37,4 +39,7 @@ test_output/
 test_output_pages2_4/
 scratch/
 
-
+# local source PDFs
+raw-pdfs/*
+!raw-pdfs/README.md
+!raw-pdfs/.gitkeep

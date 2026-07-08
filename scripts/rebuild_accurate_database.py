@@ -4,8 +4,9 @@ import fitz
 from PIL import Image
 import glob
 
-PDF_DIR = "/Users/tianma/Downloads/海错图"
-PUBLIC_IMG_DIR = "public/images"
+WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PDF_DIR = os.environ.get("HAICUOTU_PDF_DIR", os.path.join(WORKSPACE_DIR, "raw-pdfs"))
+PUBLIC_IMG_DIR = os.path.join(WORKSPACE_DIR, "public/images")
 
 # Master configuration with verified page indices and cropping instructions for all 4 volumes.
 # (page_idx, name, description, crop_side)
