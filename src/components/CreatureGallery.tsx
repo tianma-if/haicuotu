@@ -147,14 +147,14 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
       </div>
 
       {filteredCreatures.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
           {filteredCreatures.map((creature) => (
             <a
               href={`/creatures/${creature.id}`}
               key={creature.id}
-              className="group bg-paper-light ink-border p-3.5 md:p-4 flex flex-col justify-between hover:no-underline rounded-sm h-full"
+              className="group bg-paper-light ink-border p-2.5 sm:p-3.5 md:p-4 flex flex-col justify-between hover:no-underline rounded-sm h-full min-w-0"
             >
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4 min-w-0">
                 <div className="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
                   {creature.image ? (
                     <img
@@ -175,7 +175,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
 
                 <div className="space-y-2">
                   <div className="flex justify-between items-start gap-2">
-                    <h3 className="font-display text-xl font-black group-hover:text-cinnabar-red transition-colors duration-300">
+                    <h3 className="font-display text-lg md:text-xl leading-tight font-black group-hover:text-cinnabar-red transition-colors duration-300 min-w-0 break-words">
                       {creature.name}
                     </h3>
                     <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-deep-sea/10 text-deep-sea font-sans shrink-0">
@@ -183,20 +183,20 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
                     </span>
                   </div>
 
-                  <p className="text-xs text-ink-black/70 line-clamp-3 leading-relaxed font-sans">
+                  <p className="text-[11px] sm:text-xs text-ink-black/70 line-clamp-2 md:line-clamp-3 leading-relaxed font-sans">
                     {creature.description}
                   </p>
                 </div>
               </div>
 
-              <div className="border-t border-paper-dark/25 pt-3 mt-4 flex items-center justify-between text-[11px] font-sans text-ink-black/60">
-                <div className="inline-flex items-center gap-1 rounded-full bg-cinnabar-red/8 border border-cinnabar-red/20 px-2 py-1">
-                  <Flame className="w-3.5 h-3.5 text-cinnabar-red" />
-                  <span>美味 {creature.meta.delicious}/5</span>
+              <div className="border-t border-paper-dark/25 pt-2 sm:pt-3 mt-3 sm:mt-4 flex items-center justify-between gap-1 text-[10px] sm:text-[11px] font-sans text-ink-black/60">
+                <div className="inline-flex min-w-0 items-center gap-0.5 sm:gap-1 rounded-full bg-cinnabar-red/8 border border-cinnabar-red/20 px-1.5 sm:px-2 py-1">
+                  <Flame className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cinnabar-red shrink-0" />
+                  <span><span className="hidden sm:inline">美味 </span>{creature.meta.delicious}/5</span>
                 </div>
-                <div className="inline-flex items-center gap-1 rounded-full bg-deep-sea/8 border border-deep-sea/20 px-2 py-1">
-                  <ShieldAlert className="w-3.5 h-3.5 text-deep-sea" />
-                  <span>危险 {creature.meta.danger}/5</span>
+                <div className="inline-flex min-w-0 items-center gap-0.5 sm:gap-1 rounded-full bg-deep-sea/8 border border-deep-sea/20 px-1.5 sm:px-2 py-1">
+                  <ShieldAlert className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-deep-sea shrink-0" />
+                  <span><span className="hidden sm:inline">危险 </span>{creature.meta.danger}/5</span>
                 </div>
               </div>
             </a>
