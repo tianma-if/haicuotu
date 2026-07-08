@@ -146,14 +146,14 @@
     {
       "id": "vol3_15_2",
       "name": "龙门撞",
-      "image": "/images/vol3/page_15_right.webp",
+      "image": "/images/vol3/page_15_right_1.webp",
       "description": "龙门撞，体狭长有横斑，善跃。龙门撞亦鲨鱼之名。",
       "page_idx": 15
     },
     {
       "id": "vol3_15_3",
       "name": "鼠鲨",
-      "image": "/images/vol3/page_15_right.webp",
+      "image": "/images/vol3/page_15_right_2.webp",
       "description": "鼠鲨，头尖体小，状如鼠。猫鲨鼠鲨共赞。",
       "page_idx": 15
     },

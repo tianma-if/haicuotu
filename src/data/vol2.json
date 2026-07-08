@@ -11,9 +11,9 @@
       "page_idx": 2
     },
     {
-      "id": "vol2_3",
+      "id": "vol2_3_1",
       "name": "海鸥",
-      "image": "/images/vol2/page_3.webp",
+      "image": "/images/vol2/page_3_full_1.webp",
       "description": "海鸥，体白翼灰，鸣声清脆。常群飞于舟楫之后，逐鱼而食。",
       "page_idx": 3
     },
@@ -32,25 +32,25 @@
       "page_idx": 6
     },
     {
-      "id": "vol2_9",
+      "id": "vol2_1",
       "name": "海鸡",
-      "image": "/images/vol2/page_9.webp",
+      "image": "/images/vol2/page_1.webp",
       "description": "海鸡，状如鸡，冠红羽彩. 晨鸣于礁石之上，海潮退则下滩啄食。",
-      "page_idx": 9
+      "page_idx": 1
     },
     {
-      "id": "vol2_10",
+      "id": "vol2_3_2",
       "name": "海鸽",
-      "image": "/images/vol2/page_10.webp",
+      "image": "/images/vol2/page_3_full_2.webp",
       "description": "海鸽，状如鸽，色青灰，飞翔海岛。其性驯，不畏人。",
-      "page_idx": 10
+      "page_idx": 3
     },
     {
-      "id": "vol2_11",
+      "id": "vol2_5",
       "name": "海鹦鹉",
-      "image": "/images/vol2/page_11.webp",
+      "image": "/images/vol2/page_5.webp",
       "description": "海鹦鹉，嘴大而色鲜，五彩斑斓，状如鹦鹉，飞鸣滩涂。",
-      "page_idx": 11
+      "page_idx": 5
     },
     {
       "id": "vol2_15",

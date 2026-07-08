@@ -100,9 +100,9 @@ vol_configs = {
             (3, "海鸥", "海鸥，体白翼灰，鸣声清脆。常群飞于舟楫之后，逐鱼而食。", "full"),
             (4, "海燕", "海燕，状如燕而小，色青黑。大风将至则贴水低飞，海人以为风候。", "full"),
             (6, "金丝燕", "金丝燕，产闽粤海岛，吐唾筑巢于悬崖。其巢即燕窝，清香滋补，为席上珍馐。", "full"),
-            (9, "海鸡", "海鸡，状如鸡，冠红羽彩. 晨鸣于礁石之上，海潮退则下滩啄食。", "full"),
-            (10, "海鸽", "海鸽，状如鸽，色青灰，飞翔海岛。其性驯，不畏人。", "full"),
-            (11, "海鹦鹉", "海鹦鹉，嘴大而色鲜，五彩斑斓，状如鹦鹉，飞鸣滩涂。", "full"),
+            (1, "海鸡", "海鸡，状如鸡，冠红羽彩. 晨鸣于礁石之上，海潮退则下滩啄食。", "full"),
+            (3, "海鸽", "海鸽，状如鸽，色青灰，飞翔海岛。其性驯，不畏人。", "full"),
+            (5, "海鹦鹉", "海鹦鹉，嘴大而色鲜，五彩斑斓，状如鹦鹉，飞鸣滩涂。", "full"),
             (15, "燕窝", "金丝燕所筑之巢，有白、红数种。红者名血燕，最名贵，食之润肺大补。", "full"),
             (17, "海市蜃楼", "蜃吐气而成楼台殿阁，或在海上，或在空中，虚无缥缈，旋即消逝，天地间之大幻景也。", "full"),
             (18, "珠蚌", "珠蚌，大者径尺，腹中育珠。蚌随月盈虚而开阖，月满则珠光华，月缺则珠微。", "full"),
@@ -325,11 +325,42 @@ pdf_files = sorted(glob.glob(os.path.join(PDF_DIR, "*.pdf")))
 # Normalized crop overrides for pages where the illustration is tiny, highly
 # off-center, or shares the page with unrelated creatures.
 MANUAL_CROP_BOXES = {
+    (1, 19, "left"): (0.120, 0.505, 0.230, 0.705),  # 枫叶鱼
+    (1, 19, "right"): (0.585, 0.535, 0.835, 0.735),  # 草蜢鱼
     (1, 12, "third_2"): (0.425, 0.565, 0.565, 0.730),  # 小鱼
     (1, 12, "third_3"): (0.610, 0.390, 0.895, 0.785),  # 飞鱼
     (1, 13, "left"): (0.160, 0.470, 0.385, 0.775),  # 铜盆鱼
+    (1, 28, "third_1"): (0.115, 0.445, 0.640, 0.865),  # 海鳗
+    (1, 28, "third_2"): (0.405, 0.375, 0.660, 0.595),  # 竹鱼
+    (1, 28, "third_3"): (0.640, 0.535, 0.875, 0.705),  # 龙头鱼
+    (1, 29, "third_1"): (0.155, 0.425, 0.400, 0.520),  # 水沫鱼
+    (1, 29, "third_2"): (0.115, 0.590, 0.865, 0.805),  # 鹤鱼
+    (1, 29, "third_3"): (0.615, 0.425, 0.885, 0.600),  # 黄鲋
+    (1, 30, "third_1"): (0.110, 0.520, 0.370, 0.725),  # 钱串鱼
+    (1, 30, "third_2"): (0.435, 0.630, 0.575, 0.800),  # 参蕉鱼
+    (1, 30, "third_3"): (0.580, 0.335, 0.875, 0.835),  # 兜甲鱼
     (1, 39, "right"): (0.380, 0.255, 0.775, 0.880),  # 神龙
+    (3, 3, "left"): (0.365, 0.470, 0.625, 0.815),  # 鲼鱼
+    (3, 3, "right"): (0.595, 0.375, 0.925, 0.815),  # 珠皮鲼
+    (3, 15, "left"): (0.080, 0.470, 0.650, 0.865),  # 跨鲨
+    (3, 15, "right", "龙门撞"): (0.610, 0.365, 0.900, 0.585),
+    (3, 15, "right", "鼠鲨"): (0.755, 0.700, 0.920, 0.860),
+    (3, 16, "third_1"): (0.145, 0.490, 0.460, 0.770),  # 错鱼
+    (3, 16, "third_2"): (0.540, 0.565, 0.665, 0.735),  # 掏枪
     (3, 16, "third_3"): (0.745, 0.545, 0.890, 0.705),  # 瓜子肉
+    (3, 25, "third_1"): (0.195, 0.575, 0.305, 0.725),  # 龙虱
+    (3, 25, "third_2"): (0.450, 0.585, 0.615, 0.725),  # 龙肠
+    (3, 25, "third_3"): (0.675, 0.555, 0.835, 0.735),  # 海蚕
+    (3, 26, "third_1"): (0.160, 0.610, 0.270, 0.735),  # 泥蛋
+    (3, 26, "third_2"): (0.385, 0.595, 0.590, 0.835),  # 海蜘蛛
+    (3, 26, "third_3"): (0.640, 0.620, 0.860, 0.845),  # 海蜈蚣
+    (3, 29, "third_1"): (0.125, 0.400, 0.360, 0.815),  # 章鱼
+    (3, 29, "third_2"): (0.405, 0.470, 0.525, 0.800),  # 海和尚
+    (3, 29, "third_3"): (0.540, 0.530, 0.910, 0.745),  # 土肉
+    (3, 34, "quarter_1"): (0.105, 0.540, 0.235, 0.760),  # 荷包蛇
+    (3, 34, "quarter_2"): (0.285, 0.500, 0.535, 0.805),  # 墨鱼子
+    (3, 34, "quarter_3"): (0.390, 0.500, 0.565, 0.805),  # 石乳
+    (3, 34, "quarter_4"): (0.715, 0.500, 0.830, 0.750),  # 土花瓶
 }
 
 def render_page_image(doc, page_idx):
@@ -338,8 +369,11 @@ def render_page_image(doc, page_idx):
     pix = page.get_pixmap(matrix=mat)
     return Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
-def get_manual_crop_box(vol_num, page_idx, crop_side, width, height):
-    normalized_box = MANUAL_CROP_BOXES.get((vol_num, page_idx, crop_side))
+def get_manual_crop_box(vol_num, page_idx, crop_side, name, width, height):
+    normalized_box = (
+        MANUAL_CROP_BOXES.get((vol_num, page_idx, crop_side, name))
+        or MANUAL_CROP_BOXES.get((vol_num, page_idx, crop_side))
+    )
     if not normalized_box:
         return None
 
@@ -481,7 +515,9 @@ def rebuild_volume(idx, pdf_path):
     # Track duplicates to append suffix for unique routing paths
     from collections import Counter
     page_counts = Counter([c[0] for c in config["creatures"]])
+    crop_side_counts = Counter((c[0], c[3]) for c in config["creatures"])
     seen = {}
+    seen_crop_sides = {}
     page_images = {}
     auto_boxes_by_page = {}
     
@@ -493,7 +529,12 @@ def rebuild_volume(idx, pdf_path):
         if page_counts[page_idx] > 1:
             seen[page_idx] = seen.get(page_idx, 0) + 1
             c_id = f"vol{vol_num}_{page_idx}_{seen[page_idx]}"
-            image_name = f"page_{page_idx}_{crop_side}.webp"
+            if crop_side_counts[(page_idx, crop_side)] > 1:
+                crop_key = (page_idx, crop_side)
+                seen_crop_sides[crop_key] = seen_crop_sides.get(crop_key, 0) + 1
+                image_name = f"page_{page_idx}_{crop_side}_{seen_crop_sides[crop_key]}.webp"
+            else:
+                image_name = f"page_{page_idx}_{crop_side}.webp"
         else:
             c_id = f"vol{vol_num}_{page_idx}"
             image_name = f"page_{page_idx}.webp"
@@ -517,7 +558,7 @@ def rebuild_volume(idx, pdf_path):
         # Prefer detected illustration regions for multi-creature pages. This
         # avoids cutting through creatures whose drawings are not evenly spaced.
         auto_boxes = auto_boxes_by_page.get(page_idx) or []
-        manual_box = get_manual_crop_box(vol_num, page_idx, crop_side, width, height)
+        manual_box = get_manual_crop_box(vol_num, page_idx, crop_side, name, width, height)
         if manual_box:
             img = img.crop(manual_box)
         elif page_counts[page_idx] > 1 and len(auto_boxes) >= seen[page_idx]:
