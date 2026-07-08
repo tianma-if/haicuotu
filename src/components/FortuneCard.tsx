@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { getCreatureMeta, type Creature } from '../utils/data';
-import { Sparkles, RefreshCw } from 'lucide-react';
+import { type Creature } from '../utils/data';
+import { Sparkles, RefreshCw, ScrollText } from 'lucide-react';
 
 interface FortuneCardProps {
   creatures: Creature[];
@@ -49,7 +49,7 @@ export default function FortuneCard({ creatures }: FortuneCardProps) {
         </p>
       </div>
 
-      <div className="bg-paper-light border-2 border-ink-black p-6 rounded-sm shadow-md text-center space-y-6 min-h-[360px] flex flex-col justify-center items-center relative">
+      <div className="bg-paper-light border-2 border-ink-black p-5 md:p-6 rounded-sm shadow-md text-center space-y-6 min-h-[360px] flex flex-col justify-center items-center relative overflow-hidden">
         <div className="absolute top-2 left-2 text-paper-dark font-display text-xs">卍</div>
         <div className="absolute top-2 right-2 text-paper-dark font-display text-xs">卍</div>
         <div className="absolute bottom-2 left-2 text-paper-dark font-display text-xs">卍</div>
@@ -86,30 +86,38 @@ export default function FortuneCard({ creatures }: FortuneCardProps) {
 
         {selectedCreature && fortuneText && (
           <div className="space-y-5 w-full animate-fade-in">
-            <div className="bg-[#b83b3b]/10 border border-[#b83b3b]/40 text-[#b83b3b] font-display text-xs font-bold px-3 py-1 rounded-sm inline-block">
-              今日守护海怪
+            <div className="inline-flex items-center gap-1.5 bg-[#b83b3b]/10 border border-[#b83b3b]/40 text-[#b83b3b] font-display text-xs font-bold px-3 py-1 rounded-sm">
+              <ScrollText className="w-3.5 h-3.5" />
+              今日签文
             </div>
 
-            <div className="border border-paper-dark/40 bg-white aspect-[4/3] max-w-[260px] mx-auto rounded-sm overflow-hidden flex items-center justify-center shadow-inner relative">
-              {selectedCreature.image ? (
-                <img
-                  src={selectedCreature.image}
-                  alt={selectedCreature.name}
-                  className="object-contain w-full h-full p-2"
-                />
-              ) : (
-                <div className="text-center p-4">
-                  <p className="font-display text-sm text-ink-black/40">水墨白描图</p>
+            <div className="bg-[#fffdf7] border border-paper-dark/50 shadow-inner p-3 rounded-sm">
+              <div className="border border-dashed border-paper-dark/60 p-3 rounded-sm space-y-4">
+                <div className="border border-paper-dark/40 bg-white aspect-[4/3] max-w-[230px] mx-auto rounded-sm overflow-hidden flex items-center justify-center relative">
+                  {selectedCreature.image ? (
+                    <img
+                      src={selectedCreature.image}
+                      alt={selectedCreature.name}
+                      className="object-contain w-full h-full p-2"
+                    />
+                  ) : (
+                    <div className="text-center p-4">
+                      <p className="font-display text-sm text-ink-black/40">水墨白描图</p>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
 
-            <a
-              href={`/creatures/${selectedCreature.id}`}
-              className="font-display text-2xl font-black text-[#1f3b37] hover:text-[#b83b3b] inline-block border-b border-[#ebdcb9] pb-1"
-            >
-              {selectedCreature.name} ➔
-            </a>
+                <div>
+                  <span className="font-display text-xs text-cinnabar-red tracking-widest">今日守护海怪</span>
+                  <a
+                    href={`/creatures/${selectedCreature.id}`}
+                    className="font-display text-2xl font-black text-[#1f3b37] hover:text-[#b83b3b] block mt-1"
+                  >
+                    {selectedCreature.name}
+                  </a>
+                </div>
+              </div>
+            </div>
 
             <div className="grid grid-cols-2 gap-4 border-t border-b border-paper-dark/30 py-3">
               <div className="text-center">

@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { allCreatures, confidenceLabels, getCreatureMeta, type Creature } from '../../utils/data';
-import { ChevronLeft, Flame, ShieldAlert, Award, BookOpen, Compass } from 'lucide-react';
+import { allCreatures, getCreatureMeta, type Creature } from '../../utils/data';
+import { ChevronLeft, Flame, ShieldAlert, BookOpen } from 'lucide-react';
 
 export async function getStaticPaths() {
   return allCreatures.map(c => ({
@@ -17,24 +17,25 @@ interface Props {
 const { creature } = Astro.props;
 const meta = getCreatureMeta(creature);
 const identification = meta.modernIdentification;
+const sourceName = creature.volume === 4 ? '台北故宫博物院藏本' : '故宫博物院藏本';
 ---
 
 <Layout 
   title={`${creature.name} - 《海错图》智能图鉴`} 
   description={`清代聂璜《海错图》第${creature.volume}册记载的神秘生物——${creature.name}。包含古文释义：${creature.description.slice(0, 80)}`}
 >
-  <div class="space-y-6">
+  <div class="space-y-5 md:space-y-6">
     <!-- Breadcrumb & Back button -->
     <a href="/" class="inline-flex items-center gap-1 text-xs font-bold text-ink-black/60 hover:text-cinnabar-red transition-colors duration-200">
       <ChevronLeft class="w-4 h-4" /> 返回画廊图鉴
     </a>
 
     <!-- Main Detail Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      <!-- Left Column: Visual card (7 cols to highlight the image) -->
-      <div class="lg:col-span-7 space-y-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+      <!-- Left Column: Visual card, intentionally dominant on detail pages -->
+      <div class="lg:col-span-8 space-y-6">
         <!-- Main Card Image -->
-        <div class="bg-paper-light border-2 border-ink-black shadow-md p-4 rounded-sm">
+        <div class="bg-paper-light border-2 border-ink-black shadow-md p-3 md:p-4 rounded-sm">
           <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
             {creature.image ? (
               <img
@@ -49,7 +50,7 @@ const identification = meta.modernIdentification;
               </div>
             )}
             <div class="absolute top-3 right-3 bg-cinnabar-red text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
-              第一册 • 第 {creature.page_idx} 开
+              第 {creature.volume} 册 • 第 {creature.page_idx} 开
             </div>
           </div>
 
@@ -59,10 +60,10 @@ const identification = meta.modernIdentification;
         </div>
       </div>
 
-      <!-- Right Column: Texts & Ancient Scroll (5 cols) -->
-      <div class="lg:col-span-5 space-y-6">
+      <!-- Right Column: Compact notes -->
+      <div class="lg:col-span-4 space-y-3 md:space-y-4">
         <!-- Title Header -->
-        <div class="flex flex-wrap items-end justify-between gap-4 border-b border-paper-dark/40 pb-4">
+        <div class="flex flex-wrap items-end justify-between gap-4 border-b border-paper-dark/40 pb-3">
           <div class="space-y-1">
             <span class="text-[10px] font-bold bg-deep-sea text-paper-light px-2 py-0.5 rounded-full font-sans uppercase tracking-widest">
               {meta.category}
@@ -72,93 +73,61 @@ const identification = meta.modernIdentification;
             </h2>
           </div>
           <div class="text-right text-[10px] text-ink-black/60 font-sans">
-            <span class="block">出处：故宫博物院藏本</span>
+            <span class="block">出处：{sourceName}</span>
             <span class="block font-bold mt-0.5">第 {creature.volume} 册</span>
           </div>
         </div>
 
-        <!-- Attributes card panel -->
-        <div class="grid grid-cols-2 gap-4 bg-paper-light border border-paper-dark/30 p-3 rounded-sm">
-          <div class="flex items-center gap-3">
-            <div class="bg-cinnabar-red/10 p-2 rounded-sm">
-              <Flame class="w-5 h-5 text-cinnabar-red fill-current" />
-            </div>
-            <div>
-              <span class="block text-[10px] text-ink-black/50 font-sans font-bold">美味度</span>
-              <span class="font-sans text-xs font-bold">
-                {'★'.repeat(meta.delicious)}{'☆'.repeat(5 - meta.delicious)}
-              </span>
-            </div>
+        <!-- Compact attributes -->
+        <div class="flex flex-wrap items-center gap-2 text-[11px] font-sans">
+          <div class="inline-flex items-center gap-1.5 rounded-full bg-cinnabar-red/8 border border-cinnabar-red/20 px-2.5 py-1 text-ink-black/70">
+            <Flame class="w-3.5 h-3.5 text-cinnabar-red" />
+            <span class="font-bold text-ink-black/55">美味</span>
+            <span class="font-bold text-ink-black">{meta.delicious}/5</span>
           </div>
-
-          <div class="flex items-center gap-3">
-            <div class="bg-deep-sea/10 p-2 rounded-sm">
-              <ShieldAlert class="w-5 h-5 text-deep-sea fill-current" />
-            </div>
-            <div>
-              <span class="block text-[10px] text-ink-black/50 font-sans font-bold">危险度</span>
-              <span class="font-sans text-xs font-bold">
-                {'★'.repeat(meta.danger)}{'☆'.repeat(5 - meta.danger)}
-              </span>
-            </div>
+          <div class="inline-flex items-center gap-1.5 rounded-full bg-deep-sea/8 border border-deep-sea/20 px-2.5 py-1 text-ink-black/70">
+            <ShieldAlert class="w-3.5 h-3.5 text-deep-sea" />
+            <span class="font-bold text-ink-black/55">危险</span>
+            <span class="font-bold text-ink-black">{meta.danger}/5</span>
           </div>
         </div>
 
-        <!-- Ancient text segment (Classical reading Scroll) -->
-        <div class="bg-[#faf6eb] border-2 border-ink-black/85 p-5 rounded-sm shadow-inner relative overflow-hidden">
-          <div class="absolute top-0 right-0 bg-[#ebdcb9] text-ink-black/60 font-display text-[9px] font-bold px-2 py-0.5 border-b border-l border-ink-black/85 rounded-bl-sm">
-            古籍誊录
-          </div>
-          
-          <h3 class="font-display text-base font-bold text-deep-sea flex items-center gap-1.5 mb-2">
-            <BookOpen class="w-4 h-4" /> 原文记载：
+        <!-- Ancient text segment -->
+        <section class="bg-paper-light/80 border border-paper-dark/35 p-3 rounded-sm">
+          <h3 class="font-display text-sm font-bold text-deep-sea flex items-center gap-1.5 mb-1.5">
+            <BookOpen class="w-3.5 h-3.5" /> 原文
           </h3>
-
-          <!-- Text block -->
-          <div class="font-display text-xs md:text-sm leading-relaxed text-ink-black/90 tracking-wide bg-white/50 p-3 rounded-sm border border-paper-dark/30 shadow-sm min-h-[100px]">
+          <div class="font-display text-xs md:text-sm leading-relaxed text-ink-black/85 tracking-wide bg-white/45 border-l-2 border-cinnabar-red/50 px-3 py-2">
             {creature.description}
           </div>
-        </div>
+        </section>
 
-        <!-- Modern scientific interpretation -->
-        <div class="bg-paper-light border border-paper-dark/35 p-5 rounded-sm space-y-3">
-          <h3 class="font-display text-base font-bold text-deep-sea flex items-center gap-1.5 border-b border-paper-dark/20 pb-1.5">
-            <Compass class="w-4 h-4" /> 现代对照与考证：
+        <!-- Fun note with lightweight identification context -->
+        <section class="bg-paper-light border border-paper-dark/35 p-3 md:p-4 rounded-sm">
+          <h3 class="font-display text-base font-bold text-deep-sea border-b border-paper-dark/20 pb-1.5">
+            现代考证
           </h3>
-          
-          <div class="space-y-2.5 text-xs font-sans text-ink-black/85 leading-relaxed">
+          <div class="mt-2.5 space-y-2.5 text-xs font-sans text-ink-black/85 leading-relaxed">
             {identification ? (
               <>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-[11px] md:text-xs">
-                  <p>
-                    <span class="font-bold text-deep-sea">【候选对照】</span> {identification.candidateModernName}
-                  </p>
-                  <p>
-                    <span class="font-bold text-deep-sea">【可信度】</span> {confidenceLabels[identification.confidence]}
-                  </p>
-                  {identification.scientificName && (
-                    <p class="md:col-span-2">
-                      <span class="font-bold text-deep-sea">【学名】</span> <em>{identification.scientificName}</em>
-                    </p>
-                  )}
-                </div>
                 <p>
-                  <span class="font-bold text-deep-sea">【考证说明】</span> {identification.rationale}
+                  这条多被看作{identification.candidateModernName}。
                 </p>
                 <p>
-                  <span class="font-bold text-cinnabar-red">【存疑】</span> {identification.caveats}
+                  {identification.rationale}
                 </p>
+                {identification.caveats && (
+                  <p>{identification.caveats}</p>
+                )}
               </>
             ) : (
-              <p>
-                <span class="font-bold text-deep-sea">【考证说明】</span> {meta.modernInfo}
-              </p>
+              <p>{meta.modernInfo}</p>
             )}
             <p>
-              <span class="font-bold text-cinnabar-red">【食味评价】</span> {meta.deliciousComment}
+              <span class="font-bold text-cinnabar-red">食味：</span>{meta.deliciousComment}
             </p>
           </div>
-        </div>
+        </section>
 
       </div>
     </div>

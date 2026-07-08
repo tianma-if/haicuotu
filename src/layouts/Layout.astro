@@ -42,26 +42,26 @@ const {
   </head>
   <body class="paper-scroll text-ink-black min-h-screen flex flex-col font-sans selection:bg-cinnabar-red selection:text-paper-light">
     <!-- Header -->
-    <header class="border-b border-paper-dark/30 py-6 px-4 md:px-8 bg-paper-light/85 backdrop-blur-md sticky top-0 z-40">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <header class="border-b border-paper-dark/30 py-4 md:py-6 px-4 md:px-8 bg-paper-light/90 backdrop-blur-md sticky top-0 z-40">
+      <div class="max-w-6xl mx-auto flex flex-row justify-between items-center gap-3 md:gap-4">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3 group">
-          <div class="bg-cinnabar-red text-paper-light w-10 h-10 flex items-center justify-center font-display text-2xl font-bold rounded-sm shadow-md group-hover:scale-105 transition-transform duration-300">
+          <div class="bg-cinnabar-red text-paper-light w-9 h-9 md:w-10 md:h-10 flex items-center justify-center font-display text-xl md:text-2xl font-bold rounded-sm shadow-md group-hover:scale-105 transition-transform duration-300">
             海
           </div>
           <div>
-            <h1 class="font-display text-2xl font-black tracking-wide">海錯圖</h1>
-            <p class="text-xs text-ink-black/60 uppercase tracking-widest font-sans">Facsimile Digital Album</p>
+            <h1 class="font-display text-xl md:text-2xl font-black tracking-wide">海錯圖</h1>
+            <p class="hidden sm:block text-xs text-ink-black/60 uppercase tracking-widest font-sans">Facsimile Digital Album</p>
           </div>
         </a>
 
         <!-- Navigation Links -->
-        <nav class="flex items-center gap-6 font-display text-lg font-bold">
+        <nav class="flex items-center gap-4 md:gap-6 font-display text-base md:text-lg font-bold">
           <a href="/" class="hover:text-cinnabar-red transition-colors duration-300">画廊图鉴</a>
           <a href="/fortune" class="hover:text-cinnabar-red transition-colors duration-300 flex items-center gap-1">
             运势签 <span class="bg-cinnabar-red text-paper-light text-[10px] px-1 rounded-full uppercase tracking-tighter">New</span>
           </a>
-          <a href="https://github.com/tianma-if/haicuotu" target="_blank" rel="noopener noreferrer" class="hover:text-cinnabar-red transition-colors duration-300 font-sans text-sm border border-ink-black/20 rounded-full px-3 py-1 bg-paper-light/50 flex items-center gap-1 hover:bg-paper-dark/20">
+          <a href="https://github.com/tianma-if/haicuotu" target="_blank" rel="noopener noreferrer" class="hidden sm:flex hover:text-cinnabar-red transition-colors duration-300 font-sans text-sm border border-ink-black/20 rounded-full px-3 py-1 bg-paper-light/50 items-center gap-1 hover:bg-paper-dark/20">
             GitHub
           </a>
         </nav>
@@ -69,7 +69,7 @@ const {
     </header>
 
     <!-- Main Content Slot -->
-    <main class="flex-grow max-w-6xl w-full mx-auto px-4 md:px-8 py-8">
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 md:px-8 py-6 md:py-8">
       <slot />
     </main>
 

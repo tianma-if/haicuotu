@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { getCreatureMeta, type Creature } from '../utils/data';
-import { Search, Flame, ShieldAlert, Layers, Grid3X3 } from 'lucide-react';
+import { Search, Flame, ShieldAlert, Layers, Grid3X3, SlidersHorizontal } from 'lucide-react';
 
 interface CreatureGalleryProps {
   initialCreatures: Creature[];
@@ -11,6 +11,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
   const [selectedVolume, setSelectedVolume] = useState<number | 'all'>('all');
   const [selectedCategory, setSelectedCategory] = useState<string | 'all'>('all');
   const [sortBy, setSortBy] = useState<'id' | 'delicious' | 'danger'>('id');
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const creaturesWithMeta = useMemo(() => {
     return initialCreatures.map(c => ({
@@ -51,10 +52,16 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
     return result;
   }, [creaturesWithMeta, searchTerm, selectedVolume, selectedCategory, sortBy]);
 
+  const activeFilterCount = [
+    selectedVolume !== 'all',
+    selectedCategory !== 'all',
+    sortBy !== 'id'
+  ].filter(Boolean).length;
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 md:space-y-8">
       <div className="text-center space-y-3 max-w-2xl mx-auto">
-        <h2 className="font-display text-4xl md:text-5xl font-black tracking-tight text-deep-sea">
+        <h2 className="font-display text-3xl md:text-5xl font-black tracking-tight text-deep-sea">
           海錯圖譜 <span className="text-cinnabar-red">奇物大观</span>
         </h2>
         <p className="text-sm md:text-base text-ink-black/70 leading-relaxed font-sans">
@@ -62,8 +69,8 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
         </p>
       </div>
 
-      <div className="bg-paper-light border border-paper-dark/30 p-6 rounded-sm shadow-sm space-y-4">
-        <div className="flex flex-col md:flex-row gap-4">
+      <div className="bg-paper-light border border-paper-dark/30 p-4 md:p-6 rounded-sm shadow-sm space-y-4">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-4">
           <div className="relative flex-grow">
             <Search className="absolute left-3 top-3.5 h-4 w-4 text-ink-black/40" />
             <input
@@ -74,11 +81,26 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          
-          <div className="flex items-center gap-2">
+
+          <button
+            type="button"
+            onClick={() => setFiltersOpen(open => !open)}
+            className="md:hidden inline-flex items-center justify-center gap-2 border border-paper-dark/50 bg-white px-3 py-3 rounded-sm text-xs font-bold text-deep-sea"
+            aria-expanded={filtersOpen}
+          >
+            <SlidersHorizontal className="w-4 h-4" />
+            筛选排序
+            {activeFilterCount > 0 && (
+              <span className="bg-cinnabar-red text-paper-light px-1.5 py-0.5 rounded-full text-[10px]">
+                {activeFilterCount}
+              </span>
+            )}
+          </button>
+
+          <div className={`${filtersOpen ? 'flex' : 'hidden'} md:flex items-center gap-2`}>
             <span className="text-xs font-bold text-ink-black/60 whitespace-nowrap">排序方式：</span>
             <select
-              className="bg-white border border-paper-dark/40 px-3 py-3 rounded-sm text-xs font-sans focus:outline-none focus:border-cinnabar-red"
+              className="w-full md:w-auto bg-white border border-paper-dark/40 px-3 py-3 rounded-sm text-xs font-sans focus:outline-none focus:border-cinnabar-red"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
             >
@@ -89,7 +111,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-y-3 gap-x-6 text-xs border-t border-paper-dark/20 pt-4">
+        <div className={`${filtersOpen ? 'flex' : 'hidden'} md:flex flex-wrap items-center gap-y-3 gap-x-6 text-xs border-t border-paper-dark/20 pt-4`}>
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className="font-bold text-ink-black/50 flex items-center gap-0.5"><Layers className="w-3.5 h-3.5" /> 按册：</span>
             <button
@@ -130,7 +152,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
             <a
               href={`/creatures/${creature.id}`}
               key={creature.id}
-              className="group bg-paper-light ink-border p-4 flex flex-col justify-between hover:no-underline rounded-sm h-full"
+              className="group bg-paper-light ink-border p-3.5 md:p-4 flex flex-col justify-between hover:no-underline rounded-sm h-full"
             >
               <div className="space-y-4">
                 <div className="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
@@ -156,7 +178,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
                     <h3 className="font-display text-xl font-black group-hover:text-cinnabar-red transition-colors duration-300">
                       {creature.name}
                     </h3>
-                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-deep-sea/10 text-deep-sea font-sans">
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-deep-sea/10 text-deep-sea font-sans shrink-0">
                       {creature.meta.category}
                     </span>
                   </div>
@@ -167,16 +189,14 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
                 </div>
               </div>
 
-              <div className="border-t border-paper-dark/30 pt-3 mt-4 flex items-center justify-between text-[11px] font-sans text-ink-black/60">
-                <div className="flex items-center gap-0.5">
-                  <Flame className="w-3.5 h-3.5 text-cinnabar-red fill-current" />
-                  <span>美味:</span>
-                  <span className="font-bold text-ink-black">{'★'.repeat(creature.meta.delicious)}{'☆'.repeat(5 - creature.meta.delicious)}</span>
+              <div className="border-t border-paper-dark/25 pt-3 mt-4 flex items-center justify-between text-[11px] font-sans text-ink-black/60">
+                <div className="inline-flex items-center gap-1 rounded-full bg-cinnabar-red/8 border border-cinnabar-red/20 px-2 py-1">
+                  <Flame className="w-3.5 h-3.5 text-cinnabar-red" />
+                  <span>美味 {creature.meta.delicious}/5</span>
                 </div>
-                <div className="flex items-center gap-0.5">
-                  <ShieldAlert className="w-3.5 h-3.5 text-deep-sea fill-current" />
-                  <span>危险:</span>
-                  <span className="font-bold text-ink-black">{'★'.repeat(creature.meta.danger)}{'☆'.repeat(5 - creature.meta.danger)}</span>
+                <div className="inline-flex items-center gap-1 rounded-full bg-deep-sea/8 border border-deep-sea/20 px-2 py-1">
+                  <ShieldAlert className="w-3.5 h-3.5 text-deep-sea" />
+                  <span>危险 {creature.meta.danger}/5</span>
                 </div>
               </div>
             </a>
