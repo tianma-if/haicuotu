@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import SharePoster from '../../components/SharePoster';
 import { allCreatures, getCreatureMeta, type Creature } from '../../utils/data';
 import { ChevronLeft, Flame, ShieldAlert, Award, BookOpen, Compass } from 'lucide-react';
 
@@ -57,9 +56,6 @@ const meta = getCreatureMeta(creature);
             聂璜 绘于康熙戊寅年（1698年）
           </div>
         </div>
-
-        <!-- Sharing Card Component -->
-        <SharePoster client:load creature={creature} />
       </div>
 
       <!-- Right Column: Texts & Ancient Scroll (7 cols) -->
