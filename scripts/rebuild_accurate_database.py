@@ -322,11 +322,34 @@ vol_configs = {
 # Sorted alphabetically to get exact mapping: 1->第一册, 2->第三册, 3->第二册, 4->第四册
 pdf_files = sorted(glob.glob(os.path.join(PDF_DIR, "*.pdf")))
 
+# Normalized crop overrides for pages where the illustration is tiny, highly
+# off-center, or shares the page with unrelated creatures.
+MANUAL_CROP_BOXES = {
+    (1, 12, "third_2"): (0.425, 0.565, 0.565, 0.730),  # 小鱼
+    (1, 12, "third_3"): (0.610, 0.390, 0.895, 0.785),  # 飞鱼
+    (1, 13, "left"): (0.160, 0.470, 0.385, 0.775),  # 铜盆鱼
+    (1, 39, "right"): (0.380, 0.255, 0.775, 0.880),  # 神龙
+    (3, 16, "third_3"): (0.745, 0.545, 0.890, 0.705),  # 瓜子肉
+}
+
 def render_page_image(doc, page_idx):
     page = doc[page_idx]
     mat = fitz.Matrix(2.0, 2.0)
     pix = page.get_pixmap(matrix=mat)
     return Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+def get_manual_crop_box(vol_num, page_idx, crop_side, width, height):
+    normalized_box = MANUAL_CROP_BOXES.get((vol_num, page_idx, crop_side))
+    if not normalized_box:
+        return None
+
+    x1, y1, x2, y2 = normalized_box
+    return (
+        max(0, int(width * x1)),
+        max(0, int(height * y1)),
+        min(width, int(width * x2)),
+        min(height, int(height * y2)),
+    )
 
 def get_crop_box(width, height, crop_side):
     if crop_side in ("left", "half_1"):
@@ -494,7 +517,10 @@ def rebuild_volume(idx, pdf_path):
         # Prefer detected illustration regions for multi-creature pages. This
         # avoids cutting through creatures whose drawings are not evenly spaced.
         auto_boxes = auto_boxes_by_page.get(page_idx) or []
-        if page_counts[page_idx] > 1 and len(auto_boxes) >= seen[page_idx]:
+        manual_box = get_manual_crop_box(vol_num, page_idx, crop_side, width, height)
+        if manual_box:
+            img = img.crop(manual_box)
+        elif page_counts[page_idx] > 1 and len(auto_boxes) >= seen[page_idx]:
             img = img.crop(auto_boxes[seen[page_idx] - 1])
         else:
             img = img.crop(get_crop_box(width, height, crop_side))
