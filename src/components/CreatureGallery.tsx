@@ -65,7 +65,7 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
           海错图谱 <span className="text-cinnabar-red">奇物大观</span>
         </h2>
         <p className="text-sm md:text-base text-ink-black/70 leading-relaxed font-sans">
-          「错」者，杂也。清康熙年间，画家聂璜考察东南沿海，手绘数百种海洋异兽。本图鉴支持图文精准对应，还原前人笔下的神奇物产。
+          「错」者，杂也。清康熙年间，画家聂璜考察东南沿海，手绘数百种海洋异兽。
         </p>
       </div>
 
