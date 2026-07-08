@@ -9,7 +9,7 @@
 **在线浏览**: <https://haicuotu.tianma-if.com>  
 **GitHub**: <https://github.com/tianma-if/haicuotu>
 
-![《海错图》数字化图鉴预览](./public/images/vol1/page_35.webp)
+![《海错图》数字化图鉴中的人鱼图](./public/images/vol1/page_37_left.webp)
 
 ## ✨ 项目亮点 (Highlights)
 
