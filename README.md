@@ -9,7 +9,7 @@
 **在线浏览**: <https://haicuotu.tianma-if.com>  
 **GitHub**: <https://github.com/tianma-if/haicuotu>
 
-![《海错图》数字化图鉴中的章鱼图](./public/images/vol3/page_29_third_1.webp)
+<img src="./public/images/vol3/page_29_third_1.webp" alt="《海错图》数字化图鉴中的章鱼图" width="25%">
 
 ## ✨ 项目亮点 (Highlights)
 
