@@ -17,6 +17,7 @@ interface Props {
 const { creature } = Astro.props;
 const meta = getCreatureMeta(creature);
 const identification = meta.modernIdentification;
+const modernImage = identification?.modernImage;
 const sourceName = creature.volume === 4 ? '台北故宫博物院藏本' : '故宫博物院藏本';
 const title = `${creature.name} - 《海错图》数字化图鉴与现代考证`;
 const description = `《海错图》第${creature.volume}册${creature.name}条目，含聂璜原文释义、${meta.category}分类、古今生物对照与食味危险指数。${creature.description.slice(0, 70)}`;
@@ -63,26 +64,62 @@ const canonical = `/creatures/${creature.id}`;
       <div class="lg:col-span-8 space-y-6">
         <!-- Main Card Image -->
         <div class="bg-paper-light border-2 border-ink-black shadow-md p-3 md:p-4 rounded-sm">
-          <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
-            {creature.image ? (
-              <img
-                src={creature.image}
-                alt={creature.name}
-                class="object-contain w-full h-full p-3"
-              />
-            ) : (
-              <div class="text-center p-8">
-                <p class="font-display text-2xl text-ink-black/30">书卷白描图缺</p>
-                <p class="text-xs text-ink-black/40 font-sans mt-2">（当前尚未核定可对应此条的独立插图）</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div class="space-y-2">
+              <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
+                {creature.image ? (
+                  <img
+                    src={creature.image}
+                    alt={`${creature.name}海错图原图`}
+                    class="object-contain w-full h-full p-3"
+                  />
+                ) : (
+                  <div class="text-center p-8">
+                    <p class="font-display text-2xl text-ink-black/30">书卷白描图缺</p>
+                    <p class="text-xs text-ink-black/40 font-sans mt-2">（当前尚未核定可对应此条的独立插图）</p>
+                  </div>
+                )}
+                <div class="absolute top-3 right-3 bg-cinnabar-red text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
+                  第 {creature.volume} 册 • 第 {creature.page_idx} 开
+                </div>
               </div>
-            )}
-            <div class="absolute top-3 right-3 bg-cinnabar-red text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
-              第 {creature.volume} 册 • 第 {creature.page_idx} 开
+              <p class="text-center text-xs text-ink-black/50 font-sans">
+                聂璜 绘于康熙戊寅年（1698年）
+              </p>
             </div>
-          </div>
 
-          <div class="mt-4 text-center border-t border-paper-dark/30 pt-3 text-xs text-ink-black/50 font-sans">
-            聂璜 绘于康熙戊寅年（1698年）
+            <div class="space-y-2">
+              <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
+                {modernImage ? (
+                  <img
+                    src={modernImage}
+                    alt={`${creature.name}现代候选真物图`}
+                    class="object-cover w-full h-full"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="text-center p-8">
+                    <p class="font-display text-2xl text-ink-black/30">真物图缺</p>
+                    <p class="text-xs text-ink-black/40 font-sans mt-2">（当前尚未找到合适的开放授权照片）</p>
+                  </div>
+                )}
+                <div class="absolute top-3 right-3 bg-deep-sea text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
+                  现代候选真物
+                </div>
+              </div>
+              {identification?.modernImageSource ? (
+                <p class="text-center text-xs text-ink-black/50 font-sans truncate">
+                  图片来源：
+                  <a href={identification.modernImageSource} class="hover:text-cinnabar-red" target="_blank" rel="noreferrer">
+                    {identification.modernImageLicense || 'open image'}
+                  </a>
+                </p>
+              ) : (
+                <p class="text-center text-xs text-ink-black/50 font-sans">
+                  现代图按候选物种生成
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -30,6 +30,10 @@ export interface ModernIdentification {
   confidence: IdentificationConfidence;
   rationale: string;
   caveats: string;
+  modernImage?: string | null;
+  modernImageSource?: string | null;
+  modernImageCredit?: string | null;
+  modernImageLicense?: string | null;
 }
 
 export const volumes: VolumeData[] = [

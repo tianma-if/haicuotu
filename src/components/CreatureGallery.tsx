@@ -156,12 +156,43 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
             >
               <div className="space-y-3 md:space-y-4 min-w-0">
                 <div className="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
-                  {creature.image ? (
-                    <img
-                      src={creature.image}
-                      alt={creature.name}
-                      className="object-contain w-full h-full p-2 group-hover:scale-105 transition-transform duration-500 ease-out"
-                    />
+                  {creature.image || creature.meta.modernIdentification?.modernImage ? (
+                    <div className="grid grid-cols-2 w-full h-full">
+                      {creature.image ? (
+                        <div className="relative min-w-0 border-r border-paper-dark/25 flex items-center justify-center bg-white">
+                          <img
+                            src={creature.image}
+                            alt={`${creature.name}海错图原图`}
+                            className="object-contain w-full h-full p-2 group-hover:scale-105 transition-transform duration-500 ease-out"
+                          />
+                          <span className="absolute left-1.5 bottom-1.5 bg-paper-light/90 border border-paper-dark/35 px-1.5 py-0.5 text-[9px] font-bold text-ink-black/55">
+                            古图
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="relative min-w-0 border-r border-paper-dark/25 flex items-center justify-center bg-paper-light/50 p-2 text-center">
+                          <span className="text-[10px] text-ink-black/30 font-display">古图缺</span>
+                        </div>
+                      )}
+
+                      {creature.meta.modernIdentification?.modernImage ? (
+                        <div className="relative min-w-0 flex items-center justify-center bg-ink-black/[0.03]">
+                          <img
+                            src={creature.meta.modernIdentification.modernImage}
+                            alt={`${creature.name}现代候选真物图`}
+                            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500 ease-out"
+                            loading="lazy"
+                          />
+                          <span className="absolute left-1.5 bottom-1.5 bg-deep-sea/90 px-1.5 py-0.5 text-[9px] font-bold text-paper-light">
+                            真物
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="relative min-w-0 flex items-center justify-center bg-paper-light/50 p-2 text-center">
+                          <span className="text-[10px] text-ink-black/30 font-display">真物缺</span>
+                        </div>
+                      )}
+                    </div>
                   ) : (
                     <div className="text-center p-4">
                       <p className="font-display text-lg text-ink-black/40">书卷白描图缺</p>

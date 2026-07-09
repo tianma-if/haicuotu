@@ -29,7 +29,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate:modern-images": "node scripts/generate_modern_images.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.1",
@@ -43,5 +44,8 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
   }
 }
