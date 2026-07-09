@@ -64,62 +64,26 @@ const canonical = `/creatures/${creature.id}`;
       <div class="lg:col-span-8 space-y-6">
         <!-- Main Card Image -->
         <div class="bg-paper-light border-2 border-ink-black shadow-md p-3 md:p-4 rounded-sm">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <div class="space-y-2">
-              <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
-                {creature.image ? (
-                  <img
-                    src={creature.image}
-                    alt={`${creature.name}海错图原图`}
-                    class="object-contain w-full h-full p-3"
-                  />
-                ) : (
-                  <div class="text-center p-8">
-                    <p class="font-display text-2xl text-ink-black/30">书卷白描图缺</p>
-                    <p class="text-xs text-ink-black/40 font-sans mt-2">（当前尚未核定可对应此条的独立插图）</p>
-                  </div>
-                )}
-                <div class="absolute top-3 right-3 bg-cinnabar-red text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
-                  第 {creature.volume} 册 • 第 {creature.page_idx} 开
-                </div>
+          <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
+            {creature.image ? (
+              <img
+                src={creature.image}
+                alt={`${creature.name}海错图原图`}
+                class="object-contain w-full h-full p-3"
+              />
+            ) : (
+              <div class="text-center p-8">
+                <p class="font-display text-2xl text-ink-black/30">书卷白描图缺</p>
+                <p class="text-xs text-ink-black/40 font-sans mt-2">（当前尚未核定可对应此条的独立插图）</p>
               </div>
-              <p class="text-center text-xs text-ink-black/50 font-sans">
-                聂璜 绘于康熙戊寅年（1698年）
-              </p>
+            )}
+            <div class="absolute top-3 right-3 bg-cinnabar-red text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
+              第 {creature.volume} 册 • 第 {creature.page_idx} 开
             </div>
+          </div>
 
-            <div class="space-y-2">
-              <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
-                {modernImage ? (
-                  <img
-                    src={modernImage}
-                    alt={`${creature.name}现代候选真物图`}
-                    class="object-cover w-full h-full"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div class="text-center p-8">
-                    <p class="font-display text-2xl text-ink-black/30">真物图缺</p>
-                    <p class="text-xs text-ink-black/40 font-sans mt-2">（当前尚未找到合适的开放授权照片）</p>
-                  </div>
-                )}
-                <div class="absolute top-3 right-3 bg-deep-sea text-paper-light px-2.5 py-1 text-xs font-display font-bold shadow-md rounded-sm">
-                  现代候选真物
-                </div>
-              </div>
-              {identification?.modernImageSource ? (
-                <p class="text-center text-xs text-ink-black/50 font-sans truncate">
-                  图片来源：
-                  <a href={identification.modernImageSource} class="hover:text-cinnabar-red" target="_blank" rel="noreferrer">
-                    {identification.modernImageLicense || 'open image'}
-                  </a>
-                </p>
-              ) : (
-                <p class="text-center text-xs text-ink-black/50 font-sans">
-                  现代图按候选物种生成
-                </p>
-              )}
-            </div>
+          <div class="mt-4 text-center border-t border-paper-dark/30 pt-3 text-xs text-ink-black/50 font-sans">
+            聂璜 绘于康熙戊寅年（1698年）
           </div>
         </div>
       </div>
@@ -172,6 +136,29 @@ const canonical = `/creatures/${creature.id}`;
             现代考证
           </h3>
           <div class="mt-2.5 space-y-2.5 text-xs font-sans text-ink-black/85 leading-relaxed">
+            {modernImage && (
+              <figure class="float-right ml-3 mb-2 w-28 sm:w-32 md:w-36">
+                <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden">
+                  <img
+                    src={modernImage}
+                    alt={`${creature.name}现代候选真物图`}
+                    class="object-cover w-full h-full opacity-90"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption class="mt-1 text-[10px] leading-snug text-ink-black/45 text-center">
+                  现代候选真物
+                  {identification?.modernImageSource && (
+                    <>
+                      {' · '}
+                      <a href={identification.modernImageSource} class="hover:text-cinnabar-red" target="_blank" rel="noreferrer">
+                        来源
+                      </a>
+                    </>
+                  )}
+                </figcaption>
+              </figure>
+            )}
             {identification ? (
               <>
                 <p>

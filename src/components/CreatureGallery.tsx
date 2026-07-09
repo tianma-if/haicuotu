@@ -152,47 +152,16 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
             <a
               href={`/creatures/${creature.id}`}
               key={creature.id}
-              className="group bg-paper-light ink-border p-2.5 sm:p-3.5 md:p-4 flex flex-col justify-between hover:no-underline rounded-sm h-full min-w-0"
+              className="group bg-paper-light ink-border p-2.5 sm:p-3.5 md:p-4 flex flex-col hover:no-underline rounded-sm h-full min-w-0"
             >
               <div className="space-y-3 md:space-y-4 min-w-0">
                 <div className="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden flex items-center justify-center relative">
-                  {creature.image || creature.meta.modernIdentification?.modernImage ? (
-                    <div className="grid grid-cols-2 w-full h-full">
-                      {creature.image ? (
-                        <div className="relative min-w-0 border-r border-paper-dark/25 flex items-center justify-center bg-white">
-                          <img
-                            src={creature.image}
-                            alt={`${creature.name}海错图原图`}
-                            className="object-contain w-full h-full p-2 group-hover:scale-105 transition-transform duration-500 ease-out"
-                          />
-                          <span className="absolute left-1.5 bottom-1.5 bg-paper-light/90 border border-paper-dark/35 px-1.5 py-0.5 text-[9px] font-bold text-ink-black/55">
-                            古图
-                          </span>
-                        </div>
-                      ) : (
-                        <div className="relative min-w-0 border-r border-paper-dark/25 flex items-center justify-center bg-paper-light/50 p-2 text-center">
-                          <span className="text-[10px] text-ink-black/30 font-display">古图缺</span>
-                        </div>
-                      )}
-
-                      {creature.meta.modernIdentification?.modernImage ? (
-                        <div className="relative min-w-0 flex items-center justify-center bg-ink-black/[0.03]">
-                          <img
-                            src={creature.meta.modernIdentification.modernImage}
-                            alt={`${creature.name}现代候选真物图`}
-                            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500 ease-out"
-                            loading="lazy"
-                          />
-                          <span className="absolute left-1.5 bottom-1.5 bg-deep-sea/90 px-1.5 py-0.5 text-[9px] font-bold text-paper-light">
-                            真物
-                          </span>
-                        </div>
-                      ) : (
-                        <div className="relative min-w-0 flex items-center justify-center bg-paper-light/50 p-2 text-center">
-                          <span className="text-[10px] text-ink-black/30 font-display">真物缺</span>
-                        </div>
-                      )}
-                    </div>
+                  {creature.image ? (
+                    <img
+                      src={creature.image}
+                      alt={creature.name}
+                      className="object-contain w-full h-full p-2 group-hover:scale-105 transition-transform duration-500 ease-out"
+                    />
                   ) : (
                     <div className="text-center p-4">
                       <p className="font-display text-lg text-ink-black/40">书卷白描图缺</p>
@@ -217,17 +186,17 @@ export default function CreatureGallery({ initialCreatures }: CreatureGalleryPro
                   <p className="text-[11px] sm:text-xs text-ink-black/70 line-clamp-2 md:line-clamp-3 leading-relaxed font-sans">
                     {creature.description}
                   </p>
-                </div>
-              </div>
 
-              <div className="border-t border-paper-dark/25 pt-2 sm:pt-3 mt-3 sm:mt-4 flex items-center justify-between gap-1 text-[10px] sm:text-[11px] font-sans text-ink-black/60">
-                <div className="inline-flex min-w-0 items-center gap-0.5 sm:gap-1 rounded-full bg-cinnabar-red/8 border border-cinnabar-red/20 px-1.5 sm:px-2 py-1">
-                  <Flame className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-cinnabar-red shrink-0" />
-                  <span><span className="hidden sm:inline">美味 </span>{creature.meta.delicious}/5</span>
-                </div>
-                <div className="inline-flex min-w-0 items-center gap-0.5 sm:gap-1 rounded-full bg-deep-sea/8 border border-deep-sea/20 px-1.5 sm:px-2 py-1">
-                  <ShieldAlert className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-deep-sea shrink-0" />
-                  <span><span className="hidden sm:inline">危险 </span>{creature.meta.danger}/5</span>
+                  <div className="flex items-center justify-end gap-1.5 text-[10px] font-sans text-ink-black/45">
+                    <span className="inline-flex items-center gap-0.5 rounded-full bg-cinnabar-red/6 border border-cinnabar-red/15 px-1.5 py-0.5">
+                      <Flame className="w-3 h-3 text-cinnabar-red/75 shrink-0" />
+                      <span>美味 {creature.meta.delicious}/5</span>
+                    </span>
+                    <span className="inline-flex items-center gap-0.5 rounded-full bg-deep-sea/6 border border-deep-sea/15 px-1.5 py-0.5">
+                      <ShieldAlert className="w-3 h-3 text-deep-sea/75 shrink-0" />
+                      <span>危险 {creature.meta.danger}/5</span>
+                    </span>
+                  </div>
                 </div>
               </div>
             </a>
