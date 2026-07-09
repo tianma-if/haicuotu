@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { allCreatures, getCreatureMeta, type Creature } from '../../utils/data';
+import { allCreatures, getCreatureMeta, confidenceLabels, type Creature } from '../../utils/data';
 import { ChevronLeft, Flame, ShieldAlert, BookOpen } from 'lucide-react';
 
 export async function getStaticPaths() {
@@ -141,18 +141,18 @@ const canonical = `/creatures/${creature.id}`;
                 <div class="bg-white border border-paper-dark/40 aspect-[4/3] rounded-sm overflow-hidden">
                   <img
                     src={modernImage}
-                    alt={`${creature.name}现代候选真物图`}
+                    alt={`${creature.name}现代生物参考照片`}
                     class="object-cover w-full h-full opacity-90"
                     loading="lazy"
                   />
                 </div>
                 <figcaption class="mt-1 text-[10px] leading-snug text-ink-black/45 text-center">
-                  现代候选真物
+                  {identification?.modernImageTaxon || '现代生物参考'}
                   {identification?.modernImageSource && (
                     <>
                       {' · '}
                       <a href={identification.modernImageSource} class="hover:text-cinnabar-red" target="_blank" rel="noreferrer">
-                        来源
+                        {identification.modernImageProvider || '来源'}
                       </a>
                     </>
                   )}
@@ -162,7 +162,13 @@ const canonical = `/creatures/${creature.id}`;
             {identification ? (
               <>
                 <p>
-                  这条多被看作{identification.candidateModernName}。
+                  <span class="font-bold text-deep-sea">置信度：</span>{confidenceLabels[identification.confidence]}
+                  {identification.scientificName && (
+                    <span> · <span class="italic">{identification.scientificName}</span></span>
+                  )}
+                </p>
+                <p>
+                  {identification.confidence === 'high' ? '这条多被看作' : '这条可能对应'}{identification.candidateModernName}。
                 </p>
                 <p>
                   {identification.rationale}

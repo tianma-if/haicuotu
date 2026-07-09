@@ -31,9 +31,12 @@ export interface ModernIdentification {
   rationale: string;
   caveats: string;
   modernImage?: string | null;
+  modernImageKind?: 'open-photo' | string | null;
   modernImageSource?: string | null;
   modernImageCredit?: string | null;
   modernImageLicense?: string | null;
+  modernImageTaxon?: string | null;
+  modernImageProvider?: string | null;
 }
 
 export const volumes: VolumeData[] = [
