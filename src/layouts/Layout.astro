@@ -10,6 +10,8 @@ interface Props {
   type?: 'website' | 'article';
   keywords?: string[];
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
+  googleSiteVerification?: string;
+  bingSiteVerification?: string;
 }
 
 const { 
@@ -20,12 +22,15 @@ const {
   imageAlt = "《海错图》数字化图鉴插图",
   type = "website",
   keywords = ["海错图", "聂璜", "古籍数字化", "故宫博物院", "海洋生物", "海怪", "中国古籍", "国风图鉴"],
-  structuredData
+  structuredData,
+  googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION,
+  bingSiteVerification = import.meta.env.PUBLIC_BING_SITE_VERIFICATION
 } = Astro.props;
 
 const siteUrl = Astro.site ?? new URL(Astro.url.origin);
 const canonicalUrl = new URL(canonical ?? Astro.url.pathname, siteUrl).toString();
 const imageUrl = image ? new URL(image, siteUrl).toString() : undefined;
+const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/index.html' || Astro.url.pathname === '';
 const jsonLd = structuredData ?? {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -50,6 +55,8 @@ const jsonLd = structuredData ?? {
     <meta name="author" content="Haicuotu Project" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
+    {bingSiteVerification && <meta name="msvalidate.01" content={bingSiteVerification} />}
     <meta name="theme-color" content="#b23a2f" />
     <link rel="canonical" href={canonicalUrl} />
     
@@ -86,7 +93,11 @@ const jsonLd = structuredData ?? {
             海
           </div>
           <div>
-            <h1 class="font-display text-lg md:text-xl font-black tracking-wide leading-none">海错图</h1>
+            {isHome ? (
+              <h1 class="font-display text-lg md:text-xl font-black tracking-wide leading-none">海错图</h1>
+            ) : (
+              <span class="font-display text-lg md:text-xl font-black tracking-wide leading-none block">海错图</span>
+            )}
             <p class="hidden sm:block text-[11px] text-ink-black/60 uppercase tracking-widest font-sans leading-tight">Facsimile Digital Album</p>
           </div>
         </a>
